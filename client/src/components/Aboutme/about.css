@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Lemon&family=Poppins:wght@600&display=swap');
+
 @keyframes flow {
     0% {
         transform: translateY(0) translateX(0) rotate(0deg);
@@ -41,4 +43,18 @@
     width: 200px;
     height: 200px;
     border-radius: 50%;
+}
+
+.first-name {
+    position: relative;
+    display: inline-block;
+    background: linear-gradient(315deg, #44b09e 0%, #92c2e2 74%);
+    -webkit-background-clip: text;
+    color: transparent;
+}
+
+.first-name,
+.about-me,
+.personal-title {
+    font-family: 'Poppins', sans-serif;
 }

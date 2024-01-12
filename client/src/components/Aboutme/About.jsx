@@ -2,7 +2,6 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faLinkedin, faGithub, faDiscord } from '@fortawesome/free-brands-svg-icons'
 import avatar from '../../assets/cartoon_LOAF-ezgif.com-webp-to-jpg-converter.jpg'
 import { useEffect } from 'react';
-
 import './about.css'
 
 function About() {
@@ -29,7 +28,7 @@ function About() {
     }, []);
     // this sets random colors to each dots
     const getRandomColor = () => {
-        return `rgba(${Math.random() * 255}, ${Math.random() * 255}, ${Math.random() * 255}, 0.5)`; // Random RGBA color with 0.5 opacity
+        return `rgba(${Math.random() * 255}, ${Math.random() * 255}, ${Math.random() * 255}, 0.5)`;
     };
 
     return (
@@ -48,16 +47,22 @@ function About() {
                 })}
             </div>
             <div className="container text-center mt-5">
-                <h1>Peyton Touma</h1>
-                <p>Full-Stack Web Developer and Software Engineer</p>
-                <p>
+                <h1 className='first-name'>Peyton Touma</h1>
+                <p className='personal-title'>Full-Stack Web Developer and Software Engineer</p>
+                <p className='about-me'>
                     Lorem ipsum dolor sit amet consectetur adipisicing elit. Mollitia cumque, incidunt possimus placeat sit dolorum praesentium aperiam laudantium unde reprehenderit distinctio dicta nobis dolorem voluptate velit perspiciatis quibusdam iste veritatis!
                 </p>
 
                 <div className="mt-3">
-                    <FontAwesomeIcon icon={faLinkedin} className="fa-2x mx-1" />
-                    <FontAwesomeIcon icon={faGithub} className="fa-2x mx-1" />
-                    <FontAwesomeIcon icon={faDiscord} className="fa-2x mx-1" />
+                    <a href="https://www.linkedin.com/in/peyton-touma-b666a7281/">
+                        <FontAwesomeIcon icon={faLinkedin} className="fa-2x mx-1" />
+                    </a>
+                    <a href="https://github.com/pToum21">
+                        <FontAwesomeIcon icon={faGithub} className="fa-2x mx-1" />
+                    </a>
+                    <a href="https://discordapp.com/users/775148641014775808">
+                        <FontAwesomeIcon icon={faDiscord} className="fa-2x mx-1" />
+                    </a>
                 </div>
 
                 <img src={avatar} alt="avatar image" className="rounded-circle img-fluid mt-3" style={{ width: '200px', height: '200px' }} />
