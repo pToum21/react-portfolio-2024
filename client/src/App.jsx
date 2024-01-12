@@ -1,3 +1,5 @@
+// BootStrap import
+import 'bootstrap/dist/css/bootstrap.min.css';
 
 
 function App() {
