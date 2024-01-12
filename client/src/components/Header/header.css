@@ -1,0 +1,13 @@
+@import url('https://fonts.googleapis.com/css2?family=Lemon&family=Poppins:wght@600&display=swap');
+
+/* other font may use */
+/* font-family: 'Poppins', sans-serif; */
+
+#logo-name {
+    font-family: 'Lemon', serif;
+    /* font-family: 'Poppins', sans-serif; */
+}
+
+.custom-navbar{
+    height: 80px;
+}
