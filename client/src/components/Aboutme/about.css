@@ -46,6 +46,7 @@
 }
 
 .first-name {
+    font-family: 'Poppins', sans-serif;
     position: relative;
     display: inline-block;
     background: linear-gradient(315deg, #44b09e 0%, #92c2e2 74%);
@@ -53,8 +54,12 @@
     color: transparent;
 }
 
-.first-name,
 .about-me,
 .personal-title {
     font-family: 'Poppins', sans-serif;
+    color: whitesmoke;
+}
+
+.social-links {
+    color: inherit;
 }

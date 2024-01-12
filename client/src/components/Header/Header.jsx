@@ -21,8 +21,8 @@ function Header() {
                     </li>
                 </ul>
             </div>
-            <div className="ml-auto">
-                <a href="/resume" className="btn btn-outline-light">Resume</a>
+            <div className="ml-auto resume-button">
+                <a href="/resume" className="btn">Resume</a>
             </div>
         </nav>
     );

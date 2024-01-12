@@ -61,6 +61,7 @@ function About() {
                         <FontAwesomeIcon icon={faGithub} className="fa-2x mx-4" />
                     </a>
                     <a className="social-links" href="https://discordapp.com/users/775148641014775808">
+                        
                         <FontAwesomeIcon icon={faDiscord} className="fa-2x mx-4" />
                     </a>
                 </div>

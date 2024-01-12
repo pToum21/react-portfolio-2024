@@ -11,3 +11,8 @@
 .custom-navbar{
     height: 80px;
 }
+.resume-button {
+    background: linear-gradient(315deg, #44b09e 0%, #b5cedf 74%);
+    border: none;  
+    margin-right: 3%;  
+}
