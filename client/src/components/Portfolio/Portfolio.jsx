@@ -21,18 +21,22 @@ const YourComponent = () => {
                         <p className='proj-text'>
                             This application is a full stack e-commerce site that allows the user to buy and sell retro gaming consoles and games.
                         </p>
-                        <div style={{ fontSize: '0.8rem', color: 'white' }}>
+                        <div style={{ fontSize: '0.8rem', color: 'white', maxWidth: '75%', margin: '0 auto' }}>
                             <h5 className='used-stack'>Stack Used:</h5>
                             HTML, CSS (Bulma), Handlebars (with Express Session and Express Handlebars), JavaScript, Node.js, Express.js, MySQL (using mySQL2), Sequelize, Multer (for image upload), Blob storage, Stripe (for payments), bcrypt (for password hashing), dotenv, Config folder, Seeds, Splidejs (for image carousel).
                         </div>
-                        <div className="d-flex justify-content-center">
+                        <div className="d-flex justify-content-center mt-3">
                             <div className="social-links mr-3">
-                                <p style={{ fontSize: '0.8rem', color: 'white', marginBottom: 0 }}>Deployed Demo:</p>
-                                <FontAwesomeIcon icon={faArrowUpRightFromSquare} className="fa-1x mx-1" />
+                                <p style={{ fontSize: '0.8rem', color: 'white', marginBottom: 0 }}>Deployed Demo:
+                                    <FontAwesomeIcon icon={faArrowUpRightFromSquare} className="fa-1x mx-1" />
+                                </p>
+
                             </div>
-                            <div className="social-links">
-                                <p style={{ fontSize: '0.8rem', color: 'white', marginBottom: 0 }}>GitHub Repo:</p>
-                                <FontAwesomeIcon icon={faGithub} className="fa-1x mx-1" />
+                            <div>
+                                <p style={{ fontSize: '0.8rem', color: 'white', marginBottom: 0 }}>GitHub Repo:
+                                    <FontAwesomeIcon icon={faGithub} className="fa-1x mx-1" />
+                                </p>
+
                             </div>
                         </div>
                     </div>
@@ -40,24 +44,28 @@ const YourComponent = () => {
             </Row>
             {/* prroject 2 */}
             <Row>
-                <Col xs={12} md={6} className="d-flex align-items-center">
+            <Col xs={12} md={6} className="d-flex align-items-center">
                     <div className="text-center">
                         <h3 className='proj-title'>AnyYes</h3>
                         <p className='proj-text'>
                             This application is a full stack e-commerce site that allows the user to buy and sell retro gaming consoles and games.
                         </p>
-                        <div style={{ fontSize: '0.8rem', color: 'white' }}>
+                        <div style={{ fontSize: '0.8rem', color: 'white', maxWidth: '75%', margin: '0 auto' }}>
                             <h5 className='used-stack'>Stack Used:</h5>
                             HTML, CSS (Bulma), Handlebars (with Express Session and Express Handlebars), JavaScript, Node.js, Express.js, MySQL (using mySQL2), Sequelize, Multer (for image upload), Blob storage, Stripe (for payments), bcrypt (for password hashing), dotenv, Config folder, Seeds, Splidejs (for image carousel).
                         </div>
-                        <div className="d-flex justify-content-center">
+                        <div className="d-flex justify-content-center mt-3">
                             <div className="social-links mr-3">
-                                <p style={{ fontSize: '0.8rem', color: 'white', marginBottom: 0 }}>Deployed Demo:</p>
-                                <FontAwesomeIcon icon={faArrowUpRightFromSquare} className="fa-1x mx-1" />
+                                <p style={{ fontSize: '0.8rem', color: 'white', marginBottom: 0 }}>Deployed Demo:
+                                    <FontAwesomeIcon icon={faArrowUpRightFromSquare} className="fa-1x mx-1" />
+                                </p>
+
                             </div>
-                            <div className="social-links">
-                                <p style={{ fontSize: '0.8rem', color: 'white', marginBottom: 0 }}>GitHub Repo:</p>
-                                <FontAwesomeIcon icon={faGithub} className="fa-1x mx-1" />
+                            <div>
+                                <p style={{ fontSize: '0.8rem', color: 'white', marginBottom: 0 }}>GitHub Repo:
+                                    <FontAwesomeIcon icon={faGithub} className="fa-1x mx-1" />
+                                </p>
+
                             </div>
                         </div>
                     </div>
@@ -77,18 +85,22 @@ const YourComponent = () => {
                         <p className='proj-text'>
                             This application is a full stack e-commerce site that allows the user to buy and sell retro gaming consoles and games.
                         </p>
-                        <div style={{ fontSize: '0.8rem', color: 'white' }}>
+                        <div style={{ fontSize: '0.8rem', color: 'white', maxWidth: '75%', margin: '0 auto' }}>
                             <h5 className='used-stack'>Stack Used:</h5>
                             HTML, CSS (Bulma), Handlebars (with Express Session and Express Handlebars), JavaScript, Node.js, Express.js, MySQL (using mySQL2), Sequelize, Multer (for image upload), Blob storage, Stripe (for payments), bcrypt (for password hashing), dotenv, Config folder, Seeds, Splidejs (for image carousel).
                         </div>
-                        <div className="d-flex justify-content-center">
+                        <div className="d-flex justify-content-center mt-3">
                             <div className="social-links mr-3">
-                                <p style={{ fontSize: '0.8rem', color: 'white', marginBottom: 0 }}>Deployed Demo:</p>
-                                <FontAwesomeIcon icon={faArrowUpRightFromSquare} className="fa-1x mx-1" />
+                                <p style={{ fontSize: '0.8rem', color: 'white', marginBottom: 0 }}>Deployed Demo:
+                                    <FontAwesomeIcon icon={faArrowUpRightFromSquare} className="fa-1x mx-1" />
+                                </p>
+
                             </div>
-                            <div className="social-links">
-                                <p style={{ fontSize: '0.8rem', color: 'white', marginBottom: 0 }}>GitHub Repo:</p>
-                                <FontAwesomeIcon icon={faGithub} className="fa-1x mx-1" />
+                            <div>
+                                <p style={{ fontSize: '0.8rem', color: 'white', marginBottom: 0 }}>GitHub Repo:
+                                    <FontAwesomeIcon icon={faGithub} className="fa-1x mx-1" />
+                                </p>
+
                             </div>
                         </div>
                     </div>

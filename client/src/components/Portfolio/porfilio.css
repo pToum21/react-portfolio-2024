@@ -8,4 +8,17 @@
 
 .proj-title {
     font-family: 'Poppins', sans-serif;
+    font-size: 1.8rem; 
+    background: linear-gradient(315deg, #44b09e 0%, #92c2e2 74%);
+    -webkit-background-clip: text;
+    color: transparent;
+}
+
+.used-stack {
+    margin-top: 5%;
+    font-family: 'Poppins', sans-serif;
+    font-size: 1.3rem; 
+    background: linear-gradient(315deg, #8544b0 0%, #98cff3 74%);
+    -webkit-background-clip: text;
+    color: transparent;
 }
