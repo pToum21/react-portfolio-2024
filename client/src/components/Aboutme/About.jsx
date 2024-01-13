@@ -65,7 +65,7 @@ function About() {
                     </a>
                 </div>
 
-                <img src={avatar} alt="avatar image" className="rounded-circle img-fluid mt-3" style={{ width: '300px', height: '300px' }} />
+                <img src={avatar} alt="avatar image" className="rounded-circle img-fluid mt-4" style={{ width: '300px', height: '300px', marginRight: '20px' }} />
             </div>
         </div>
     );

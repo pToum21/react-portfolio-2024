@@ -8,6 +8,8 @@
     justify-content: center;
     align-items: center;
     background-color: #223c58; 
+   /* filter: drop-shadow(30px 10px 4px #4444dd); */
+   filter: drop-shadow(0 -6mm 4mm rgb(160, 0, 210));
 }
 
 .description-image {
@@ -38,4 +40,9 @@
   width: 100px;
   height: 100px; 
   border: 1px solid #000;
+}
+
+.tech-stack {
+    font-family: 'Poppins', sans-serif;
+    color: #44b09e;
 }
