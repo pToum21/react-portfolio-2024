@@ -33,7 +33,7 @@ function Description() {
                         </p>
                     </div>
                 </div>
-                <Row>
+                <Row className="align-items-center">
                     <Col md={12} lg={6} className='mb-4'>
                         <img src={portrait} alt="Description Image" className="img-fluid description-image" />
                     </Col>
