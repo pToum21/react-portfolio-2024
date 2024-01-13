@@ -1,3 +1,6 @@
+@import url('https://fonts.googleapis.com/css2?family=Lemon&family=Poppins:wght@600&display=swap');
+
+
 .description-container {
     height: 100vh;
     width: 100%;
@@ -14,8 +17,20 @@
     height: auto;
 }
 
-.description-text {
-    font-size: 1.5rem;
+.about-me-text {
+    font-size: 1.4rem;
     line-height: 1.6;
     color: #333;
+    font-family: 'Poppins', sans-serif;
+}
+
+.about-me-title {
+    font-family: 'Poppins', sans-serif;
+    font-family: 'Poppins', sans-serif;
+    position: relative;
+    display: inline-block;
+    font-size: 1.8rem; 
+    background: linear-gradient(315deg, #44b09e 0%, #92c2e2 74%);
+    -webkit-background-clip: text;
+    color: transparent;
 }
