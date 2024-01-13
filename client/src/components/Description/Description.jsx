@@ -1,11 +1,30 @@
-import React from 'react';
+import React, { useEffect, useState } from 'react';
 import { Container, Row, Col } from 'react-bootstrap';
+import { useSpring, animated } from 'react-spring';
 import { faJs, faHtml5, faCss3, faReact, faNode, faBootstrap, faStripe, faFigma, faGithub } from '@fortawesome/free-brands-svg-icons';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import './description.css';
 import portrait from '../../assets/DC90F5B1-793E-4326-8061-0384F1A4176E.png';
 
 function Description() {
+
+    const [scrollY, setScrollY] = useState(0);
+
+    useEffect(() => {
+        const handleScroll = () => {
+            setScrollY(window.scrollY);
+        };
+
+        window.addEventListener('scroll', handleScroll);
+
+        return () => {
+            window.removeEventListener('scroll', handleScroll);
+        };
+    }, []);
+
+    const wireframeAnimation = useSpring({
+        transform: `rotate(${scrollY / 5}deg)`,
+    });
     return (
         <div className="description-container">
             <Container fluid className="description-content">
@@ -35,6 +54,7 @@ function Description() {
                 </div>
                 <Row className="align-items-center">
                     <Col md={12} lg={6} className='mb-4'>
+                        <animated.div style={wireframeAnimation} className="wireframe-polygon"></animated.div>
                         <img src={portrait} alt="Description Image" className="img-fluid description-image" />
                     </Col>
                     <Col md={12} lg={6}>
