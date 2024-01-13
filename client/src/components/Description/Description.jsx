@@ -3,7 +3,7 @@ import { Container, Row, Col } from 'react-bootstrap';
 import { faJs, faHtml5, faCss3, faReact, faNode, faBootstrap, faStripe, faFigma, faGithub } from '@fortawesome/free-brands-svg-icons';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import './description.css';
-import portrait from '../../assets/IMG_2452.jpg';
+import portrait from '../../assets/DC90F5B1-793E-4326-8061-0384F1A4176E.png';
 
 function Description() {
     return (
