@@ -1,0 +1,11 @@
+@import url('https://fonts.googleapis.com/css2?family=Lemon&family=Poppins:wght@600&display=swap');
+
+.proj-text {
+    font-family: 'Poppins', sans-serif;
+    max-width: 60%;  
+    margin: 0 auto;
+}
+
+.proj-title {
+    font-family: 'Poppins', sans-serif;
+}
