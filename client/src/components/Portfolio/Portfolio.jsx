@@ -6,8 +6,8 @@ import anyyesImage from '../../assets/anyyes.png';
 
 function Portfolio() {
     return (
-        <Card style={{ width: '25rem' }}>
-            <Card.Img variant="top" src={anyyesImage} style={{ height: '15rem', objectFit: 'cover' }} />
+        <Card className='mt-5' style={{ width: '25rem', background: '#1a1a1a', color: 'white'  }}>
+            <Card.Img variant="top" src={anyyesImage} style={{ height: '15rem', objectFit: 'cover'}} />
             <Card.Body>
                 <Card.Title>AnyYes</Card.Title>
                 <Card.Text style={{ fontSize: '0.85rem' }}>
@@ -15,7 +15,7 @@ function Portfolio() {
                 </Card.Text>
             </Card.Body>
             <ListGroup className="list-group-flush">
-                <ListGroup.Item style={{ fontSize: '0.8rem' }}>
+                <ListGroup.Item style={{ fontSize: '0.8rem', background: '#1a1a1a', color: 'white' }}>
                     <h5>Stack Used:</h5>
                     HTML, CSS (Bulma), Handlebars (with Express Session and Express Handlebars), JavaScript, Node.js, Express.js, MySQL (using mySQL2), Sequelize, Multer (for image upload), Blob storage, Stripe (for payments), bcrypt (for password hashing), dotenv, Config folder, Seeds, Splidejs (for image carousel).
                 </ListGroup.Item>
