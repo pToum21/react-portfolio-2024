@@ -1,20 +1,35 @@
 .contact-box {
-    width: 70%;
-    height: 30%;
+    width: 80%;
+    height: 45%;
     margin: 0 auto;
     padding: 20px;
     box-shadow: 0 4px 8px rgba(126, 48, 189, 0.945);
     border-radius: 10px;   
     background: white;
     margin-bottom: 30%;
+    background-color: #f5f5f5;
+}
+
+.title-box {
+    text-align: center;
+    margin-bottom: 20px;
 }
 
 .full-page {
     background-color: rgb(27, 52, 75);
     display: flex;
+    flex-direction: column; 
     justify-content: center;
     align-items: center;
     height: 60vh;
     margin-top: 5vh;
 }
 
+textarea {
+    resize: none;
+}
+
+
+textarea {
+    height: 150px;
+}
