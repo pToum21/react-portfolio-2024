@@ -38,12 +38,12 @@ const YourComponent = () => {
                             </div>
                             <div className="d-flex justify-content-center">
                                 <div className="social-links mr-3">
-                                    <a href="" style={{ fontSize: '0.8rem', color: 'white', marginBottom: 0 }}>Deployed Demo:
+                                    <a href="https://anyyes-3bf9b8d1cf29.herokuapp.com/" style={{ fontSize: '0.8rem', color: 'white', marginBottom: 0 }}>Deployed Demo:
                                         <FontAwesomeIcon icon={faArrowUpRightFromSquare} className="fa-1x mx-1" />
                                     </a>
                                 </div>
                                 <div className="social-links mr-3">
-                                    <a href="" style={{ fontSize: '0.8rem', color: 'white', marginBottom: 0 }}>GitHub Repo:
+                                    <a href="https://github.com/pToum21/anyYes" style={{ fontSize: '0.8rem', color: 'white', marginBottom: 0 }}>GitHub Repo:
                                         <FontAwesomeIcon icon={faGithub} className="fa-1x mx-1" />
                                     </a>
                                 </div>
@@ -135,12 +135,12 @@ const YourComponent = () => {
                             </div>
                             <div className="d-flex justify-content-center">
                                 <div className="social-links mr-3">
-                                    <a href="https://tech-blogger-the-full-exp-603c6ae302d3.herokuapp.com/" style={{ fontSize: '0.8rem', color: 'white', marginBottom: 0 }}>Deployed Demo:
+                                    <a href="https://ptoum21.github.io/weatherapp-2/" style={{ fontSize: '0.8rem', color: 'white', marginBottom: 0 }}>Deployed Demo:
                                         <FontAwesomeIcon icon={faArrowUpRightFromSquare} className="fa-1x mx-1" />
                                     </a>
                                 </div>
                                 <div className="social-links mr-3">
-                                    <a href="https://github.com/pToum21/full-stack-tech-blog" style={{ fontSize: '0.8rem', color: 'white', marginBottom: 0 }}>GitHub Repo:
+                                    <a href="https://github.com/pToum21/weatherapp-2" style={{ fontSize: '0.8rem', color: 'white', marginBottom: 0 }}>GitHub Repo:
                                         <FontAwesomeIcon icon={faGithub} className="fa-1x mx-1" />
                                     </a>
                                 </div>
