@@ -1,6 +1,3 @@
-@import url('https://fonts.googleapis.com/css2?family=Lemon&family=Poppins:wght@600&display=swap');
-
-
 .description-container {
     width: 100%;
     overflow: hidden;
@@ -8,21 +5,25 @@
     justify-content: center;
     align-items: center;
     background-color: #223c58; 
-   filter: drop-shadow(0 -6mm 4mm rgb(160, 0, 210));
+    filter: drop-shadow(0 -6mm 4mm rgb(160, 0, 210));
+}
+
+.description-content {
+    padding: 20px; /* Add padding for better spacing */
 }
 
 .description-image {
     width: 100%; 
     max-width: 100%; 
     height: auto; 
+    border-radius: 8px; /* Optional: Add border-radius for rounded corners */
 }
 
 .about-me-text {
     margin-top: 20px; 
     font-family: 'Poppins', sans-serif;
     font-size: 17px;
-    line-height: 40px;
-    
+    line-height: 1.6; /* Adjust line-height for better readability */
 }
 
 .about-me-title {    
@@ -36,12 +37,13 @@
 }
 
 .wireframe-polygon {
-  width: 100px;
-  height: 100px; 
-  border: 1px solid #000;
+    width: 100px;
+    height: 100px; 
+    border: 1px solid #000;
 }
 
 .tech-stack {
     font-family: 'Poppins', sans-serif;
     color: #44b09e;
+    font-size: 16px; /* Adjust font size for better visibility */
 }
