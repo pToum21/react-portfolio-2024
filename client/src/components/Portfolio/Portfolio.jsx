@@ -14,9 +14,13 @@ const YourComponent = () => {
             {/* container holding all projects and descs */}
             <Container style={{ height: '80vh', marginTop: '50px' }}>
                 {/* project 1 */}
-                <Row>
+                <Row className='each-proj'>
                     <Col xs={12} md={6} className="d-flex align-items-center justify-content-center">
-                        <img src={anyyes} alt="Your Image" className="img-fluid" />
+                        <img
+                            src={anyyes}
+                            alt="anyYes project"
+                            className="img-fluid rounded-image"
+                        />
                     </Col>
                     <Col xs={12} md={6} className="d-flex align-items-center">
                         <div className="text-center">
@@ -46,7 +50,7 @@ const YourComponent = () => {
                     </Col>
                 </Row>
                 {/* prroject 2 */}
-                <Row>
+                <Row className='each-proj'>
                     <Col xs={12} md={6} className="d-flex align-items-center">
                         <div className="text-center">
                             <h3 className='proj-title'>AnyYes</h3>
@@ -74,13 +78,21 @@ const YourComponent = () => {
                         </div>
                     </Col>
                     <Col xs={12} md={6} className="d-flex align-items-center justify-content-center">
-                        <img src={anyyes} alt="Your Image" className="img-fluid" />
+                        <img
+                            src={anyyes}
+                            alt="anyYes project"
+                            className="img-fluid rounded-image"
+                        />
                     </Col>
                 </Row>
                 {/* project 3 */}
-                <Row>
-                    <Col xs={12} md={6} className="d-flex align-items-center justify-content-center">
-                        <img src={anyyes} alt="Your Image" className="img-fluid" />
+                <Row className='each-proj'>
+                <Col xs={12} md={6} className="d-flex align-items-center justify-content-center">
+                        <img
+                            src={anyyes}
+                            alt="anyYes project"
+                            className="img-fluid rounded-image"
+                        />
                     </Col>
                     <Col xs={12} md={6} className="d-flex align-items-center">
                         <div className="text-center">
