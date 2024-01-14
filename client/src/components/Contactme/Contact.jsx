@@ -11,10 +11,11 @@ function Contact() {
                 <div className="title-box">
                     <h1>Don't be shy hit my line 👇</h1>
                 </div>
-                <div className="contact-box">
+                <div className="contact-box bg-dark">
                     <Form>
                         <InputGroup className="mb-3">
                             <Form.Control
+                                className='bg-dark'
                                 placeholder="Name/Company Name"
                                 aria-label="Name"
                             />
@@ -22,16 +23,21 @@ function Contact() {
 
                         <InputGroup className="mb-3">
                             <Form.Control
+                                className='bg-dark'
                                 placeholder="Email"
                                 aria-label="Sender's Email"
                                 aria-describedby="basic-addon2"
                             />
-                            <InputGroup.Text id="basic-addon2">@example.com</InputGroup.Text>
+                            <InputGroup.Text id="basic-addon2"  className='bg-dark text-white'>@example.com</InputGroup.Text>
                         </InputGroup>
 
                         <InputGroup>
-                            <InputGroup.Text>Message</InputGroup.Text>
-                            <Form.Control as="textarea" aria-label="With textarea" />
+                        
+                            <InputGroup.Text  className='bg-dark text-light'>Message</InputGroup.Text>
+                            <Form.Control
+                             className='bg-dark'
+                             as="textarea" 
+                             aria-label="With textarea" />
                         </InputGroup>
 
                         <Button as="input" type="submit" value="Submit" />
