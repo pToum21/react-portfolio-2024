@@ -9,7 +9,7 @@ import viewacar from '../../assets/View a Car - Google Chrome 1_13_2024 4_44_11 
 import techblog from '../../assets/techBlog.png'
 import weatherapp from '../../assets/weatherApp.png'
 
-const YourComponent = () => {
+const Portfolio = () => {
     return (
         <>
             <h1 className='portfolio-title'>Portfolio</h1>
@@ -161,4 +161,4 @@ const YourComponent = () => {
     );
 };
 
-export default YourComponent;
+export default Portfolio;

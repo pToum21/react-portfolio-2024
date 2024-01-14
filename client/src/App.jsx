@@ -5,8 +5,10 @@ import About from './components/Aboutme/About.jsx';
 import Portfolio from './components/Portfolio/Portfolio.jsx';
 import Description from './components/Description/Description.jsx';
 import Contact from './components/Contactme/Contact.jsx';
+import Footer from './components/Footer/Footer.jsx';
 
 import './styles.css';
+
 
 function App() {
   return (
@@ -17,6 +19,7 @@ function App() {
       <Description />
       <Portfolio />
       <Contact />
+      <Footer />    
     </>
   )
 }
