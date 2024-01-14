@@ -57,7 +57,7 @@ const YourComponent = () => {
                         <div className="text-center">
                             <h3 className='proj-title'>TechBlog <span className='emoji'>🖥️</span></h3>
                             <p className='proj-text'>
-                            This is a full-stack technology blog that empowers users to seamlessly execute all CRUD operations. Additionally, users can engage in insightful discussions through comments on posts and have the capability to modify their personalized dashboards for an enhanced and tailored experience.
+                                This is a full-stack technology blog that empowers users to seamlessly execute all CRUD operations. Additionally, users can engage in insightful discussions through comments on posts and have the capability to modify their personalized dashboards for an enhanced and tailored experience.
                             </p>
                             <div style={{ fontSize: '0.8rem', color: 'white', maxWidth: '75%', margin: '0 auto' }}>
                                 <h5 className='used-stack'>Stack Used:</h5>
@@ -100,11 +100,11 @@ const YourComponent = () => {
                         <div className="text-center">
                             <h3 className='proj-title'>View A Car <span span className='emoji'>🚗</span></h3>
                             <p className='proj-text'>
-                            A blog-style website dedicated to providing users with comprehensive insights into automobiles, encompassing not only detailed views of cars but also additional knowledge and historical context surrounding each vehicle.
+                                A blog-style website dedicated to providing users with comprehensive insights into automobiles, encompassing not only detailed views of cars but also additional knowledge and historical context surrounding each vehicle.
                             </p>
                             <div style={{ fontSize: '0.8rem', color: 'white', maxWidth: '75%', margin: '0 auto' }}>
                                 <h5 className='used-stack'>Stack Used:</h5>
-                               React, HTML, CSS, bootstrap and bootstrap-react, JavaScript
+                                React, HTML, CSS, bootstrap and bootstrap-react, JavaScript
                             </div>
                             <div className="d-flex justify-content-center">
                                 <div className="social-links mr-3">
@@ -127,11 +127,11 @@ const YourComponent = () => {
                         <div className="text-center">
                             <h3 className='proj-title'>Whats The Weather <span className='emoji'>☔</span></h3>
                             <p className='proj-text'>
-                            Retrieve weather data for any city, providing access to current weather conditions, a five-day forecast, and the present date. Seamlessly toggle between metric and imperial units, accompanied by a persistent search history feature.
+                                Retrieve weather data for any city, providing access to current weather conditions, a five-day forecast, and the present date. Seamlessly toggle between metric and imperial units, accompanied by a persistent search history feature.
                             </p>
                             <div style={{ fontSize: '0.8rem', color: 'white', maxWidth: '75%', margin: '0 auto' }}>
                                 <h5 className='used-stack'>Stack Used:</h5>
-                               HTML, CSS, JavaScript, bootstrap, weatherApi
+                                HTML, CSS, JavaScript, bootstrap, weatherApi
                             </div>
                             <div className="d-flex justify-content-center">
                                 <div className="social-links mr-3">
