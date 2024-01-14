@@ -8,18 +8,14 @@ import Contact from './components/Contactme/Contact.jsx';
 
 import './styles.css';
 
-
-
-
 function App() {
-
   return (
     <>
       {/* components */}
       <Header />
       <About />
       <Description />
-      <Portfolio/>
+      <Portfolio />
       <Contact />
     </>
   )
