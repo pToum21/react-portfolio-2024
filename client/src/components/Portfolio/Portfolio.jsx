@@ -55,13 +55,13 @@ const YourComponent = () => {
                 <Row className='each-proj'>
                     <Col xs={12} md={6} className="d-flex align-items-center">
                         <div className="text-center">
-                            <h3 className='proj-title'>TechBlog</h3>
+                            <h3 className='proj-title'>TechBlog <span className='emoji'>🖥️</span></h3>
                             <p className='proj-text'>
                             This is a full-stack technology blog that empowers users to seamlessly execute all CRUD operations. Additionally, users can engage in insightful discussions through comments on posts and have the capability to modify their personalized dashboards for an enhanced and tailored experience.
                             </p>
                             <div style={{ fontSize: '0.8rem', color: 'white', maxWidth: '75%', margin: '0 auto' }}>
                                 <h5 className='used-stack'>Stack Used:</h5>
-                                HTML, CSS (Bulma), Handlebars (with Express Session and Express Handlebars), JavaScript, Node.js, Express.js, MySQL (using mySQL2), Sequelize, Multer (for image upload), Blob storage, Stripe (for payments), bcrypt (for password hashing), dotenv, Config folder, Seeds, Splidejs (for image carousel).
+                                HTML, CSS (BootStrap), Handlebars (with Express Session and Express Handlebars), JavaScript, Node.js, Express.js, MySQL (using mySQL2), Sequelize, bcrypt (for password hashing), dotenv.
                             </div>
                             <div className="d-flex justify-content-center">
                                 <div className="social-links mr-3">
@@ -104,7 +104,7 @@ const YourComponent = () => {
                             </p>
                             <div style={{ fontSize: '0.8rem', color: 'white', maxWidth: '75%', margin: '0 auto' }}>
                                 <h5 className='used-stack'>Stack Used:</h5>
-                               React, HTML, CSS, bootstrap and bootstrap-react
+                               React, HTML, CSS, bootstrap and bootstrap-react, JavaScript
                             </div>
                             <div className="d-flex justify-content-center">
                                 <div className="social-links mr-3">
@@ -125,13 +125,13 @@ const YourComponent = () => {
                 <Row className='each-proj'>
                     <Col xs={12} md={6} className="d-flex align-items-center">
                         <div className="text-center">
-                            <h3 className='proj-title'>Whats The Weather</h3>
+                            <h3 className='proj-title'>Whats The Weather <span className='emoji'>☔</span></h3>
                             <p className='proj-text'>
-                                This application is a full stack e-commerce site that allows the user to buy and sell retro gaming consoles and games.
+                            Retrieve weather data for any city, providing access to current weather conditions, a five-day forecast, and the present date. Seamlessly toggle between metric and imperial units, accompanied by a persistent search history feature.
                             </p>
                             <div style={{ fontSize: '0.8rem', color: 'white', maxWidth: '75%', margin: '0 auto' }}>
                                 <h5 className='used-stack'>Stack Used:</h5>
-                                HTML, CSS (Bulma), Handlebars (with Express Session and Express Handlebars), JavaScript, Node.js, Express.js, MySQL (using mySQL2), Sequelize, Multer (for image upload), Blob storage, Stripe (for payments), bcrypt (for password hashing), dotenv, Config folder, Seeds, Splidejs (for image carousel).
+                               HTML, CSS, JavaScript, bootstrap, weatherApi
                             </div>
                             <div className="d-flex justify-content-center">
                                 <div className="social-links mr-3">
