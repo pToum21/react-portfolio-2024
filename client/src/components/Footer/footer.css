@@ -53,11 +53,11 @@
 }
 
 .footer-links:nth-child(3):before {
-    background: blue;
+    background: #5865f2;
 }
 
 .footer-container {
     display: flex;
-    justify-content: flex-start; /* Align icons on the left side */
+    justify-content: flex-start;
     margin-top: 10px;
 }
