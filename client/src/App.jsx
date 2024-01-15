@@ -9,7 +9,6 @@ import Footer from './components/Footer/Footer.jsx';
 
 import './styles.css';
 
-
 function App() {
   return (
     <>
@@ -19,7 +18,7 @@ function App() {
       <Description />
       <Portfolio />
       <Contact />
-      <Footer />    
+      <Footer />
     </>
   )
 }

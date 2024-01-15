@@ -1,4 +1,3 @@
-import React from 'react';
 import { Container, Row, Col } from 'react-bootstrap';
 import { faGithub } from '@fortawesome/free-brands-svg-icons';
 import { faArrowUpRightFromSquare } from '@fortawesome/free-solid-svg-icons';
@@ -11,6 +10,7 @@ import weatherapp from '../../assets/weatherApp.png'
 
 const Portfolio = () => {
     return (
+        // renders the portfolio component
         <>
             <h1 className='portfolio-title'>Portfolio</h1>
             <h2 className='port-header'>Each Project is a unique piece of Web Development <span className='emoji'>🧩</span></h2>
@@ -19,23 +19,27 @@ const Portfolio = () => {
                 {/* project 1 */}
                 <Row className='each-proj'>
                     <Col xs={12} md={6} className="d-flex align-items-center justify-content-center">
+                        {/* project image */}
                         <img
                             src={anyyes}
                             alt="anyYes project"
                             className="rounded-image"
-                            style={{ width: '100%'}}
+                            style={{ width: '100%' }}
                         />
                     </Col>
                     <Col xs={12} md={6} className="d-flex align-items-center">
                         <div className="text-center">
+                            {/* project title */}
                             <h3 className='proj-title'>AnyYes <span className='emoji'>🎮</span></h3>
                             <p className='proj-text'>
                                 This application is a full stack e-commerce site that allows the user to buy and sell retro gaming consoles and games.
                             </p>
+                            {/* project stack */}
                             <div style={{ fontSize: '0.8rem', color: 'white', maxWidth: '75%', margin: '0 auto' }}>
                                 <h5 className='used-stack'>Stack Used:</h5>
                                 HTML, CSS (Bulma), Handlebars (with Express Session and Express Handlebars), JavaScript, Node.js, Express.js, MySQL (using mySQL2), Sequelize, Multer (for image upload), Blob storage, Stripe (for payments), bcrypt (for password hashing), dotenv, Config folder, Seeds, Splidejs (for image carousel).
                             </div>
+                            {/* a link icons */}
                             <div className="d-flex justify-content-center">
                                 <div className="mr-3">
                                     <a href="https://anyyes-3bf9b8d1cf29.herokuapp.com/" style={{ fontSize: '0.8rem', color: 'white', marginBottom: 0 }}>Deployed Demo:
@@ -70,7 +74,7 @@ const Portfolio = () => {
                                     </a>
                                 </div>
                                 <div className="mr-2">
-                                    <a href="https://github.com/pToum21/full-stack-tech-blog" style={{ fontSize: '0.8rem', color: 'white', marginBottom: 0, padding: '5px'}}>GitHub Repo:
+                                    <a href="https://github.com/pToum21/full-stack-tech-blog" style={{ fontSize: '0.8rem', color: 'white', marginBottom: 0, padding: '5px' }}>GitHub Repo:
                                         <FontAwesomeIcon icon={faGithub} className="fa-1x mx-1" />
                                     </a>
                                 </div>
@@ -82,7 +86,7 @@ const Portfolio = () => {
                             src={techblog}
                             alt="anyYes project"
                             className="rounded-image"
-                            style={{width: '100%'}}
+                            style={{ width: '100%' }}
                         />
                     </Col>
                 </Row>
@@ -93,7 +97,7 @@ const Portfolio = () => {
                             src={viewacar}
                             alt="anyYes project"
                             className="rounded-image"
-                            style={{width: '100%'}}
+                            style={{ width: '100%' }}
                         />
                     </Col>
                     <Col xs={12} md={6} className="d-flex align-items-center">
@@ -152,7 +156,7 @@ const Portfolio = () => {
                             src={weatherapp}
                             alt="anyYes project"
                             className="rounded-image"
-                            style={{width: '100%'}}
+                            style={{ width: '100%' }}
                         />
                     </Col>
                 </Row>
