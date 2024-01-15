@@ -53,15 +53,15 @@ function About() {
                     I'm a passionate full-stack web developer based in Los Angeles, California. 📍
                 </p>
 
-                <div className="mt-3 ">
+                <div className="mt-3 social-links-container">
                     <a className="social-links" href="https://www.linkedin.com/in/peyton-touma-b666a7281/">
-                        <FontAwesomeIcon icon={faLinkedin} className="fa-2x mx-4" />
+                        <FontAwesomeIcon icon={faLinkedin} className="fa-2x" />
                     </a>
                     <a className="social-links" href="https://github.com/pToum21">
-                        <FontAwesomeIcon icon={faGithub} className="fa-2x mx-4" />
+                        <FontAwesomeIcon icon={faGithub} className="fa-2x" />
                     </a>
                     <a className="social-links" href="https://discordapp.com/users/775148641014775808">
-                        <FontAwesomeIcon icon={faDiscord} className="fa-2x mx-4" />
+                        <FontAwesomeIcon icon={faDiscord} className="fa-2x" />
                     </a>
                 </div>
 
