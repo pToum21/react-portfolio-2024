@@ -76,14 +76,17 @@
     z-index: 1;
 }
 
-.social-links .fa-2x {
+.social-links .socail-icons {
     position: relative;
     color: #262626;
     transition: 0.5s;
     z-index: 3;
+    width: 100%;
+    height: 80%;
+    margin-top: 7px;
 }
 
-.social-links:hover .fa-2x {
+.social-links:hover .socail-icons {
     color: #fff;
     transform: rotateY(360deg);
 }
@@ -105,13 +108,13 @@
 }
 
 .social-links:nth-child(1):before {
-    background: #3b5999;
+    background: #0a66c2;
 }
 
 .social-links:nth-child(2):before {
-    background: #55acee;
+    background: #6e5494;
 }
 
 .social-links:nth-child(3):before {
-    background: #0077b5;
+    background: #5865f2;
 }

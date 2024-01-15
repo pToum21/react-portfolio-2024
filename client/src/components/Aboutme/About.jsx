@@ -55,17 +55,17 @@ function About() {
 
                 <div className="mt-3 social-links-container">
                     <a className="social-links" href="https://www.linkedin.com/in/peyton-touma-b666a7281/">
-                        <FontAwesomeIcon icon={faLinkedin} className="fa-2x" />
+                        <FontAwesomeIcon icon={faLinkedin} className="fa-1x socail-icons" />
                     </a>
                     <a className="social-links" href="https://github.com/pToum21">
-                        <FontAwesomeIcon icon={faGithub} className="fa-2x" />
+                        <FontAwesomeIcon icon={faGithub} className="fa-1x socail-icons" />
                     </a>
                     <a className="social-links" href="https://discordapp.com/users/775148641014775808">
-                        <FontAwesomeIcon icon={faDiscord} className="fa-2x" />
+                        <FontAwesomeIcon icon={faDiscord} className="fa-1x socail-icons" />
                     </a>
                 </div>
 
-                <img src={avatar} alt="avatar image" className="rounded-circle img-fluid mt-4" style={{ width: '300px', height: '300px', marginRight: '20px' }} />
+                <img src={avatar} alt="avatar image" className="rounded-circle img-fluid mt-5" style={{ width: '300px', height: '300px' }} />
             </div>
         </div>
     );
