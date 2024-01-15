@@ -46,6 +46,7 @@ function About() {
                     return <div className="dot" style={dotStyle} key={index}></div>;
                 })}
             </div>
+            {/* actual about me component */}
             <div className="container text-center mt-3">
                 <h1 className='first-name'>Peyton Touma</h1>
                 <p className='personal-title'>Full-Stack Web Developer and Software Engineer</p>
@@ -64,7 +65,7 @@ function About() {
                         <FontAwesomeIcon icon={faDiscord} className="fa-1x socail-icons" />
                     </a>
                 </div>
-
+                {/* avatar image  */}
                 <img src={avatar} alt="avatar image" className="rounded-circle img-fluid mt-5" style={{ width: '300px', height: '300px' }} />
             </div>
         </div>

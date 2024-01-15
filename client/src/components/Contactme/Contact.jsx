@@ -7,14 +7,15 @@ import Button from 'react-bootstrap/Button';
 function Contact() {
     return (
         <>
-
+            {/* div holdes the contact me section */}
             <div className="full-page">
-
+                {/* contains the contact me title and header */}
                 <div className="title-box">
                     <h1 className='contact-me-header'>Contact Me</h1>
                     <h2 className='form-title'>Don't be shy hit my line <span className='emoji'>👇</span></h2>
                 </div>
 
+                {/* this section actual holds the bootstrap component */}
                 <div className="contact-box bg-dark">
                     <Form>
 
@@ -44,6 +45,7 @@ function Contact() {
                                 aria-label="With textarea" />
                         </InputGroup>
 
+                        {/* submit button */}
                         <div>
                             <Button as="input" type="submit" value="Submit" className="custom-submit-btn" />
                         </div>
