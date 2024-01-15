@@ -1,6 +1,63 @@
 .footer-links {
     color: inherit;
-    font-size: 1.4rem;
-    margin: 0 15px;
+    margin: 0 10px; 
+    height: 40px;
+    width: 5%;
+    background-color: #fff;
+    text-align: center;
+    line-height: 80px;   
+    border-radius: 40%;
+    position: relative;
+    overflow: hidden;
+    border: 3px solid;
+    z-index: 1;
 }
 
+.footer-links .footer-icons {
+    position: relative;
+    color: #262626;
+    transition: 0.5s;
+    z-index: 3;
+    width: 80%;
+    height: 60%;
+    margin-bottom: 40%;
+}
+
+.footer-links:hover .footer-icons {
+    color: #fff;
+    transform: rotateY(360deg);
+}
+
+.footer-links:before {
+    content: "";
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: #f00;
+    transition: 0.5s;
+    z-index: 2;
+}
+
+.footer-links:hover:before {
+    top: 0;
+}
+
+.footer-links:nth-child(1):before {
+    background: #0a66c2;
+}
+
+.footer-links:nth-child(2):before {
+    background: #6e5494;
+}
+
+.footer-links:nth-child(3):before {
+    background: blue;
+}
+
+.footer-container {
+    display: flex;
+    justify-content: flex-start; /* Align icons on the left side */
+    margin-top: 10px;
+}
