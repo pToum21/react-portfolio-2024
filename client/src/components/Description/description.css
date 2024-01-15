@@ -4,33 +4,36 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: #223c58; 
+    background-color: #223c58;
     filter: drop-shadow(0 -6mm 4mm rgb(160, 0, 210));
 }
 
 .description-content {
-    padding: 20px; /* Add padding for better spacing */
+    padding: 20px;
+    /* Add padding for better spacing */
 }
 
 .description-image {
-    width: 100%; 
-    max-width: 100%; 
-    height: auto; 
-    border-radius: 8px; /* Optional: Add border-radius for rounded corners */
+    width: 100%;
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+    /* Optional: Add border-radius for rounded corners */
 }
 
 .about-me-text {
-    margin-top: 20px; 
+    margin-top: 20px;
     font-family: 'Poppins', sans-serif;
-    font-size: 17px;
-    line-height: 1.6; /* Adjust line-height for better readability */
+    font-size: 1rem;
+    line-height: 1.6;
+    /* Adjust line-height for better readability */
 }
 
-.about-me-title {    
+.about-me-title {
     font-family: 'Poppins', sans-serif;
     position: relative;
     display: inline-block;
-    font-size: 1.8rem; 
+    font-size: 1.8rem;
     background: linear-gradient(315deg, #44b09e 0%, #92c2e2 74%);
     -webkit-background-clip: text;
     color: transparent;
@@ -38,12 +41,31 @@
 
 .wireframe-polygon {
     width: 100px;
-    height: 100px; 
-    border: 1px solid #000;
+    height: 100px;
+    border-radius: 50%;
+    background-color: #44b09e;
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    margin-bottom: 10%;
 }
+
+.wireframe-polygon::before {
+    content: 'The Real Me';
+    font-family: 'Poppins', sans-serif;
+    color: purple;
+    font-size: 12px;
+    text-align: center;
+    writing-mode: vertical-rl;
+    transform: rotate(180deg); 
+}
+
 
 .tech-stack {
     font-family: 'Poppins', sans-serif;
     color: #44b09e;
-    font-size: 16px; /* Adjust font size for better visibility */
+    font-size: 16px;
+    /* Adjust font size for better visibility */
 }
