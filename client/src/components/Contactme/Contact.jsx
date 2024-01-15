@@ -14,8 +14,10 @@ function Contact() {
                     <h1 className='contact-me-header'>Contact Me</h1>
                     <h2 className='form-title'>Don't be shy hit my line <span className='emoji'>👇</span></h2>
                 </div>
+
                 <div className="contact-box bg-dark">
                     <Form>
+
                         <InputGroup className="mb-3">
                             <Form.Control
                                 className='bg-dark'
@@ -35,7 +37,6 @@ function Contact() {
                         </InputGroup>
 
                         <InputGroup>
-
                             <InputGroup.Text className='bg-dark text-light'>Message</InputGroup.Text>
                             <Form.Control
                                 className='bg-dark'
@@ -43,7 +44,10 @@ function Contact() {
                                 aria-label="With textarea" />
                         </InputGroup>
 
-                        <Button as="input" type="submit" value="Submit" />
+                        <div>
+                            <Button as="input" type="submit" value="Submit" className="custom-submit-btn" />
+                        </div>
+
                     </Form>
                 </div>
             </div>

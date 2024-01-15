@@ -66,3 +66,7 @@ textarea {
  .form-control:focus{
     color:whitesmoke;
  }
+
+ .custom-submit-btn {
+    float: right;
+}
