@@ -7,9 +7,12 @@ import Button from 'react-bootstrap/Button';
 function Contact() {
     return (
         <>
+
             <div className="full-page">
+
                 <div className="title-box">
-                    <h1>Don't be shy hit my line 👇</h1>
+                    <h1 className='contact-me-header'>Contact Me</h1>
+                    <h2 className='form-title'>Don't be shy hit my line <span className='emoji'>👇</span></h2>
                 </div>
                 <div className="contact-box bg-dark">
                     <Form>
@@ -28,16 +31,16 @@ function Contact() {
                                 aria-label="Sender's Email"
                                 aria-describedby="basic-addon2"
                             />
-                            <InputGroup.Text id="basic-addon2"  className='bg-dark text-white'>@example.com</InputGroup.Text>
+                            <InputGroup.Text id="basic-addon2" className='bg-dark text-white'>@example.com</InputGroup.Text>
                         </InputGroup>
 
                         <InputGroup>
-                        
-                            <InputGroup.Text  className='bg-dark text-light'>Message</InputGroup.Text>
+
+                            <InputGroup.Text className='bg-dark text-light'>Message</InputGroup.Text>
                             <Form.Control
-                             className='bg-dark'
-                             as="textarea" 
-                             aria-label="With textarea" />
+                                className='bg-dark'
+                                as="textarea"
+                                aria-label="With textarea" />
                         </InputGroup>
 
                         <Button as="input" type="submit" value="Submit" />
