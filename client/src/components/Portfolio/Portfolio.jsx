@@ -43,7 +43,7 @@ const Portfolio = () => {
                                     </a>
                                 </div>
                                 <div className="mr-3">
-                                    <a href="https://github.com/pToum21/anyYes" style={{ fontSize: '0.8rem', color: 'white', marginBottom: 0 }}>GitHub Repo:
+                                    <a href="https://github.com/pToum21/anyYes" style={{ fontSize: '0.8rem', color: 'white', marginBottom: '0', padding: '5px' }}>GitHub Repo:
                                         <FontAwesomeIcon icon={faGithub} className="fa-1x mx-1" />
                                     </a>
                                 </div>
@@ -69,8 +69,8 @@ const Portfolio = () => {
                                         <FontAwesomeIcon icon={faArrowUpRightFromSquare} className="fa-1x mx-1" />
                                     </a>
                                 </div>
-                                <div className="mr-3">
-                                    <a href="https://github.com/pToum21/full-stack-tech-blog" style={{ fontSize: '0.8rem', color: 'white', marginBottom: 0 }}>GitHub Repo:
+                                <div className="mr-2">
+                                    <a href="https://github.com/pToum21/full-stack-tech-blog" style={{ fontSize: '0.8rem', color: 'white', marginBottom: 0, padding: '5px'}}>GitHub Repo:
                                         <FontAwesomeIcon icon={faGithub} className="fa-1x mx-1" />
                                     </a>
                                 </div>
@@ -113,7 +113,7 @@ const Portfolio = () => {
                                     </a>
                                 </div>
                                 <div className="mr-3">
-                                    <a href="https://github.com/pToum21/view-a-car" style={{ fontSize: '0.8rem', color: 'white', marginBottom: 0 }}>GitHub Repo:
+                                    <a href="https://github.com/pToum21/view-a-car" style={{ fontSize: '0.8rem', color: 'white', marginBottom: 0, padding: '5px' }}>GitHub Repo:
                                         <FontAwesomeIcon icon={faGithub} className="fa-1x mx-1" />
                                     </a>
                                 </div>
@@ -140,7 +140,7 @@ const Portfolio = () => {
                                     </a>
                                 </div>
                                 <div className="mr-3">
-                                    <a href="https://github.com/pToum21/weatherapp-2" style={{ fontSize: '0.8rem', color: 'white', marginBottom: 0 }}>GitHub Repo:
+                                    <a href="https://github.com/pToum21/weatherapp-2" style={{ fontSize: '0.8rem', color: 'white', marginBottom: 0, padding: '5px' }}>GitHub Repo:
                                         <FontAwesomeIcon icon={faGithub} className="fa-1x mx-1" />
                                     </a>
                                 </div>
