@@ -10,7 +10,6 @@
 
 .description-content {
     padding: 20px;
-    /* Add padding for better spacing */
 }
 
 .description-image {
@@ -18,7 +17,6 @@
     max-width: 100%;
     height: auto;
     border-radius: 8px;
-    /* Optional: Add border-radius for rounded corners */
 }
 
 .about-me-text {
@@ -26,7 +24,6 @@
     font-family: 'Poppins', sans-serif;
     font-size: 1rem;
     line-height: 1.6;
-    /* Adjust line-height for better readability */
 }
 
 .about-me-title {
@@ -67,5 +64,4 @@
     font-family: 'Poppins', sans-serif;
     color: #44b09e;
     font-size: 16px;
-    /* Adjust font size for better visibility */
 }

@@ -3,9 +3,11 @@ import { faLinkedin, faGithub, faDiscord } from '@fortawesome/free-brands-svg-ic
 import './footer.css'
 
 const Footer = () => {
+    // return for the footer component
     return (
         <footer className="footer fixed-bottom py-3 bg-dark">
             <div className="footer-container">
+                {/* clickable footer icons */}
                 <a className="footer-links" href="https://www.linkedin.com/in/peyton-touma-b666a7281/">
                     <FontAwesomeIcon icon={faLinkedin} className="fa-1x mx-1 footer-icons" />
                 </a>
