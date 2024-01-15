@@ -23,7 +23,7 @@ const Portfolio = () => {
                             src={anyyes}
                             alt="anyYes project"
                             className="rounded-image"
-                            style={{ maxWidth: '500px', width: 'auto', height: '300px' }}
+                            style={{ width: '100%'}}
                         />
                     </Col>
                     <Col xs={12} md={6} className="d-flex align-items-center">
@@ -82,7 +82,7 @@ const Portfolio = () => {
                             src={techblog}
                             alt="anyYes project"
                             className="rounded-image"
-                            style={{ maxWidth: '500px', width: 'auto', height: '300px' }}
+                            style={{width: '100%'}}
                         />
                     </Col>
                 </Row>
@@ -93,12 +93,12 @@ const Portfolio = () => {
                             src={viewacar}
                             alt="anyYes project"
                             className="rounded-image"
-                            style={{ maxWidth: '500px', width: 'auto', height: '300px' }}
+                            style={{width: '100%'}}
                         />
                     </Col>
                     <Col xs={12} md={6} className="d-flex align-items-center">
                         <div className="text-center">
-                            <h3 className='proj-title'>View A Car <span span className='emoji'>🚗</span></h3>
+                            <h3 className='proj-title'>View A Car <span className='emoji'>🚗</span></h3>
                             <p className='proj-text'>
                                 A blog-style website dedicated to providing users with comprehensive insights into automobiles, encompassing not only detailed views of cars but also additional knowledge and historical context surrounding each vehicle.
                             </p>
@@ -152,7 +152,7 @@ const Portfolio = () => {
                             src={weatherapp}
                             alt="anyYes project"
                             className="rounded-image"
-                            style={{ maxWidth: '500px', width: 'auto', height: '300px' }}
+                            style={{width: '100%'}}
                         />
                     </Col>
                 </Row>
