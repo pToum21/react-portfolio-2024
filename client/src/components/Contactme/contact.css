@@ -35,6 +35,7 @@
     align-items: center;
     height: 60vh;
     margin-top: 20vh;
+    box-shadow: 0 -8px 40px rgba(126, 48, 189, 0.945);
 }
 
 textarea {
