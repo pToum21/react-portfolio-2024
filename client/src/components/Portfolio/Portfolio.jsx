@@ -37,12 +37,12 @@ const Portfolio = () => {
                                 HTML, CSS (Bulma), Handlebars (with Express Session and Express Handlebars), JavaScript, Node.js, Express.js, MySQL (using mySQL2), Sequelize, Multer (for image upload), Blob storage, Stripe (for payments), bcrypt (for password hashing), dotenv, Config folder, Seeds, Splidejs (for image carousel).
                             </div>
                             <div className="d-flex justify-content-center">
-                                <div className="social-links mr-3">
+                                <div className="mr-3">
                                     <a href="https://anyyes-3bf9b8d1cf29.herokuapp.com/" style={{ fontSize: '0.8rem', color: 'white', marginBottom: 0 }}>Deployed Demo:
                                         <FontAwesomeIcon icon={faArrowUpRightFromSquare} className="fa-1x mx-1" />
                                     </a>
                                 </div>
-                                <div className="social-links mr-3">
+                                <div className="mr-3">
                                     <a href="https://github.com/pToum21/anyYes" style={{ fontSize: '0.8rem', color: 'white', marginBottom: 0 }}>GitHub Repo:
                                         <FontAwesomeIcon icon={faGithub} className="fa-1x mx-1" />
                                     </a>
@@ -64,12 +64,12 @@ const Portfolio = () => {
                                 HTML, CSS (BootStrap), Handlebars (with Express Session and Express Handlebars), JavaScript, Node.js, Express.js, MySQL (using mySQL2), Sequelize, bcrypt (for password hashing), dotenv.
                             </div>
                             <div className="d-flex justify-content-center">
-                                <div className="social-links mr-3">
+                                <div className="mr-3">
                                     <a href="https://tech-blogger-the-full-exp-603c6ae302d3.herokuapp.com/" style={{ fontSize: '0.8rem', color: 'white', marginBottom: 0 }}>Deployed Demo:
                                         <FontAwesomeIcon icon={faArrowUpRightFromSquare} className="fa-1x mx-1" />
                                     </a>
                                 </div>
-                                <div className="social-links mr-3">
+                                <div className="mr-3">
                                     <a href="https://github.com/pToum21/full-stack-tech-blog" style={{ fontSize: '0.8rem', color: 'white', marginBottom: 0 }}>GitHub Repo:
                                         <FontAwesomeIcon icon={faGithub} className="fa-1x mx-1" />
                                     </a>
@@ -107,12 +107,12 @@ const Portfolio = () => {
                                 React, HTML, CSS, bootstrap and bootstrap-react, JavaScript
                             </div>
                             <div className="d-flex justify-content-center">
-                                <div className="social-links mr-3">
+                                <div className="mr-3">
                                     <a href="" style={{ fontSize: '0.8rem', color: 'white', marginBottom: 0 }}>Deployed Demo:
                                         <FontAwesomeIcon icon={faArrowUpRightFromSquare} className="fa-1x mx-1" />
                                     </a>
                                 </div>
-                                <div className="social-links mr-3">
+                                <div className="mr-3">
                                     <a href="https://github.com/pToum21/view-a-car" style={{ fontSize: '0.8rem', color: 'white', marginBottom: 0 }}>GitHub Repo:
                                         <FontAwesomeIcon icon={faGithub} className="fa-1x mx-1" />
                                     </a>
@@ -134,12 +134,12 @@ const Portfolio = () => {
                                 HTML, CSS, JavaScript, bootstrap, weatherApi
                             </div>
                             <div className="d-flex justify-content-center">
-                                <div className="social-links mr-3">
+                                <div className="mr-3">
                                     <a href="https://ptoum21.github.io/weatherapp-2/" style={{ fontSize: '0.8rem', color: 'white', marginBottom: 0 }}>Deployed Demo:
                                         <FontAwesomeIcon icon={faArrowUpRightFromSquare} className="fa-1x mx-1" />
                                     </a>
                                 </div>
-                                <div className="social-links mr-3">
+                                <div className="mr-3">
                                     <a href="https://github.com/pToum21/weatherapp-2" style={{ fontSize: '0.8rem', color: 'white', marginBottom: 0 }}>GitHub Repo:
                                         <FontAwesomeIcon icon={faGithub} className="fa-1x mx-1" />
                                     </a>
