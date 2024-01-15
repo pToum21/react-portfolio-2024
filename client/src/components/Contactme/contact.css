@@ -69,4 +69,8 @@ textarea {
 
  .custom-submit-btn {
     float: right;
+    background: linear-gradient(315deg, #44b09e 0%, #b5cedf 74%);
+    border: none; 
+    margin-top: 2%;
+    margin-right: 2%;
 }
