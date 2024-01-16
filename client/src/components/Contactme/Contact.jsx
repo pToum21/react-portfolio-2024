@@ -27,6 +27,8 @@ function Contact() {
 
                         <InputGroup className="mb-3">
                             <Form.Control
+                                name="username"
+                                id="username"
                                 className='bg-dark'
                                 placeholder="Name/Company Name"
                                 aria-label="Name"
