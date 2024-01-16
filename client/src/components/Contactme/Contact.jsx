@@ -3,8 +3,13 @@ import './contact.css';
 import Form from 'react-bootstrap/Form';
 import InputGroup from 'react-bootstrap/InputGroup';
 import Button from 'react-bootstrap/Button';
+import { useForm, ValidationError } from '@formspree/react';
 
 function Contact() {
+    const [state, handleSubmit] = useForm("xpzvworp");
+    if (state.succeeded) {
+        return <p>Thanks for joining!</p>;
+    }
     return (
         <>
             {/* div holdes the contact me section */}
