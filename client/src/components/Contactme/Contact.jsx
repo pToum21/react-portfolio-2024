@@ -8,8 +8,9 @@ import { useForm, ValidationError } from '@formspree/react';
 function Contact() {
     const [state, handleSubmit] = useForm("xpzvworp");
     if (state.succeeded) {
-        return <p>Thanks for joining!</p>;
+        return <p>Thanks for Contacting me, you will hear back shortly!</p>;
     }
+
     return (
         <>
             {/* div holdes the contact me section */}
@@ -22,7 +23,7 @@ function Contact() {
 
                 {/* this section actual holds the bootstrap component */}
                 <div className="contact-box bg-dark">
-                    <Form>
+                    <Form onSubmit={handleSubmit}>
 
                         <InputGroup className="mb-3">
                             <Form.Control
@@ -32,8 +33,11 @@ function Contact() {
                             />
                         </InputGroup>
 
-                        <InputGroup className="mb-3">
+                        <InputGroup className="mb-3" htmlFor="email">
                             <Form.Control
+                                id="email"
+                                type="email"
+                                name="email"
                                 className='bg-dark'
                                 placeholder="Email"
                                 aria-label="Sender's Email"
@@ -45,6 +49,8 @@ function Contact() {
                         <InputGroup>
                             <InputGroup.Text className='bg-dark text-light'>Message</InputGroup.Text>
                             <Form.Control
+                                id="message"
+                                name="message"
                                 className='bg-dark'
                                 as="textarea"
                                 aria-label="With textarea" />
@@ -52,7 +58,7 @@ function Contact() {
 
                         {/* submit button */}
                         <div>
-                            <Button as="input" type="submit" value="Submit" className="custom-submit-btn" />
+                            <Button as="input" type="submit" disabled={state.submitting} value="Submit" className="custom-submit-btn" />
                         </div>
 
                     </Form>
