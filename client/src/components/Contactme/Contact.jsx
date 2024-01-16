@@ -3,7 +3,7 @@ import './contact.css';
 import Form from 'react-bootstrap/Form';
 import InputGroup from 'react-bootstrap/InputGroup';
 import Button from 'react-bootstrap/Button';
-import { useForm, ValidationError } from '@formspree/react';
+import { useForm } from '@formspree/react';
 
 function Contact() {
     const [state, handleSubmit] = useForm("xpzvworp");
@@ -11,8 +11,7 @@ function Contact() {
         return (
             <div className="full-page">
                 <div className="title-box">
-                    <h1 className='contact-me-header'>Contact Me</h1>
-                    <p>Thanks for contacting me! You will hear back shortly.</p>
+                    <p className='thank-you-tag'>Thanks for contacting me! You will hear back shortly. <span className='emoji'>🙏</span></p>
                 </div>
             </div>
         );

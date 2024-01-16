@@ -75,3 +75,12 @@ textarea {
     margin-top: 2%;
     margin-right: 2%;
 }
+
+.thank-you-tag {
+    font-family: 'Poppins', sans-serif;
+    font-size: 1.8rem;
+    background: linear-gradient(315deg, #722f9e 15%, #74c4ac 74%);
+    -webkit-background-clip: text;
+    color: transparent;
+    margin-bottom: 40%;
+}
