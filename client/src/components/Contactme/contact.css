@@ -7,7 +7,7 @@
     background: #f5f5f5;
     margin-bottom: 30%;
     color: white;
-    height: 90%;
+    height: 100%;
 }
 
 /* Additional styles to target input and textarea text color */
@@ -34,7 +34,7 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    height: 100vh;
+    height: 80vh;
     margin-top: 20vh;
     box-shadow: 0 -8px 40px rgba(126, 48, 189, 0.945);
 }
