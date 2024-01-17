@@ -1,0 +1,1 @@
+import { Document, Page } from 'react-pdf'
