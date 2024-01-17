@@ -99,6 +99,10 @@ textarea {
     height: 100%;
 }
 
+.contact-me-information {
+    margin-bottom: 10%;
+}
+
 .con-info-titles {
     font-size: 1.4rem;
     font-family: 'Poppins', sans-serif;
@@ -108,6 +112,7 @@ textarea {
     .contact-box {
         flex-direction: column;
         align-items: center;
+        padding: none;
     }
 
     .contact-info {
