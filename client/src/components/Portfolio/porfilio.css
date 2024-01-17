@@ -58,3 +58,9 @@
     margin-top: 5%;
     margin-bottom: 10%;
 }
+
+@media (max-width: 767px) {
+    .each-proj:nth-child(odd) {
+        flex-direction: column-reverse;
+    }
+}
