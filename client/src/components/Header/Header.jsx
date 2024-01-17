@@ -15,10 +15,10 @@ function Header() {
             <Navbar.Collapse id="navbarNav">
                 {/* links that in time will render different react components */}
                 <Nav className="me-auto nav-bar">
-                    <HashLink to="/#about-me">Home</HashLink>
-                    <HashLink to="/#description">About</HashLink>
-                    <HashLink to="/#portfolio">Portfolio</HashLink>
-                    <HashLink to="/#contact-me">Contact</HashLink>
+                    <HashLink className='nav-bar-links' to="/#about-me">Home</HashLink>
+                    <HashLink className='nav-bar-links' to="/#description">About</HashLink>
+                    <HashLink className='nav-bar-links' to="/#portfolio">Portfolio</HashLink>
+                    <HashLink className='nav-bar-links' to="/#contact-me">Contact</HashLink>
                 </Nav>
                 {/* Link to the /resume route */}
                 <Button as={Link} to="/resume" variant="outline-light" className="resume-button ml-auto">Resume</Button>
