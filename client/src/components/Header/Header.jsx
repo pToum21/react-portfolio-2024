@@ -12,9 +12,13 @@ function Header() {
             <Navbar.Collapse id="navbarNav">
                 {/* a links that in time will render diffrent react components */}
                 <Nav className="me-auto nav-bar">
-                    <Nav.Link href="/">Home</Nav.Link>
-                    <Nav.Link href="/about">About</Nav.Link>
-                    <Nav.Link href="/contact">Contact</Nav.Link>
+                    <Nav.Link href="#about-me">Home</Nav.Link>
+                    <Nav.Link href="#description">About</Nav.Link>
+                    <Nav.Link href="#portfolio">Portfolio</Nav.Link>
+                    <Nav.Link href="#contact-me">Contact</Nav.Link>
+                    
+
+
                 </Nav>
                 {/* resume button */}
                 <Button href="/resume" variant="outline-light" className="resume-button ml-auto">Resume</Button>

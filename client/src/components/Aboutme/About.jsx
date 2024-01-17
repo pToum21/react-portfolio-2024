@@ -33,7 +33,7 @@ function About() {
     };
 
     return (
-        <div className="about-container">
+        <div className="about-container" id="about-me">
             <div className="dot-container">
                 {/* sets random colors for each cycle */}
                 {Array.from({ length: 200 }, (_, index) => {

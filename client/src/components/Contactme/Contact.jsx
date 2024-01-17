@@ -20,7 +20,7 @@ function Contact() {
     return (
         <>
             {/* div holdes the contact me section */}
-            <div className="full-page">
+            <div className="full-page" id="contact-me">
                 {/* contains the contact me title and header */}
                 <div className="title-box">
                     <h1 className='contact-me-header'>Contact Me</h1>

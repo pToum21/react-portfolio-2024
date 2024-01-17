@@ -28,7 +28,7 @@ function Description() {
 
     // actual return for the description component
     return (
-        <div className="description-container">
+        <div className="description-container" id="description">
             <Container fluid className="description-content">
                 <div className="about-me-text">
                     <div className="mt-3 ">

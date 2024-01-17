@@ -11,7 +11,7 @@ import weatherapp from '../../assets/weatherApp.png'
 const Portfolio = () => {
     return (
         // renders the portfolio component
-        <>
+        <div id="portfolio">
             <h1 className='portfolio-title'>Portfolio</h1>
             <h2 className='port-header'>Each Project is a unique piece of Web Development <span className='emoji'>🧩</span></h2>
             {/* container holding all projects and descs */}
@@ -161,7 +161,7 @@ const Portfolio = () => {
                     </Col>
                 </Row>
             </Container>
-        </>
+        </div>
     );
 };
 
