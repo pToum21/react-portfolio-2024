@@ -6,8 +6,18 @@ import Portfolio from './components/Portfolio/Portfolio.jsx';
 import Description from './components/Description/Description.jsx';
 import Contact from './components/Contactme/Contact.jsx';
 import Footer from './components/Footer/Footer.jsx';
-
+import Resume from './components/Resume/Resume.jsx';
 import './styles.css';
+
+
+import { pdfjs } from 'react-pdf';
+
+pdfjs.GlobalWorkerOptions.workerSrc = new URL(
+  'pdfjs-dist/build/pdf.worker.min.js',
+  import.meta.url,
+).toString();
+
+
 
 function App() {
   return (
@@ -19,6 +29,7 @@ function App() {
       <Portfolio />
       <Contact />
       <Footer />
+      <Resume />
     </>
   )
 }
