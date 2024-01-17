@@ -1,5 +1,5 @@
 .contact-box {
-    width: 70%;
+    width: 80%;
     margin: 0 auto;
     padding: 20px;
     box-shadow: 0 4px 8px rgba(126, 48, 189, 0.945);
@@ -7,6 +7,7 @@
     background: #f5f5f5;
     margin-bottom: 30%;
     color: white;
+    height: 90%;
 }
 
 /* Additional styles to target input and textarea text color */
@@ -33,7 +34,7 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    height: 60vh;
+    height: 100vh;
     margin-top: 20vh;
     box-shadow: 0 -8px 40px rgba(126, 48, 189, 0.945);
 }
@@ -83,4 +84,35 @@ textarea {
     -webkit-background-clip: text;
     color: transparent;
     margin-bottom: 40%;
+}
+
+.contact-box {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    padding: 20px;
+}
+
+.contact-info {
+    border-left: #c2e7e1 2px solid;
+    padding-left: 15%;
+    height: 100%;
+}
+
+.con-info-titles {
+    font-size: 1.4rem;
+    font-family: 'Poppins', sans-serif;
+}
+
+@media (max-width: 767px) {
+    .contact-box {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .contact-info {
+        margin-top: 20px;
+        border-left: none;
+        padding-left: none;
+    }
 }

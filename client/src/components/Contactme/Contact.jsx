@@ -1,4 +1,3 @@
-// Contact.jsx
 import './contact.css';
 import Form from 'react-bootstrap/Form';
 import InputGroup from 'react-bootstrap/InputGroup';
@@ -19,18 +18,14 @@ function Contact() {
 
     return (
         <>
-            {/* div holdes the contact me section */}
             <div className="full-page" id="contact-me">
-                {/* contains the contact me title and header */}
                 <div className="title-box">
                     <h1 className='contact-me-header'>Contact Me</h1>
-                    <h2 className='form-title'>Don't be shy hit my line <span className='emoji'>👇</span></h2>
+                    <h2 className='form-title'>Don't be shy, hit my line <span className='emoji'>👇</span></h2>
                 </div>
 
-                {/* this section actual holds the bootstrap component */}
                 <div className="contact-box bg-dark">
                     <Form onSubmit={handleSubmit}>
-
                         <InputGroup className="mb-3">
                             <Form.Control
                                 name="username"
@@ -64,12 +59,21 @@ function Contact() {
                                 aria-label="With textarea" />
                         </InputGroup>
 
-                        {/* submit button */}
                         <div>
                             <Button as="input" type="submit" disabled={state.submitting} value="Submit" className="custom-submit-btn" />
                         </div>
-
                     </Form>
+
+                    {/* Contact info area */}
+                    <div className="contact-info">
+                        <h3 className='contact-me-information'>Contact Information:</h3>
+                        <h4 className='con-info-titles'>Address</h4>
+                        <p>Los Angeles, CA</p>
+                        <h5 className='con-info-titles'>Email</h5>
+                        <p>pey2moo1@gmail.com</p>
+                        <h6 className='con-info-titles'>Phone</h6>
+                        <p>(240) 449-5594</p>
+                    </div>
                 </div>
             </div>
         </>
