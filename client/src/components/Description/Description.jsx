@@ -1,13 +1,16 @@
 import React, { useEffect, useState } from 'react';
 import { Container, Row, Col } from 'react-bootstrap';
 import { useSpring, animated } from 'react-spring';
+import Slider from 'react-slick';
+import 'slick-carousel/slick/slick.css';
+import 'slick-carousel/slick/slick-theme.css';
 import { faJs, faHtml5, faCss3, faReact, faNode, faBootstrap, faStripe, faFigma, faGithub } from '@fortawesome/free-brands-svg-icons';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import './description.css';
-import portrait from '../../assets/DC90F5B1-793E-4326-8061-0384F1A4176E.png';
+import portrait1 from '../../assets/DC90F5B1-793E-4326-8061-0384F1A4176E.png';
+import portrait2 from '../../assets/DC90F5B1-793E-4326-8061-0384F1A4176E.png'; // Add your additional portrait images here
 
 function Description() {
-    // for spining real me circle animation
     const [scrollY, setScrollY] = useState(0);
 
     useEffect(() => {
@@ -26,7 +29,19 @@ function Description() {
         transform: `rotate(${scrollY / 5}deg)`,
     });
 
-    // actual return for the description component
+    const portraitImages = [portrait1, portrait2];  // Add your additional portrait images here
+
+    const carouselSettings = {
+        dots: true,
+        infinite: true,
+        speed: 500,
+        slidesToShow: 1,
+        slidesToScroll: 1,
+        autoplay: true,
+        autoplaySpeed:3000,
+        arrows: false
+    };
+
     return (
         <div className="description-container" id="description">
             <Container fluid className="description-content">
@@ -56,8 +71,17 @@ function Description() {
                 </div>
                 <Row className="align-items-center">
                     <Col xs={12} md={12} lg={6} className='mb-4'>
-                        {/* real me image */}
-                        <img src={portrait} alt="Description Image" className="img-fluid description-image" />
+                        {/* carousel for portrait images */}
+                        <Slider {...carouselSettings}>
+                            {portraitImages.map((portrait, index) => (
+                                <img
+                                    key={index}
+                                    src={portrait}
+                                    alt={`Portrait Image ${index + 1}`}
+                                    className="img-fluid description-image"
+                                />
+                            ))}
+                        </Slider>
                     </Col>
                     <Col xs={12} md={12} lg={6}>
                         {/* div containing the animation of the circle */}
