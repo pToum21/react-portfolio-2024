@@ -9,8 +9,7 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import './description.css';
 import portrait1 from '../../assets/DC90F5B1-793E-4326-8061-0384F1A4176E.png';
 import portrait2 from '../../assets/IMG_0073.jpg';
-import portrait3 from '../../assets/IMG_2452 (1).jpg';
-import portrait4 from '../../assets/IMG_2637.jpg';
+import portrait3 from '../../assets/IMG_2637.jpg';
 
 
 
@@ -34,7 +33,7 @@ function Description() {
         transform: `rotate(${scrollY / 5}deg)`,
     });
 
-    const portraitImages = [portrait1, portrait2, portrait3, portrait4];
+    const portraitImages = [portrait1, portrait2, portrait3];
 
     const carouselSettings = {
         dots: true,
