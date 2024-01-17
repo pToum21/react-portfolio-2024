@@ -7,7 +7,7 @@ function Header() {
     // renders the header component which is a bootstrap nav bar
     return (
         <Navbar bg="dark" variant="dark" expand="lg" className="custom-navbar fixed-top py-3">
-            <Navbar.Brand id='logo-name'>Peyton Touma</Navbar.Brand>
+            <Navbar.Brand id='logo-name'>Peyton Touma |</Navbar.Brand>
             <Navbar.Toggle aria-controls='basic-navbar-nav' />
             <Navbar.Collapse id="navbarNav">
                 {/* a links that in time will render diffrent react components */}
