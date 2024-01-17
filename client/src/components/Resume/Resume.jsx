@@ -20,18 +20,15 @@ function Resume() {
             <Document file={resumePdf} onLoadSuccess={onDocumentLoadSuccess}>
                 {Array.apply(null, Array(numPages))
                     .map((x, i) => i + 1)
-                    .map(page => {
-                        return (
-                            <Page
-                                pageNumber={page}
-                                renderTextLayer={false}
-                                renderAnnotationLayer={false} />
-                        )
-
-                    })}
-
+                    .map(page => (
+                        <Page
+                            key={page}
+                            pageNumber={page}
+                            renderTextLayer={false}
+                            renderAnnotationLayer={false}
+                        />
+                    ))}
             </Document>
-            
         </div>
     );
 }
