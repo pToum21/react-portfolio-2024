@@ -1,7 +1,7 @@
 // BootStrap import
 import 'bootstrap/dist/css/bootstrap.min.css';
 import Header from './components/Header/Header.jsx';
-import {  Outlet } from 'react-router-dom';
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import About from './components/Aboutme/About.jsx';
 import Portfolio from './components/Portfolio/Portfolio.jsx';
 import Description from './components/Description/Description.jsx';
@@ -14,27 +14,31 @@ import './styles.css';
 import { pdfjs } from 'react-pdf';
 
 pdfjs.GlobalWorkerOptions.workerSrc = new URL(
-  'pdfjs-dist/build/pdf.worker.min.js',
-  import.meta.url,
+ 'pdfjs-dist/build/pdf.worker.min.js',
+ import.meta.url,
 ).toString();
 
 
 
 function App() {
-  return (
-    <>
-      {/* components */}
-      <Header/>
+ return (
+  <Router>
+   <Routes>
+    <Route path="/" element={
+     <>
+      <Header />
       <About />
       <Description />
       <Portfolio />
       <Contact />
       <Footer />
-      {/* <Resume /> */}
-      <Outlet />
+     </>
+    } />
+    <Route path="/resume" element={<Resume />} />
+   </Routes>
+  </Router>
 
-    </>
-  )
+ )
 }
 
 export default App
