@@ -5,9 +5,12 @@ import './footer.css'
 const Footer = () => {
     // return for the footer component
     return (
-        <footer className="footer fixed-bottom py-3 bg-dark">
+        <footer className="footer py-4 bg-dark">
+            <p className='mt-2'>© Peyton Touma | Full Stack Web Developer. All rights reserved.</p>
             <div className="footer-container">
+                
                 {/* clickable footer icons */}
+                
                 <a className="footer-links" href="https://www.linkedin.com/in/peyton-touma-b666a7281/">
                     <FontAwesomeIcon icon={faLinkedin} className="fa-1x mx-1 footer-icons" />
                 </a>

@@ -1,4 +1,24 @@
-.footer-links {
+/* Add this CSS to your footer.css file */
+
+.footer {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  /* Style for the left-aligned paragraph */
+  .footer p {
+    margin: 0; /* Remove default margin */
+  }
+  
+  /* Style for the right-aligned anchor links */
+  .footer-container {
+    display: flex;
+    align-items: center;
+  }
+  
+  .footer-links {
     color: inherit;
     margin: 0 10px;
     height: 40px;
@@ -10,9 +30,9 @@
     overflow: hidden;
     border: 3px solid;
     z-index: 1;
-}
-
-.footer-links .footer-icons {
+  }
+  
+  .footer-links .footer-icons {
     position: relative;
     color: #262626;
     transition: 0.5s;
@@ -20,14 +40,14 @@
     width: 80%;
     height: 60%;
     margin-top: 20%;
-}
-
-.footer-links:hover .footer-icons {
+  }
+  
+  .footer-links:hover .footer-icons {
     color: #fff;
     transform: rotateY(360deg);
-}
-
-.footer-links:before {
+  }
+  
+  .footer-links:before {
     content: "";
     position: absolute;
     top: 100%;
@@ -37,26 +57,27 @@
     background: #f00;
     transition: 0.5s;
     z-index: 2;
-}
-
-.footer-links:hover:before {
+  }
+  
+  .footer-links:hover:before {
     top: 0;
-}
-
-.footer-links:nth-child(1):before {
+  }
+  
+  .footer-links:nth-child(1):before {
     background: #0a66c2;
-}
-
-.footer-links:nth-child(2):before {
+  }
+  
+  .footer-links:nth-child(2):before {
     background: #6e5494;
-}
-
-.footer-links:nth-child(3):before {
+  }
+  
+  .footer-links:nth-child(3):before {
     background: #5865f2;
-}
-
-.footer-container {
+  }
+  
+  .footer-container {
     display: flex;
-    justify-content: flex-start;
+    justify-content: flex-end; /* Align links to the right */
     margin-top: 10px;
-}
+  }
+  
