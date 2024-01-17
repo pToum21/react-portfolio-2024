@@ -23,19 +23,21 @@ pdfjs.GlobalWorkerOptions.workerSrc = new URL(
 function App() {
  return (
   <Router>
+    <Header />
    <Routes>
     <Route path="/" element={
      <>
-      <Header />
+      
       <About />
       <Description />
       <Portfolio />
       <Contact />
-      <Footer />
+      
      </>
     } />
     <Route path="/resume" element={<Resume />} />
    </Routes>
+   <Footer />
   </Router>
 
  )
