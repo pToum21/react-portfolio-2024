@@ -1,7 +1,27 @@
-.resume-div{
+.resume-div {
     padding: 10%;
+    position: relative;
 }
 
 .react-pdf__Page__canvas {
     margin: 1%;
+}
+
+.resume-title {
+    font-family: 'Poppins', sans-serif;
+    position: relative;
+    font-size: 2rem;
+    background: linear-gradient(315deg, #44b09e 0%, #58ddbc 74%);
+    -webkit-background-clip: text;
+    color: transparent;
+}
+
+.resume-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.download-button {
+    margin-left: auto; /* This will move the button to the right */
 }
