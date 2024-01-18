@@ -19,9 +19,35 @@
     margin-left: 1%;
 }
 
+
+/* Link container styles */
 .nav-bar-links {
     text-decoration: none;
-    color: aliceblue;
+    color: #fff; 
     margin-left: 6%;
     margin-right: 6%;
+    position: relative;
+}
+
+/* Underline styles on hover */
+.nav-bar-links:hover::after {
+    content: '';
+    display: block; 
+    height: 2px; 
+    background-color: #4c00ff; 
+    position: absolute; 
+    bottom: -5px; 
+    left: 0; 
+    width: 100%; 
+}
+
+/* Underline styles on active/clicked */
+.nav-bar-links:active::after {
+    content: '';
+    display: block;
+    height: 2px;
+    background-color: #6200ff; 
+    position: absolute;
+    left: 0;
+    width: 100%;
 }
