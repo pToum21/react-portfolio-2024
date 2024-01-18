@@ -33,6 +33,7 @@ function Contact() {
                                 className='bg-dark'
                                 placeholder="Name/Company Name"
                                 aria-label="Name"
+                                required
                             />
                         </InputGroup>
 
@@ -45,6 +46,7 @@ function Contact() {
                                 placeholder="Email"
                                 aria-label="Sender's Email"
                                 aria-describedby="basic-addon2"
+                                required
                             />
                             <InputGroup.Text id="basic-addon2" className='bg-dark text-white'>@example.com</InputGroup.Text>
                         </InputGroup>
@@ -56,6 +58,7 @@ function Contact() {
                                 name="message"
                                 className='bg-dark'
                                 as="textarea"
+                                required
                                 aria-label="With textarea" />
                         </InputGroup>
 

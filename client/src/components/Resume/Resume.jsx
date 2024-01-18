@@ -14,9 +14,13 @@ function Resume() {
 
     return (
         <div className='resume-div'>
-            <p>
-                Page {pageNumber} of {numPages}
-            </p>
+            <div>
+                <p>
+                    Page {pageNumber} of {numPages}
+                </p>
+
+                <button>Download PDF</button>
+            </div>
             <Document file={resumePdf} onLoadSuccess={onDocumentLoadSuccess}>
                 {Array.apply(null, Array(numPages))
                     .map((x, i) => i + 1)

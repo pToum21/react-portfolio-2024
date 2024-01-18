@@ -18,7 +18,7 @@ const Footer = () => {
                     <FontAwesomeIcon icon={faGithub} className="fa-1x mx-1 footer-icons" />
                 </a>
                 <a className="footer-links" href="https://discordapp.com/users/775148641014775808">
-                    <FontAwesomeIcon icon={faDiscord} className="fa-1x mx-1 footer-icons" />
+                    <FontAwesomeIcon icon={faDiscord} className="fa-1x mx-1 footer-icons"  />
                 </a>
             </div>
         </footer>
