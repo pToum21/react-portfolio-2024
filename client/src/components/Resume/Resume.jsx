@@ -1,6 +1,7 @@
 import { useState } from 'react';
 import { Document, Page } from 'react-pdf';
 import './resume.css';
+import Button from 'react-bootstrap/Button';
 
 import resumePdf from '../../assets/Peyton_Touma_-_Web_Developer.pdf';
 
@@ -23,9 +24,9 @@ function Resume() {
         <div className='resume-div'>
             <div className='resume-header'>
                 <p className='resume-title'>Resume</p>
-                <button onClick={handleDownload} className='download-button'>
+                <Button onClick={handleDownload} className="custom-submit-btn">
                     Download PDF
-                </button>
+                </Button>
             </div>
             <Document file={resumePdf} onLoadSuccess={onDocumentLoadSuccess}>
                 {Array.apply(null, Array(numPages))
