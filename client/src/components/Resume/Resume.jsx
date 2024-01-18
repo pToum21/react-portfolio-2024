@@ -2,7 +2,8 @@ import { useState } from 'react';
 import { Document, Page } from 'react-pdf';
 import './resume.css'
 
-import resumePdf from '../../assets/resume.pdf'
+import resumePdf from '../../assets/Peyton_Touma_-_Web_Developer.pdf'
+
 
 function Resume() {
     const [numPages, setNumPages] = useState();
@@ -11,6 +12,12 @@ function Resume() {
     function onDocumentLoadSuccess({ numPages }) {
         setNumPages(numPages);
     }
+    const handleDownload = () => {
+        const link = document.createElement('a');
+        link.href = resumePdf;
+        link.download = {resumePdf};
+        link.click();
+    };
 
     return (
         <div className='resume-div'>
@@ -19,7 +26,7 @@ function Resume() {
                     Page {pageNumber} of {numPages}
                 </p>
 
-                <button>Download PDF</button>
+                <button onClick={handleDownload}>Download PDF</button>
             </div>
             <Document file={resumePdf} onLoadSuccess={onDocumentLoadSuccess}>
                 {Array.apply(null, Array(numPages))
