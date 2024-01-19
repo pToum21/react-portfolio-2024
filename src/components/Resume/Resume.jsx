@@ -2,12 +2,17 @@ import { useState } from 'react';
 import { Document, Page } from 'react-pdf';
 import './resume.css';
 import Button from 'react-bootstrap/Button';
-
+import { pdfjs } from 'react-pdf';
 import resumePdf from '../../assets/Peyton_Touma_-_Web_Developer.pdf';
 
 function Resume() {
     const [numPages, setNumPages] = useState();
     const [pageNumber, setPageNumber] = useState(1);
+
+    pdfjs.GlobalWorkerOptions.workerSrc = new URL(
+        'pdfjs-dist/build/pdf.worker.min.js',
+        import.meta.url,
+    ).toString();
 
     function onDocumentLoadSuccess({ numPages }) {
         setNumPages(numPages);
