@@ -21,7 +21,7 @@ function Resume() {
     const handleDownload = () => {
         const link = document.createElement('a');
         link.href = resumePdf;
-        link.download = 'Peyton_Touma_Web_Developer_Resume.pdf';
+        link.download = 'Peyton_Touma_-_Web_Developer.pdf';
         link.click();
     };
 
