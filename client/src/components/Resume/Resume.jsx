@@ -25,7 +25,7 @@ function Resume() {
             <div className='resume-header'>
                 <p className='resume-title'>Resume</p>
                 <Button onClick={handleDownload} className="custom-submit-btn">
-                    Download PDF
+                    Download As PDF
                 </Button>
             </div>
             <Document file={resumePdf} onLoadSuccess={onDocumentLoadSuccess}>
