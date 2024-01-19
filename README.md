@@ -1,8 +1,35 @@
-# React + Vite
+# Peyton-Touma_portfolio
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+## Description - 💠
+- This is my portfolio using react
+- a portfolio made using react vite
+- used react-router-dom to render components
+- used reactpdf to render resume
+- used react-bootstrap for styling
+- used react-router-hash-link to make the nav bar work from any component
+- used react spring for a the animation of the ball spinning on scroll
+- slick carousel for the image carousel
+- font awesome for fonts and icons
 
-Currently, two official plugins are available:
+## Deployed Application - 👾
+https://peyton-touma-portfolio.netlify.app/
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## Table of Contents - 📋
+* [Installation](#installation---☢️)
+* [Usage](#usage---💎)
+* [How to Contribute](#how-to-contribute---🍴)
+* [Test](#test---🧪)
+* [Questions](#qustions---❓)
+
+## Usage - 💎
+they must run rpm init -y and npm i to install dependiences used when creating this project
+
+## Installation - ☢️
+ You must run npm i to download the correct packages.
+
+## Preview Photo
+
+
+## Qustions - ❓
+Feel Free to contact me at pey3moo3@gmail.com or [ptoum21](https://github.com/ptoum21).
+
