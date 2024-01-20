@@ -25,7 +25,7 @@ function Contact() {
                 </div>
 
                 <div className="contact-box bg-dark">
-                    <Form onSubmit={handleSubmit}>
+                    <Form className="full-form-comp" onSubmit={handleSubmit}>
                         <InputGroup className="mb-3">
                             <Form.Control
                                 name="username"
