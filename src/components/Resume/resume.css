@@ -8,6 +8,7 @@
 }
 
 .resume-title {
+    margin-top: 15%;
     font-family: 'Poppins', sans-serif;
     position: relative;
     font-size: 2rem;
@@ -22,6 +23,7 @@
     align-items: center;
 }
 
-.download-button {
-    margin-left: auto; 
+.custom-download-button {
+    margin-right: auto;
 }
+

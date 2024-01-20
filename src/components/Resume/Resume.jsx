@@ -29,7 +29,7 @@ function Resume() {
         <div className='resume-div'>
             <div className='resume-header'>
                 <p className='resume-title'>Resume</p>
-                <Button onClick={handleDownload} className="custom-submit-btn">
+                <Button onClick={handleDownload} className="custom-download-btn">
                     Download As PDF
                 </Button>
             </div>
