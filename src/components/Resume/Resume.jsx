@@ -25,6 +25,7 @@ function Resume() {
         link.click();
     };
 
+    // figure out how to resize the resume to fit on phone screen
     return (
         <div className='resume-div'>
             <div className='resume-header'>
