@@ -34,9 +34,3 @@
     align-items: center;
 }
 
-.custom-download-button {
-    margin-right: auto;
-    float: right;
-    background: linear-gradient(315deg, #44b09e 0%, #b5cedf 74%);
-    border: none;
-}

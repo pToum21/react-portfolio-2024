@@ -63,4 +63,10 @@
     .each-proj:nth-child(odd) {
         flex-direction: column-reverse;
     }
+    .port-header {
+        margin-left: 3%;
+    }
+    .portfolio-title {
+        margin-left: 3%;
+    }
 }
