@@ -34,18 +34,21 @@ function Resume() {
                     Download As PDF
                 </Button>
             </div>
-            <Document file={resumePdf} onLoadSuccess={onDocumentLoadSuccess}>
-                {Array.apply(null, Array(numPages))
-                    .map((x, i) => i + 1)
-                    .map(page => (
-                        <Page
-                            key={page}
-                            pageNumber={page}
-                            renderTextLayer={false}
-                            renderAnnotationLayer={false}
-                        />
-                    ))}
-            </Document>
+            <div className="pdf-container">
+                <Document file={resumePdf} onLoadSuccess={onDocumentLoadSuccess}>
+                    {Array.apply(null, Array(numPages))
+                        .map((x, i) => i + 1)
+                        .map(page => (
+                            <Page
+                                key={page}
+                                pageNumber={page}
+                                width={window.innerWidth}
+                                renderTextLayer={false}
+                                renderAnnotationLayer={false}
+                            />
+                        ))}
+                </Document>
+            </div>
         </div>
     );
 }

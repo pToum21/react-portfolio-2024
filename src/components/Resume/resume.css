@@ -3,8 +3,14 @@
     position: relative;
 }
 
+.pdf-container {
+    width: 100%; 
+    overflow-x: auto; 
+}
+
 .react-pdf__Page__canvas {
     margin: 1%;
+    width: 100%; 
 }
 
 .resume-title {
@@ -30,4 +36,3 @@
     background: linear-gradient(315deg, #44b09e 0%, #b5cedf 74%);
     border: none;
 }
-
