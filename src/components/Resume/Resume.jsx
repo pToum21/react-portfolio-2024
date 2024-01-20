@@ -39,13 +39,14 @@ function Resume() {
                     {Array.apply(null, Array(numPages))
                         .map((x, i) => i + 1)
                         .map(page => (
-                            <Page
-                                key={page}
-                                pageNumber={page}
-                                width={window.innerWidth}
-                                renderTextLayer={false}
-                                renderAnnotationLayer={false}
-                            />
+                            <div key={page} className="pdf-page-container">
+                                <Page
+                                    pageNumber={page}
+                                    width={window.innerWidth} 
+                                    renderTextLayer={false}
+                                    renderAnnotationLayer={false}
+                                />
+                            </div>
                         ))}
                 </Document>
             </div>
