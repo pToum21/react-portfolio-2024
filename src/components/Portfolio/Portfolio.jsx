@@ -5,8 +5,8 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import './porfilio.css';
 import anyyes from '../../assets/anyyes.png';
 import viewacar from '../../assets/View a Car - Google Chrome 1_13_2024 4_44_11 PM.png';
-import techblog from '../../assets/techBlog.png'
-import weatherapp from '../../assets/weatherApp.png'
+import techblog from '../../assets/techBlog.png';
+import weatherapp from '../../assets/weatherApp.png';
 
 const Portfolio = () => {
     return (
