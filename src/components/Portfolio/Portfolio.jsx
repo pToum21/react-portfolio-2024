@@ -3,10 +3,10 @@ import { faGithub } from '@fortawesome/free-brands-svg-icons';
 import { faArrowUpRightFromSquare } from '@fortawesome/free-solid-svg-icons';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import './porfilio.css';
-import anyyes from '../../assets/anyyes.png';
-import viewacar from '../../assets/View a Car - Google Chrome 1_13_2024 4_44_11 PM.png';
-import techblog from '../../assets/techBlog.png';
-import weatherapp from '../../assets/weatherApp.png';
+import anyyes from '../../assets/anyesThumbnail.png';
+import viewacar from '../../assets/viewAcarthumbnail.png';
+import techblog from '../../assets/techBlogThumbnail.png';
+import weatherapp from '../../assets/WhatsTheWeather.png';
 
 const Portfolio = () => {
     return (
