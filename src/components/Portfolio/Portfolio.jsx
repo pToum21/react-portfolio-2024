@@ -7,6 +7,7 @@ import anyyes from '../../assets/anyesThumbnail.png';
 import viewacar from '../../assets/viewAcarthumbnail.png';
 import techblog from '../../assets/techBlogThumbnail.png';
 import weatherapp from '../../assets/WhatsTheWeather.png';
+import cryptograbber from '../../assets/CryptoGrabberThumbNail.png'
 
 const Portfolio = () => {
     return (
@@ -59,22 +60,22 @@ const Portfolio = () => {
                 <Row className='each-proj'>
                     <Col xs={12} md={6} className="d-flex align-items-center">
                         <div className="text-center">
-                            <h3 className='proj-title'>TechBlog <span className='emoji'>🖥️</span></h3>
+                            <h3 className='proj-title'>Crytpo Grabber <span className='emoji'>💰</span></h3>
                             <p className='proj-text'>
-                                This is a full-stack technology blog that empowers users to seamlessly execute all CRUD operations. Additionally, users can engage in insightful discussions through comments on posts and have the capability to modify their personalized dashboards for an enhanced and tailored experience.
+                                This front-end crypto viewing website provides a homepage overview of the entire cryptocurrency market. Users can select a specific coin to view its performance graph with a specified time frame.
                             </p>
                             <div style={{ fontSize: '0.8rem', color: 'white', maxWidth: '75%', margin: '0 auto' }}>
                                 <h5 className='used-stack'>Stack Used:</h5>
-                                HTML, CSS (BootStrap), Handlebars (with Express Session and Express Handlebars), JavaScript, Node.js, Express.js, MySQL (using mySQL2), Sequelize, bcrypt (for password hashing), dotenv.
+                                HTML, CSS, Material Ui, React, JavaScript, npm, coin gecko api, bcrypt, react-router-dom, react-chartjs, react-alice-carousel, axios
                             </div>
                             <div className="d-flex justify-content-center">
                                 <div className="mr-3">
-                                    <a href="https://tech-blogger-the-full-exp-603c6ae302d3.herokuapp.com/" style={{ fontSize: '1rem', color: 'white', marginBottom: 0 }}>Deployed Demo:
+                                    <a href="https://crypto-grabber.netlify.app/" style={{ fontSize: '1rem', color: 'white', marginBottom: 0 }}>Deployed Demo:
                                         <FontAwesomeIcon icon={faArrowUpRightFromSquare} className="fa-1x mx-1" />
                                     </a>
                                 </div>
                                 <div className="mr-2">
-                                    <a href="https://github.com/pToum21/full-stack-tech-blog" style={{ fontSize: '1rem', color: 'white', marginBottom: 0, padding: '5px' }}>GitHub Repo:
+                                    <a href="https://github.com/pToum21/crypto-grabber-repo" style={{ fontSize: '1rem', color: 'white', marginBottom: 0, padding: '5px' }}>GitHub Repo:
                                         <FontAwesomeIcon icon={faGithub} className="fa-1x mx-1" />
                                     </a>
                                 </div>
@@ -83,7 +84,7 @@ const Portfolio = () => {
                     </Col>
                     <Col xs={12} md={6} className="d-flex align-items-center justify-content-center">
                         <img
-                            src={techblog}
+                            src={cryptograbber}
                             alt="anyYes project"
                             className="rounded-image"
                             style={{ width: '100%' }}
@@ -166,3 +167,40 @@ const Portfolio = () => {
 };
 
 export default Portfolio;
+
+
+
+// <Row className='each-proj'>
+//                     <Col xs={12} md={6} className="d-flex align-items-center">
+//                         <div className="text-center">
+//                             <h3 className='proj-title'>TechBlog <span className='emoji'>🖥️</span></h3>
+//                             <p className='proj-text'>
+//                                 This is a full-stack technology blog that empowers users to seamlessly execute all CRUD operations. Additionally, users can engage in insightful discussions through comments on posts and have the capability to modify their personalized dashboards for an enhanced and tailored experience.
+//                             </p>
+//                             <div style={{ fontSize: '0.8rem', color: 'white', maxWidth: '75%', margin: '0 auto' }}>
+//                                 <h5 className='used-stack'>Stack Used:</h5>
+//                                 HTML, CSS (BootStrap), Handlebars (with Express Session and Express Handlebars), JavaScript, Node.js, Express.js, MySQL (using mySQL2), Sequelize, bcrypt (for password hashing), dotenv.
+//                             </div>
+//                             <div className="d-flex justify-content-center">
+//                                 <div className="mr-3">
+//                                     <a href="https://tech-blogger-the-full-exp-603c6ae302d3.herokuapp.com/" style={{ fontSize: '1rem', color: 'white', marginBottom: 0 }}>Deployed Demo:
+//                                         <FontAwesomeIcon icon={faArrowUpRightFromSquare} className="fa-1x mx-1" />
+//                                     </a>
+//                                 </div>
+//                                 <div className="mr-2">
+//                                     <a href="https://github.com/pToum21/full-stack-tech-blog" style={{ fontSize: '1rem', color: 'white', marginBottom: 0, padding: '5px' }}>GitHub Repo:
+//                                         <FontAwesomeIcon icon={faGithub} className="fa-1x mx-1" />
+//                                     </a>
+//                                 </div>
+//                             </div>
+//                         </div>
+//                     </Col>
+//                     <Col xs={12} md={6} className="d-flex align-items-center justify-content-center">
+//                         <img
+//                             src={techblog}
+//                             alt="anyYes project"
+//                             className="rounded-image"
+//                             style={{ width: '100%' }}
+//                         />
+//                     </Col>
+//                 </Row>
