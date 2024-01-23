@@ -17,6 +17,8 @@ function About() {
         'yea i get it you like to hit me lets move on now',
         'please dont get stuck here',
         'omg there is more to this portfolio then punching the dev in the face',
+        'this is getting to be annoying',
+        'help!!!!'
     ];
 
     useEffect(() => {
