@@ -93,9 +93,9 @@ const Portfolio = () => {
                 </Row>
                 {/* project 3 */}
                 <Row className='each-proj'>
-                    <Col xs={12} md={6} className="d-flex align-items-center justify-content-center">
+                <Col xs={12} md={6} className="d-flex align-items-center justify-content-center">
                         <img
-                            src={viewacar}
+                            src={techblog}
                             alt="anyYes project"
                             className="rounded-image"
                             style={{ width: '100%' }}
@@ -103,22 +103,22 @@ const Portfolio = () => {
                     </Col>
                     <Col xs={12} md={6} className="d-flex align-items-center">
                         <div className="text-center">
-                            <h3 className='proj-title'>View A Car <span className='emoji'>🚗</span></h3>
+                            <h3 className='proj-title'>TechBlog <span className='emoji'>🖥️</span></h3>
                             <p className='proj-text'>
-                                A blog-style website dedicated to providing users with comprehensive insights into automobiles, encompassing not only detailed views of cars but also additional knowledge and historical context surrounding each vehicle.
+                                This is a full-stack technology blog that empowers users to seamlessly execute all CRUD operations. Additionally, users can engage in insightful discussions through comments on posts and have the capability to modify their personalized dashboards for an enhanced and tailored experience.
                             </p>
                             <div style={{ fontSize: '0.8rem', color: 'white', maxWidth: '75%', margin: '0 auto' }}>
                                 <h5 className='used-stack'>Stack Used:</h5>
-                                React, HTML, CSS, bootstrap and bootstrap-react, JavaScript
+                                HTML, CSS (BootStrap), Handlebars (with Express Session and Express Handlebars), JavaScript, Node.js, Express.js, MySQL (using mySQL2), Sequelize, bcrypt (for password hashing), dotenv.
                             </div>
                             <div className="d-flex justify-content-center">
                                 <div className="mr-3">
-                                    <a href="" style={{ fontSize: '1rem', color: 'white', marginBottom: 0 }}>Deployed Demo:
+                                    <a href="https://tech-blogger-the-full-exp-603c6ae302d3.herokuapp.com/" style={{ fontSize: '1rem', color: 'white', marginBottom: 0 }}>Deployed Demo:
                                         <FontAwesomeIcon icon={faArrowUpRightFromSquare} className="fa-1x mx-1" />
                                     </a>
                                 </div>
-                                <div className="mr-3">
-                                    <a href="https://github.com/pToum21/view-a-car" style={{ fontSize: '1rem', color: 'white', marginBottom: 0, padding: '5px' }}>GitHub Repo:
+                                <div className="mr-2">
+                                    <a href="https://github.com/pToum21/full-stack-tech-blog" style={{ fontSize: '1rem', color: 'white', marginBottom: 0, padding: '5px' }}>GitHub Repo:
                                         <FontAwesomeIcon icon={faGithub} className="fa-1x mx-1" />
                                     </a>
                                 </div>
@@ -167,40 +167,3 @@ const Portfolio = () => {
 };
 
 export default Portfolio;
-
-
-
-// <Row className='each-proj'>
-//                     <Col xs={12} md={6} className="d-flex align-items-center">
-//                         <div className="text-center">
-//                             <h3 className='proj-title'>TechBlog <span className='emoji'>🖥️</span></h3>
-//                             <p className='proj-text'>
-//                                 This is a full-stack technology blog that empowers users to seamlessly execute all CRUD operations. Additionally, users can engage in insightful discussions through comments on posts and have the capability to modify their personalized dashboards for an enhanced and tailored experience.
-//                             </p>
-//                             <div style={{ fontSize: '0.8rem', color: 'white', maxWidth: '75%', margin: '0 auto' }}>
-//                                 <h5 className='used-stack'>Stack Used:</h5>
-//                                 HTML, CSS (BootStrap), Handlebars (with Express Session and Express Handlebars), JavaScript, Node.js, Express.js, MySQL (using mySQL2), Sequelize, bcrypt (for password hashing), dotenv.
-//                             </div>
-//                             <div className="d-flex justify-content-center">
-//                                 <div className="mr-3">
-//                                     <a href="https://tech-blogger-the-full-exp-603c6ae302d3.herokuapp.com/" style={{ fontSize: '1rem', color: 'white', marginBottom: 0 }}>Deployed Demo:
-//                                         <FontAwesomeIcon icon={faArrowUpRightFromSquare} className="fa-1x mx-1" />
-//                                     </a>
-//                                 </div>
-//                                 <div className="mr-2">
-//                                     <a href="https://github.com/pToum21/full-stack-tech-blog" style={{ fontSize: '1rem', color: 'white', marginBottom: 0, padding: '5px' }}>GitHub Repo:
-//                                         <FontAwesomeIcon icon={faGithub} className="fa-1x mx-1" />
-//                                     </a>
-//                                 </div>
-//                             </div>
-//                         </div>
-//                     </Col>
-//                     <Col xs={12} md={6} className="d-flex align-items-center justify-content-center">
-//                         <img
-//                             src={techblog}
-//                             alt="anyYes project"
-//                             className="rounded-image"
-//                             style={{ width: '100%' }}
-//                         />
-//                     </Col>
-//                 </Row>
