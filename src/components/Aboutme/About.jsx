@@ -1,36 +1,39 @@
+import { useState, useEffect } from 'react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faLinkedin, faGithub, faDiscord } from '@fortawesome/free-brands-svg-icons';
 import avatar from '../../assets/cartoon_LOAF-ezgif.com-webp-to-jpg-converter.jpg';
-import { useEffect } from 'react';
 import './about.css';
 
 function About() {
-    // this is for the animation in the background
+    const [showTextBox, setShowTextBox] = useState(false);
+    const [randomText, setRandomText] = useState('');
+
+    // Array of different texts
+    const textOptions = [
+        'Hi Nice To Meet You',
+        'Ow that hurt a little',
+        'okay i get it you like to hit me',
+        'please just scroll down',
+    ];
+
     useEffect(() => {
-        const keyframes = `
-          @keyframes flow {
-            0% {
-              transform: translateY(0) translateX(0) rotate(0deg);
-            }
-            100% {
-              transform: translateY(100vh) translateX(100vw) rotate(720deg);
-            }
-          }
-        `;
+        // Handle random text generation when the text box is rendered
+        if (showTextBox) {
+            const randomIndex = Math.floor(Math.random() * textOptions.length);
+            setRandomText(textOptions[randomIndex]);
+        }
+    }, [showTextBox]);
 
-        const styleTag = document.createElement('style');
-        styleTag.innerHTML = keyframes;
-        document.head.appendChild(styleTag);
-
-        return () => {
-            document.head.removeChild(styleTag);
-        };
-    }, []);
-
-    // this sets random colors to each dots
-    const getRandomColor = () => {
-        return `rgba(${Math.random() * 255}, ${Math.random() * 255}, ${Math.random() * 255}, 0.5)`;
+    const handleImageClick = () => {
+        setShowTextBox(!showTextBox);
     };
+
+    useEffect(() => {
+        // Display "Hi Nice To Meet You" on the first click
+        if (showTextBox && randomText === '' && textOptions.length > 0) {
+            setRandomText('Hi Nice To Meet You');
+        }
+    }, [showTextBox, randomText, textOptions]);
 
     return (
         <div className="about-container" id="about-me">
@@ -38,7 +41,7 @@ function About() {
                 {/* sets random colors for each cycle */}
                 {Array.from({ length: 200 }, (_, index) => {
                     const dotStyle = {
-                        backgroundColor: getRandomColor(),
+                        backgroundColor: `rgba(${Math.random() * 255}, ${Math.random() * 255}, ${Math.random() * 255}, 0.5)`,
                         left: `${Math.random() * 100}vw`,
                         top: `${Math.random() * 100}vh`,
                         animationDelay: `-${Math.random() * 20}s`,
@@ -65,8 +68,22 @@ function About() {
                         <FontAwesomeIcon icon={faDiscord} className="fa-1x socail-icons" />
                     </a>
                 </div>
-                {/* avatar image  */}
-                <img src={avatar} alt="avatar image" className="rounded-circle img-fluid mt-5" style={{ width: '300px', height: '300px' }} />
+
+                {/* Avatar image with click event */}
+                <img
+                    src={avatar}
+                    alt="avatar image"
+                    className="rounded-circle img-fluid mt-5"
+                    style={{ width: '300px', height: '300px', cursor: 'pointer' }}
+                    onClick={handleImageClick}
+                />
+
+                {/* Render text box conditionally */}
+                {showTextBox && (
+                    <div className="text-box cartoon-bubble">
+                        <p>{randomText}</p>
+                    </div>
+                )}
             </div>
         </div>
     );
