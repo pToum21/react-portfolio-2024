@@ -131,3 +131,11 @@ background-color: #161313;
   transform: translateX(-50%);
   z-index: 1;
 }
+
+.swipe-image {
+    transition: transform 0.3s ease-in-out;
+  }
+  
+  .swipe-image:hover {
+    transform: scale(1.1);
+  }

@@ -1,19 +1,22 @@
 import { useState, useEffect } from 'react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faLinkedin, faGithub, faDiscord } from '@fortawesome/free-brands-svg-icons';
-import avatar from '../../assets/cartoon_LOAF-ezgif.com-webp-to-jpg-converter.jpg';
+import avatar1 from '../../assets/cartoon_LOAF-ezgif.com-webp-to-jpg-converter.jpg';
+import avatar2 from '../../assets/IMG_0113.jpg';
 import './about.css';
 
 function About() {
     const [showTextBox, setShowTextBox] = useState(false);
     const [randomText, setRandomText] = useState('');
+    const [currentImage, setCurrentImage] = useState(avatar1);
 
     // Array of different texts
     const textOptions = [
-        'Hi Nice To Meet You',
-        'Ow that hurt a little',
-        'okay i get it you like to hit me',
-        'please just scroll down',
+        'okay that hurt a little but its okay',
+        'ow, um hi?',
+        'yea i get it you like to hit me lets move on now',
+        'please dont get stuck here',
+        'omg there is more to this portfolio then punching the dev in the face',
     ];
 
     useEffect(() => {
@@ -25,7 +28,11 @@ function About() {
     }, [showTextBox]);
 
     const handleImageClick = () => {
+        // Toggle text box visibility
         setShowTextBox(!showTextBox);
+
+        // Change the image with a swipe animation
+        setCurrentImage(currentImage === avatar1 ? avatar2 : avatar1);
     };
 
     useEffect(() => {
@@ -71,10 +78,15 @@ function About() {
 
                 {/* Avatar image with click event */}
                 <img
-                    src={avatar}
+                    src={currentImage}
                     alt="avatar image"
-                    className="rounded-circle img-fluid mt-5"
-                    style={{ width: '300px', height: '300px', cursor: 'pointer' }}
+                    className="rounded-circle img-fluid mt-5 swipe-image"
+                    style={{
+                        width: '300px',
+                        height: '300px',
+                        cursor: 'pointer',
+                        objectFit: 'cover',
+                    }}
                     onClick={handleImageClick}
                 />
 
