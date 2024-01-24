@@ -58,6 +58,7 @@ function About() {
                     return <div className="dot" style={dotStyle} key={index}></div>;
                 })}
             </div>
+            
             {/* actual about me component */}
             <div className="container text-center mt-3">
                 <h1 className='first-name'>Peyton Touma</h1>

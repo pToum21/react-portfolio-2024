@@ -49,7 +49,7 @@ function Description() {
     return (
         <div className="description-container" id="description">
             <Container className="description-content">
-                <Row className="align-items-center">
+                <Row className="align-items-center">               
                     <Col xs={12} md={12} lg={6} className='mb-4'>
                         {/* carousel for portrait images */}
                         <Slider {...carouselSettings}>

@@ -12,25 +12,27 @@ import './styles.css';
 import TechStackCarousel from './components/Techstack/Techstack.jsx';
 
 
+
+
 function App() {
- return (
-  <Router>
-    <Header />
-   <Routes>
-    <Route path="/" element={
-     <>     
-      <About />
-      <TechStackCarousel />
-      <Description />
-      <Portfolio />
-      <Contact />    
-     </>
-    } />
-    <Route path="/resume" element={<Resume />} />
-   </Routes>
-   <Footer />
-  </Router>
- )
+  return (
+    <Router>
+      <Header />
+      <Routes>
+        <Route path="/" element={
+          <>
+            <About />
+            <TechStackCarousel />
+            <Description />
+            <Portfolio />
+            <Contact />
+          </>
+        } />
+        <Route path="/resume" element={<Resume />} />
+      </Routes>
+      <Footer />
+    </Router>
+  )
 }
 
 export default App
