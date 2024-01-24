@@ -1,7 +1,7 @@
 .bubble-container {
     position: fixed;
-    top: 5%; /* Adjust this value based on your desired vertical position */
-    left: 10%; /* Adjust this value based on your desired horizontal position */
+    top: 5%; 
+    left: 10%; 
     z-index: 100; 
 }
 
@@ -10,7 +10,7 @@
     top: 82%;
     left: 86%;
     rotate: 180deg;
-    /* Add any other styles for bottom-right positioning */
+   
   }
 
 .bubble {
