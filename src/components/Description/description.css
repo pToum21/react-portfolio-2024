@@ -1,13 +1,16 @@
 .description-container {
-    width: 100%;
+    width: 90%;
     overflow: hidden;
     display: flex;
     justify-content: center;
     align-items: center;
     background-color: #223c58;
-    filter: drop-shadow(0 -6mm 4mm rgb(160, 0, 210));
+    filter: drop-shadow(4mm -6mm 4mm rgb(160, 0, 210));
     position: relative;
+    border-radius: 20px;
+    margin-left: 5%;
 }
+
 
 .description-content {
     padding: 20px;
