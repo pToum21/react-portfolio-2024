@@ -58,7 +58,7 @@ function About() {
                     return <div className="dot" style={dotStyle} key={index}></div>;
                 })}
             </div>
-            
+
             {/* actual about me component */}
             <div className="container text-center mt-3">
                 <h1 className='first-name'>Peyton Touma</h1>
@@ -89,6 +89,9 @@ function About() {
                         height: '300px',
                         cursor: 'pointer',
                         objectFit: 'cover',
+                        border: '5px solid transparent',
+                        position: 'relative',
+                        animation: 'innerBorderAnimation 4s infinite alternate, outerRingAnimation 6s infinite linear',
                     }}
                     onClick={handleImageClick}
                 />
