@@ -9,6 +9,7 @@ import Contact from './components/Contactme/Contact.jsx';
 import Footer from './components/Footer/Footer.jsx';
 import Resume from './components/Resume/Resume.jsx';
 import './styles.css';
+import TechStackCarousel from './components/Techstack/Techstack.jsx';
 
 
 function App() {
@@ -19,6 +20,7 @@ function App() {
     <Route path="/" element={
      <>     
       <About />
+      <TechStackCarousel />
       <Description />
       <Portfolio />
       <Contact />    

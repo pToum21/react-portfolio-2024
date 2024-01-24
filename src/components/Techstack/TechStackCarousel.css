@@ -1,0 +1,24 @@
+.tech-stack-carousel-container {
+    margin-bottom: 20px;
+    padding-bottom: 22px;
+
+  }
+  
+  .tech-stack-heading {
+    font-weight: bold;
+    text-align: center;
+    font-family: 'Poppins', sans-serif;
+    font-size: 3rem;
+    background: linear-gradient(315deg, #44b09e 0%, #92c2e2 74%);
+    -webkit-background-clip: text;
+    color: transparent;
+  }
+
+  .tech-stack-icons {
+    color: #44b09e;
+  }
+
+  .slick-prev,
+.slick-next {
+  display: none !important; /* Hide the navigation arrows */
+}

@@ -49,30 +49,6 @@ function Description() {
     return (
         <div className="description-container" id="description">
             <Container className="description-content">
-                <div className="about-me-text">
-                    <div className="mt-3 ">
-                        {/* tech stack icons */}
-                        <p className="tech-stack"> Tech Stack:
-                            <FontAwesomeIcon icon={faJs} className="fa-1x mx-2" />
-                            <FontAwesomeIcon icon={faHtml5} className="fa-1x mx-2" />
-                            <FontAwesomeIcon icon={faCss3} className="fa-1x mx-2" />
-                            <FontAwesomeIcon icon={faReact} className="fa-1x mx-2" />
-                            <FontAwesomeIcon icon={faNode} className="fa-1x mx-2" />
-                            <FontAwesomeIcon icon={faBootstrap} className="fa-1x mx-2" />
-                            <FontAwesomeIcon icon={faStripe} className="fa-1x mx-2" />
-                            <FontAwesomeIcon icon={faFigma} className="fa-1x mx-2" />
-                            <FontAwesomeIcon icon={faGithub} className="fa-1x mx-2" />
-                            <i className="devicon-mysql-plain fa-1x mx-2"></i>
-                            <i className="devicon-mongodb-plain fa-1x mx-2"></i>
-                            <i className="devicon-sequelize-plain fa-1x mx-2"></i>
-                            <i className="devicon-express-original fa-1x mx-2"></i>
-                            <i className="devicon-bash-plain fa-1x mx-2"></i>
-                            <i className="devicon-blender-original fa-1x mx-2"></i>
-                            <i className="devicon-photoshop-plain fa-1x mx-2"></i>
-                            <i className="devicon-illustrator-plain fa-1x mx-2"></i>
-                        </p>
-                    </div>
-                </div>
                 <Row className="align-items-center">
                     <Col xs={12} md={12} lg={6} className='mb-4'>
                         {/* carousel for portrait images */}

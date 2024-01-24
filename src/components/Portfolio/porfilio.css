@@ -25,9 +25,9 @@
 
 .portfolio-title {
     margin-top: 10%;
-    margin-left: 10%;
+    margin-left: 24%;
     font-family: 'Poppins', sans-serif;
-    font-size: 1.5rem;
+    font-size: 3rem;
     background: linear-gradient(315deg, #136485 15%, #74c4ac 74%);
     -webkit-background-clip: text;
     color: transparent;
@@ -35,10 +35,10 @@
 
 .port-header {
     margin-top: 2%;
-    margin-left: 10%;
+    margin-left: 24%;
     margin-bottom: 7%;
     font-family: 'Lemon', serif;
-    font-size: 1.5rem;
+    font-size: 1.4rem;
     background: linear-gradient(315deg, #440370 4%, #d6d0eb 74%);
     -webkit-background-clip: text;
     color: transparent;
