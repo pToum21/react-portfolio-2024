@@ -111,3 +111,9 @@
     transform: rotate(330deg);
 }
 
+@media (max-width: 600px) {
+    .bubble-container {
+      display: none;
+    }
+  }
+
