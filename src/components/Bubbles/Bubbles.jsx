@@ -1,33 +1,58 @@
+// Bubbles.jsx
 import React from 'react';
 import './bubbles.css';
 
 function Bubbles() {
-    // Check if the screen width is less than a certain breakpoint (e.g., 600px)
-    const isSmallScreen = window.innerWidth < 600;
+    return (
+        <div>
+            {/* Top left bubbles */}
+            <div className='bubble-container'>
+                <div className='bubble'>
+                    <span className='blue'></span>
+                    <span className='red'></span>
+                    <span className='yellow'></span>
+                    <span className='red2'></span>
+                    <span className='white'></span>
+                </div>
+                <div className='bubble'>
+                    <span className='blue'></span>
+                    <span className='red'></span>
+                    <span className='yellow'></span>
+                    <span className='red2'></span>
+                    <span className='white'></span>
+                </div>
+                <div className='bubble'>
+                    <span className='blue'></span>
+                    <span className='red'></span>
+                    <span className='yellow'></span>
+                    <span className='red2'></span>
+                    <span className='white'></span>
+                </div>
+            </div>
 
-    // Conditionally render the component based on screen size
-    return isSmallScreen ? null : (
-        <div className='bubble-container'>
-            <div className='bubble'>
-                <span className='blue'></span>
-                <span className='red'></span>
-                <span className='yellow'></span>
-                <span className='red2'></span>
-                <span className='white'></span>
-            </div>
-            <div className='bubble'>
-                <span className='blue'></span>
-                <span className='red'></span>
-                <span className='yellow'></span>
-                <span className='red2'></span>
-                <span className='white'></span>
-            </div>
-            <div className='bubble'>
-                <span className='blue'></span>
-                <span className='red'></span>
-                <span className='yellow'></span>
-                <span className='red2'></span>
-                <span className='white'></span>
+            {/* Bottom right bubbles */}
+            <div className='bubble-container bottom-right'>
+                <div className='bubble'>
+                    <span className='blue'></span>
+                    <span className='red'></span>
+                    <span className='yellow'></span>
+                    <span className='red2'></span>
+                    <span className='white'></span>
+                </div>
+                <div className='bubble'>
+                    <span className='blue'></span>
+                    <span className='red'></span>
+                    <span className='yellow'></span>
+                    <span className='red2'></span>
+                    <span className='white'></span>
+                </div>
+                <div className='bubble'>
+                    <span className='blue'></span>
+                    <span className='red'></span>
+                    <span className='yellow'></span>
+                    <span className='red2'></span>
+                    <span className='white'></span>
+                </div>
             </div>
         </div>
     );

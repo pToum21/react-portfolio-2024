@@ -5,6 +5,13 @@
     z-index: 100; 
 }
 
+.bubble-container.bottom-right {
+    position: fixed;
+    top: 70%;
+    left: 75%;
+    /* Add any other styles for bottom-right positioning */
+  }
+
 .bubble {
     margin-top: 90px;
     right: -200px;
