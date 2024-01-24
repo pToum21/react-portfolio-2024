@@ -10,6 +10,7 @@ import Footer from './components/Footer/Footer.jsx';
 import Resume from './components/Resume/Resume.jsx';
 import './styles.css';
 import TechStackCarousel from './components/Techstack/Techstack.jsx';
+import Bubbles from './components/Bubbles/Bubbles.jsx';
 
 
 
@@ -21,6 +22,7 @@ function App() {
       <Routes>
         <Route path="/" element={
           <>
+            <Bubbles/>
             <About />
             <TechStackCarousel />
             <Description />
