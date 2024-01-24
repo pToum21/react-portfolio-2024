@@ -7,8 +7,9 @@
 
 .bubble-container.bottom-right {
     position: fixed;
-    top: 70%;
-    left: 75%;
+    top: 82%;
+    left: 86%;
+    rotate: 180deg;
     /* Add any other styles for bottom-right positioning */
   }
 
@@ -42,10 +43,11 @@
 
 @keyframes animate {
     0%, 100%{
-        transform: translateY(-20px);
+        transform: translateY(-100px);
+        
     }
     50%{
-        transform: translateY(20px);
+        transform: translateY(100px);
     }
 }
 
