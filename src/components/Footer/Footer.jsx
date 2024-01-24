@@ -6,7 +6,7 @@ const Footer = () => {
     // return for the footer component
     return (
         <footer className="footer py-4 bg-dark">
-            <p className='mt-2'>© Peyton Touma | Full Stack Web Developer. All rights reserved.</p>
+            <p className='mt-2 footer-header'>© Peyton Touma | Full Stack Web Developer. All rights reserved.</p>
             <div className="footer-container">
                 
                 {/* clickable footer icons */}

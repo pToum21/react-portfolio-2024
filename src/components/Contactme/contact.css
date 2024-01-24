@@ -84,9 +84,9 @@ textarea {
   float: right;
   background: linear-gradient(315deg, #44b09e 0%, #b5cedf 74%);
   border: none;
-  margin-top: 2%;
+  margin-top: 2%; 
   margin-right: 2%;
-  width: 100%;
+  width: 15%;
 }
 
 .thank-you-tag {
@@ -138,5 +138,10 @@ textarea {
 
   .full-form-comp {
     width: 100%;
+  }
+
+  .custom-submit-btn{
+width: 100%;
+margin-right: 0;
   }
 }

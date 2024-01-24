@@ -16,8 +16,11 @@
   .footer-container {
     display: flex;
     align-items: center;
+    margin-right: 5%;
   }
   
+
+
   .footer-links {
     color: inherit;
     margin: 0 10px;
