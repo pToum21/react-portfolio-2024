@@ -6,6 +6,7 @@
     align-items: center;
     background-color: #223c58;
     filter: drop-shadow(0 -6mm 4mm rgb(160, 0, 210));
+    position: relative;
 }
 
 .description-content {
@@ -68,4 +69,5 @@
     font-family: 'Poppins', sans-serif;
     color: #44b09e;
     font-size: 16px;
+    width: 100%;
 }
