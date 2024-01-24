@@ -19,8 +19,12 @@
     border-radius: 8px;
 }
 
+
+
 .about-me-text {
     margin-top: 20px;
+    max-width: 800px; 
+    width: 100%;
     font-family: 'Poppins', sans-serif;
     font-size: 1rem;
     line-height: 1.6;

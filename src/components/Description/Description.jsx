@@ -48,7 +48,7 @@ function Description() {
 
     return (
         <div className="description-container" id="description">
-            <Container fluid className="description-content">
+            <Container className="description-content">
                 <div className="about-me-text">
                     <div className="mt-3 ">
                         {/* tech stack icons */}
@@ -87,7 +87,7 @@ function Description() {
                             ))}
                         </Slider>
                     </Col>
-                    <Col xs={12} md={12} lg={6}>
+                    <Col xs={12} md={12} lg={6} className='texttext'>
                         {/* div containing the animation of the circle */}
                         <animated.div style={wireframeAnimation} className="wireframe-polygon"></animated.div>
                         {/* about me header */}
