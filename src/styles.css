@@ -1,4 +1,10 @@
 body {
-    background-color: #141c27;
-    color: #fff;    
-  }
+  background-color: #141c27;
+  color: #fff;
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+
+body::-webkit-scrollbar {
+  display: none;
+}
