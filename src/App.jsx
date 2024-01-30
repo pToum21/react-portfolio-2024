@@ -22,15 +22,19 @@ function App() {
       <Routes>
         <Route path="/" element={
           <>
-            <Bubbles/>
+            <Bubbles />
             <About />
             <TechStackCarousel />
             <Description />
             <Portfolio />
             <Contact />
           </>
-        } />
-        <Route path="/resume" element={<Resume />} />
+        }
+        />
+        <Route path="/resume" element={
+          <Resume />
+        }
+        />
       </Routes>
       <Footer />
     </Router>
