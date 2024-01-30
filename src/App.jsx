@@ -12,9 +12,7 @@ import './styles.css';
 import TechStackCarousel from './components/Techstack/Techstack.jsx';
 import Bubbles from './components/Bubbles/Bubbles.jsx';
 
-
-
-
+// all components in application used inside of react-router dom
 function App() {
   return (
     <Router>
