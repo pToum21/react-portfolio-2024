@@ -4,9 +4,8 @@ import { faArrowUpRightFromSquare } from '@fortawesome/free-solid-svg-icons';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import './porfilio.css';
 import anyyes from '../../assets/anyesThumbnail.png';
-import viewacar from '../../assets/viewAcarthumbnail.png';
 import techblog from '../../assets/techBlogThumbnail.png';
-import weatherapp from '../../assets/WhatsTheWeather.png';
+import liberThumbNail from '../../assets/liberThumbnail.png'
 import cryptograbber from '../../assets/CryptoGrabberThumbNail.png'
 
 const Portfolio = () => {
@@ -17,6 +16,40 @@ const Portfolio = () => {
             <h2 className='port-header'>Each Project is a unique piece of Web Development <span className='emoji'>🧩</span></h2>
             {/* container holding all projects and descs */}
             <Container style={{ marginTop: '50px' }}>
+            <Row className='each-proj'>
+                    <Col xs={12} md={6} className="d-flex align-items-center">
+                        <div className="text-center">
+                            <h3 className='proj-title'>Liber <span className='emoji'>📚</span></h3>
+                            <p className='proj-text'>
+                            Liber is an interactive e-reader along with book-saving capabilities and a social media aspect -- think your Kindle, GoodReads, and saved-books-app combined.
+                            </p>
+                            <div style={{ fontSize: '0.8rem', color: 'white', maxWidth: '75%', margin: '0 auto' }}>
+                                <h5 className='used-stack'>Stack Used:</h5>
+                                React, Material Ui, mongoDb, gprahql, three.js/three-fiber, bcrypt, react-router-dom, axios
+                            </div>
+                            <div className="d-flex justify-content-center">
+                                <div className="mr-3">
+                                    <a href="https://liber-d603fbac9e96.herokuapp.com/" style={{ fontSize: '1rem', color: 'white', marginBottom: 0 }}>Deployed Demo:
+                                        <FontAwesomeIcon icon={faArrowUpRightFromSquare} className="fa-1x mx-1" />
+                                    </a>
+                                </div>
+                                <div className="mr-2">
+                                    <a href="https://github.com/pToum21/liber?tab=readme-ov-file" style={{ fontSize: '1rem', color: 'white', marginBottom: 0, padding: '5px' }}>GitHub Repo:
+                                        <FontAwesomeIcon icon={faGithub} className="fa-1x mx-1" />
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </Col>
+                    <Col xs={12} md={6} className="d-flex align-items-center justify-content-center">
+                        <img
+                            src={liberThumbNail}
+                            alt="anyYes project"
+                            className="rounded-image"
+                            style={{ width: '100%' }}
+                        />
+                    </Col>
+                </Row>
                 {/* project 1 */}
                 <Row className='each-proj'>
                     <Col xs={12} md={6} className="d-flex align-items-center justify-content-center">
@@ -126,41 +159,7 @@ const Portfolio = () => {
                         </div>
                     </Col>
                 </Row>
-                {/* project 4 */}
-                <Row className='each-proj'>
-                    <Col xs={12} md={6} className="d-flex align-items-center">
-                        <div className="text-center">
-                            <h3 className='proj-title'>Whats The Weather <span className='emoji'>☔</span></h3>
-                            <p className='proj-text'>
-                                Retrieve weather data for any city, providing access to current weather conditions, a five-day forecast, and the present date. Seamlessly toggle between metric and imperial units, accompanied by a persistent search history feature.
-                            </p>
-                            <div style={{ fontSize: '0.8rem', color: 'white', maxWidth: '75%', margin: '0 auto' }}>
-                                <h5 className='used-stack'>Stack Used:</h5>
-                                HTML, CSS, JavaScript, bootstrap, weatherApi
-                            </div>
-                            <div className="d-flex justify-content-center">
-                                <div className="mr-3">
-                                    <a href="https://ptoum21.github.io/weatherapp-2/" style={{ fontSize: '1rem', color: 'white', marginBottom: 0 }}>Deployed Demo:
-                                        <FontAwesomeIcon icon={faArrowUpRightFromSquare} className="fa-1x mx-1" />
-                                    </a>
-                                </div>
-                                <div className="mr-3">
-                                    <a href="https://github.com/pToum21/weatherapp-2" style={{ fontSize: '1rem', color: 'white', marginBottom: 0, padding: '5px' }}>GitHub Repo:
-                                        <FontAwesomeIcon icon={faGithub} className="fa-1x mx-1" />
-                                    </a>
-                                </div>
-                            </div>
-                        </div>
-                    </Col>
-                    <Col xs={12} md={6} className="d-flex align-items-center justify-content-center">
-                        <img
-                            src={weatherapp}
-                            alt="anyYes project"
-                            className="rounded-image"
-                            style={{ width: '100%' }}
-                        />
-                    </Col>
-                </Row>
+               
             </Container>
         </div>
     );
