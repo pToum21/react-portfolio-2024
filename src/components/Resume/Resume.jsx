@@ -1,18 +1,31 @@
-import { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import { Document, Page } from 'react-pdf';
 import './resume.css';
 import Button from 'react-bootstrap/Button';
 import { pdfjs } from 'react-pdf';
-import resumePdf from '../../assets/Peyton_Touma_-_Web_Developer.pdf';
+import resumePdf from '../../assets/02-19-2024-resume_Peyton Touma - Copy.pdf';
 
 function Resume() {
     const [numPages, setNumPages] = useState();
     const [pageNumber, setPageNumber] = useState(1);
+    const [pageWidth, setPageWidth] = useState(window.innerWidth);
 
     pdfjs.GlobalWorkerOptions.workerSrc = new URL(
         'pdfjs-dist/build/pdf.worker.min.js',
         import.meta.url,
     ).toString();
+
+    useEffect(() => {
+        const handleResize = () => {
+            setPageWidth(window.innerWidth);
+        };
+
+        window.addEventListener('resize', handleResize);
+
+        return () => {
+            window.removeEventListener('resize', handleResize);
+        };
+    }, []);
 
     function onDocumentLoadSuccess({ numPages }) {
         setNumPages(numPages);
@@ -41,7 +54,7 @@ function Resume() {
                             <div key={page} className="pdf-page-container">
                                 <Page
                                     pageNumber={page}
-                                    width={window.innerWidth} 
+                                    width={pageWidth}
                                     renderTextLayer={false}
                                     renderAnnotationLayer={false}
                                 />

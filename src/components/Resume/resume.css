@@ -1,24 +1,24 @@
 .resume-div {
-    padding: 10%;
+    padding: 1rem;
     position: relative;
 }
 
 .pdf-container {
-    overflow-x: auto; 
+    overflow-x: auto;
+    max-width: 100%;
+    margin: 0 auto; /* Center the content */
 }
 
 .react-pdf__Page__canvas {
-    margin: 1%;
-    width: 100%; 
+    width: 100% !important;
 }
 
 .pdf-page-container {
-    width: 100%; 
-    margin-bottom: 1rem; 
+    width: 100%;
+    margin-bottom: 1rem;
 }
 
 .resume-title {
-  
     font-family: 'Poppins', sans-serif;
     position: relative;
     font-size: 3rem;
@@ -33,4 +33,3 @@
     justify-content: space-between;
     align-items: center;
 }
-
