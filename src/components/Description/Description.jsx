@@ -42,14 +42,14 @@ function Description() {
         slidesToShow: 1,
         slidesToScroll: 1,
         autoplay: true,
-        autoplaySpeed:3000,
+        autoplaySpeed: 3000,
         arrows: false
     };
 
     return (
         <div className="description-container" id="description">
             <Container className="description-content">
-                <Row className="align-items-center">               
+                <Row className="align-items-center">
                     <Col xs={12} md={12} lg={6} className='mb-4'>
                         {/* carousel for portrait images */}
                         <Slider {...carouselSettings}>
@@ -70,7 +70,7 @@ function Description() {
                         <h4 className='about-me-title'>About Me</h4>
                         {/* about me description header title */}
                         <p className="about-me-text">
-                            👋 I'm Peyton Touma, a Full-Stack Web Developer based in Los Angeles, with roots in the small town of Olney, Maryland. Currently enrolled in the UCLA Full-Stack Web Development Bootcamp, I'll be completing the course in February 2024. My skill set includes JavaScript for dynamic web pages, HTML, CSS, and React for crafting engaging user interfaces. I work with Node.js and Express.js for building scalable server-side applications and manage databases using MySQL, MongoDB, Sequelize, and Mongoose. Additionally, I have a background in graphic design, utilizing tools such as Blender, Photoshop, Illustrator, and Cinema 4D. I am proficient in front-end frameworks like Tailwind, Bootstrap, and Bulma, and use Webpack for optimized asset bundling. Furthermore, I leverage the Stripe API for e-commerce development. GitHub is my go-to for version control, ensuring efficient collaboration and code management.
+                            👋 I'm Peyton Touma, a Full-Stack Web Developer based in Los Angeles, with roots in the small town of Olney, Maryland. Recently certified by the UCLA Full-Stack Web Development Bootcamp, my skill set includes JavaScript for dynamic web pages, HTML, CSS, and React for crafting engaging user interfaces. I work with Node.js and Express.js for building scalable server-side applications and manage databases using MySQL, MongoDB, Sequelize, and Mongoose. Additionally, I have a background in graphic design, utilizing tools such as Blender, Photoshop, Illustrator, and Cinema 4D. I am proficient in front-end frameworks like Tailwind, Bootstrap, and Bulma, and use Webpack for optimized asset bundling. Furthermore, I leverage the Stripe API for e-commerce development. GitHub is my go-to for version control, ensuring efficient collaboration and code management.
                         </p>
                     </Col>
                 </Row>
