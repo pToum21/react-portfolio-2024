@@ -1,7 +1,7 @@
 import React from 'react';
 import Slider from 'react-slick';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faJs, faHtml5, faCss3, faReact, faNode, faBootstrap, faStripe, faFigma, faGithub } from '@fortawesome/free-brands-svg-icons';
+import { faJs, faHtml5, faCss3, faReact, faNode, faBootstrap, faStripe, faFigma, faGithub, faPython } from '@fortawesome/free-brands-svg-icons';
 
 import 'slick-carousel/slick/slick.css';
 import 'slick-carousel/slick/slick-theme.css';
@@ -9,15 +9,17 @@ import './TechStackCarousel.css'; // Import your custom styles
 
 const TechStackCarousel = () => {
   const fontAwesomeIcons = [
-    faJs, faHtml5, faCss3, faReact, faNode, faBootstrap, faStripe, faFigma, faGithub,
+    faJs, faHtml5, faCss3, faReact, faNode, 
+    faBootstrap, faStripe, faFigma, faGithub, faPython
     // Add other FontAwesome icons here
   ];
 
   const devIcons = [
     'devicon-mysql-plain', 'devicon-mongodb-plain', 'devicon-sequelize-plain',
     'devicon-express-original', 'devicon-bash-plain', 'devicon-blender-original',
-    'devicon-photoshop-plain', 'devicon-illustrator-plain',
-    // Add other devicon class names here
+    'devicon-photoshop-plain', 'devicon-illustrator-plain', 'devicon-flask-original', 
+    'devicon-sqlalchemy-plain', 'devicon-threejs-original', 'devicon-materialui-plain', 
+    'devicon-materializecss-plain', 'devicon-tailwindcss-original', 'devicon-bulma-plain' 
   ];
 
   const combinedIcons = [...fontAwesomeIcons, ...devIcons];
@@ -30,7 +32,7 @@ const TechStackCarousel = () => {
     slidesToScroll: 1,
     autoplay: true,
     autoplaySpeed: 2500,
-  
+
   };
 
   return (
