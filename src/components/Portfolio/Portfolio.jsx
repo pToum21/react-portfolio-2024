@@ -7,6 +7,8 @@ import anyyes from '../../assets/anyesThumbnail.png';
 import techblog from '../../assets/techBlogThumbnail.png';
 import liberThumbNail from '../../assets/liberThumbnail.png'
 import cryptograbber from '../../assets/CryptoGrabberThumbNail.png'
+import blicky from '../../assets/blicky-thumbnail.png'
+
 
 const Portfolio = () => {
     return (
@@ -16,12 +18,12 @@ const Portfolio = () => {
             <h2 className='port-header'>Each Project is a unique piece of Web Development <span className='emoji'>🧩</span></h2>
             {/* container holding all projects and descs */}
             <Container style={{ marginTop: '50px' }}>
-            <Row className='each-proj'>
+                <Row className='each-proj'>
                     <Col xs={12} md={6} className="d-flex align-items-center">
                         <div className="text-center">
                             <h3 className='proj-title'>Liber <span className='emoji'>📚</span></h3>
                             <p className='proj-text'>
-                            Liber is an interactive e-reader along with book-saving capabilities and a social media aspect -- think your Kindle, GoodReads, and saved-books-app combined.
+                                Liber is an interactive e-reader along with book-saving capabilities and a social media aspect -- think your Kindle, GoodReads, and saved-books-app combined.
                             </p>
                             <div style={{ fontSize: '0.8rem', color: 'white', maxWidth: '75%', margin: '0 auto' }}>
                                 <h5 className='used-stack'>Stack Used:</h5>
@@ -44,7 +46,7 @@ const Portfolio = () => {
                     <Col xs={12} md={6} className="d-flex align-items-center justify-content-center">
                         <img
                             src={liberThumbNail}
-                            alt="anyYes project"
+                            alt="liber reader project"
                             className="rounded-image"
                             style={{ width: '100%' }}
                         />
@@ -118,22 +120,54 @@ const Portfolio = () => {
                     <Col xs={12} md={6} className="d-flex align-items-center justify-content-center">
                         <img
                             src={cryptograbber}
-                            alt="anyYes project"
+                            alt="crypto grabber project"
                             className="rounded-image"
                             style={{ width: '100%' }}
                         />
                     </Col>
                 </Row>
-                {/* project 3 */}
+
+
                 <Row className='each-proj'>
-                <Col xs={12} md={6} className="d-flex align-items-center justify-content-center">
+                    <Col xs={12} md={6} className="d-flex align-items-center justify-content-center">
                         <img
-                            src={techblog}
-                            alt="anyYes project"
+                            src={blicky}
+                            alt="blicky project"
                             className="rounded-image"
                             style={{ width: '100%' }}
                         />
                     </Col>
+                    <Col xs={12} md={6} className="d-flex align-items-center">
+                        <div className="text-center">
+                            <h3 className='proj-title'>Blicky.io <span className='emoji'>🔫</span></h3>
+                            <p className='proj-text'>
+                                Blicky.io is an online 3D multiplayer third person shooter game created using react and three.js.  The game gives players the ability to invite there friends and battle to the death.
+                            </p>
+                            <div style={{ fontSize: '0.8rem', color: 'white', maxWidth: '75%', margin: '0 auto' }}>
+                                <h5 className='used-stack'>Stack Used:</h5>
+                                React, JavaScript, Three.js, React-Three-Fiber, TailWind, playroomkit, rapier(physics engine)
+                            </div>
+                            <div className="d-flex justify-content-center">
+                                <div className="mr-3">
+                                    <a href="https://blicky.netlify.app/" style={{ fontSize: '1rem', color: 'white', marginBottom: 0 }}>Deployed Demo:
+                                        <FontAwesomeIcon icon={faArrowUpRightFromSquare} className="fa-1x mx-1" />
+                                    </a>
+                                </div>
+                                <div className="mr-2">
+                                    <a href="https://github.com/pToum21/multiplayer-shooter" style={{ fontSize: '1rem', color: 'white', marginBottom: 0, padding: '5px' }}>GitHub Repo:
+                                        <FontAwesomeIcon icon={faGithub} className="fa-1x mx-1" />
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </Col>
+                </Row>
+
+
+
+
+                {/* project 3 */}
+                <Row className='each-proj'>
                     <Col xs={12} md={6} className="d-flex align-items-center">
                         <div className="text-center">
                             <h3 className='proj-title'>TechBlog <span className='emoji'>🖥️</span></h3>
@@ -158,8 +192,17 @@ const Portfolio = () => {
                             </div>
                         </div>
                     </Col>
+                    <Col xs={12} md={6} className="d-flex align-items-center justify-content-center">
+                        <img
+                            src={techblog}
+                            alt="tech project"
+                            className="rounded-image"
+                            style={{ width: '100%' }}
+                        />
+                    </Col>
+
                 </Row>
-               
+
             </Container>
         </div>
     );
