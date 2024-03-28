@@ -173,3 +173,15 @@
         transform: translate(0, 0);
     }
 }
+
+@media (max-width: 600px) {
+    .first-name {
+      font-size: 1.3rem;
+    }
+    .personal-title {
+      font-size: 1rem;
+    } 
+    .about-me {
+      font-size: 1rem;
+    } 
+  }

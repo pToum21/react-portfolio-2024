@@ -60,7 +60,7 @@ function About() {
             </div>
 
             {/* actual about me component */}
-            <div className="container text-center mt-3">
+            <div className="container text-center mt-5">
                 <h1 className='first-name'>Peyton Touma</h1>
                 <p className='personal-title'>Full-Stack Web Developer and Software Engineer</p>
                 <p className='about-me'>
