@@ -31,7 +31,7 @@ const Portfolio = () => {
                             </div>
                             <div className="d-flex justify-content-center">
                                 <div className="mr-3">
-                                    <a href="https://liber-d603fbac9e96.herokuapp.com/" style={{ fontSize: '1rem', color: 'white', marginBottom: 0 }}>Deployed Demo:
+                                    <a href="https://liber-3-25f01cbf7764.herokuapp.com/" style={{ fontSize: '1rem', color: 'white', marginBottom: 0 }}>Deployed Demo:
                                         <FontAwesomeIcon icon={faArrowUpRightFromSquare} className="fa-1x mx-1" />
                                     </a>
                                 </div>
