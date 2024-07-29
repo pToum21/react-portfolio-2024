@@ -8,6 +8,7 @@ import techblog from '../../assets/techBlogThumbnail.png';
 import liberThumbNail from '../../assets/liberThumbnail.png'
 import cryptograbber from '../../assets/CryptoGrabberThumbNail.png'
 import blicky from '../../assets/blicky-thumbnail.png'
+import GDATMs from '../../assets/gdatms.png'
 
 
 const Portfolio = () => {
@@ -89,6 +90,45 @@ const Portfolio = () => {
                                 </div>
                             </div>
                         </div>
+                    </Col>
+                </Row>
+                <Row className='each-proj'>
+
+                    <Col xs={12} md={6} className="d-flex align-items-center">
+                        <div className="text-center">
+                            {/* project title */}
+                            <h3 className='proj-title'>GD ATMs <span className='emoji'>🎮</span></h3>
+                            <p className='proj-text'>
+                                This application is a full stack ticketing system that allows the user to buy, view and make support claims regarding my ATM locations.
+                            </p>
+                            {/* project stack */}
+                            <div style={{ fontSize: '0.8rem', color: 'white', maxWidth: '75%', margin: '0 auto' }}>
+                                <h5 className='used-stack'>Stack Used:</h5>
+                                HTML, CSS, React, Material Ui, graphQL, node.js, express.js, bcrypt, react-router-dom, axios, google-maps API
+                            </div>
+                            {/* a link icons */}
+                            <div className="d-flex justify-content-center">
+                                <div className="mr-3">
+                                    <a href="https://gd-atms-09c01d3953db.herokuapp.com/" style={{ fontSize: '1rem', color: 'white', marginBottom: 0 }}>Deployed Demo:
+                                        <FontAwesomeIcon icon={faArrowUpRightFromSquare} className="fa-1x mx-1" />
+                                    </a>
+                                </div>
+                                <div className="mr-3">
+                                    <a href="hhttps://github.com/pToum21/gd-atms-v2" style={{ fontSize: '1rem', color: 'white', marginBottom: '0', padding: '5px' }}>GitHub Repo:
+                                        <FontAwesomeIcon icon={faGithub} className="fa-1x mx-1" />
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </Col>
+                    <Col xs={12} md={6} className="d-flex align-items-center justify-content-center">
+                        {/* project image */}
+                        <img
+                            src={GDATMs}
+                            alt="GD ATMs project"
+                            className="rounded-image"
+                            style={{ width: '100%' }}
+                        />
                     </Col>
                 </Row>
                 {/* project 2 */}
