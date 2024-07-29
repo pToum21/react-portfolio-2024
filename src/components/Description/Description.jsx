@@ -70,7 +70,15 @@ function Description() {
                         <h4 className='about-me-title'>About Me</h4>
                         {/* about me description header title */}
                         <p className="about-me-text">
-                            👋 I'm Peyton Touma, a Full-Stack Web Developer based in Los Angeles, with roots in the small town of Olney, Maryland. Recently certified by the UCLA Full-Stack Web Development Bootcamp, my skill set includes JavaScript for dynamic web pages, HTML, CSS, and React for crafting engaging user interfaces. I work with Node.js, Express.js, Python, and Flask for building scalable server-side applications and manage databases using MySQL, SQLAlchemy, MongoDB, Sequelize, and Mongoose. Additionally, I have a background in graphic design, utilizing tools such as Blender, Photoshop, Illustrator, and Cinema 4D. I am proficient in front-end frameworks like Tailwind, Bootstrap, and Bulma, and use Webpack for optimized asset bundling. Furthermore, I leverage the Stripe API for e-commerce development. GitHub is my go-to for version control, ensuring efficient collaboration and code management.
+                            👋 Hi, I’m Peyton Touma, a Full-Stack Web Developer based in Los Angeles with roots in Olney, Maryland. I’m currently on the lookout for new opportunities, but in the meantime, I’m working part-time at Code Ninjas as a Code Instructor.
+
+                            I recently completed the UCLA Full-Stack Web Development Bootcamp, where I gained expertise in JavaScript, HTML, CSS, and React for dynamic and engaging web interfaces. My backend skills include Node.js, Express.js, Python, and Flask, and I’m adept at managing databases with MySQL, SQLAlchemy, MongoDB, Sequelize, and Mongoose.
+
+                            My background in graphic design is well-supported by tools such as Blender, Photoshop, Illustrator, and Cinema 4D. I’m also skilled in front-end frameworks like Tailwind, Bootstrap, and Bulma, and I use Webpack for optimized asset bundling. Additionally, I work with the Stripe API for e-commerce solutions and rely on GitHub for version control and efficient code management.
+
+                            At Code Ninjas, I teach students HTML, CSS, and JavaScript, covering both foundational and advanced topics. I also lead a 3D design course using Cinema 4D and Blender, mentoring students through the creation of detailed 3D models and helping them develop their projects.
+
+                            If you’re looking for a dedicated and versatile web developer with a passion for teaching and a solid technical background, I’d love to connect!
                         </p>
                     </Col>
                 </Row>
