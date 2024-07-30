@@ -10,8 +10,6 @@ import portrait2 from '../../assets/IMG_0073.jpg';
 import portrait3 from '../../assets/IMG_2637.jpg';
 
 
-
-
 function Description() {
     const [scrollY, setScrollY] = useState(0);
 
