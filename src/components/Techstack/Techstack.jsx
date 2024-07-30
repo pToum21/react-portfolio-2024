@@ -5,11 +5,11 @@ import { faJs, faHtml5, faCss3, faReact, faNode, faBootstrap, faStripe, faFigma,
 
 import 'slick-carousel/slick/slick.css';
 import 'slick-carousel/slick/slick-theme.css';
-import './TechStackCarousel.css'; // Import your custom styles
+import './TechStackCarousel.css';
 
 const TechStackCarousel = () => {
   const fontAwesomeIcons = [
-    faJs, faHtml5, faCss3, faReact, faNode, 
+    faJs, faHtml5, faCss3, faReact, faNode,
     faBootstrap, faStripe, faFigma, faGithub, faPython
     // Add other FontAwesome icons here
   ];
@@ -17,9 +17,10 @@ const TechStackCarousel = () => {
   const devIcons = [
     'devicon-mysql-plain', 'devicon-mongodb-plain', 'devicon-sequelize-plain',
     'devicon-express-original', 'devicon-bash-plain', 'devicon-blender-original',
-    'devicon-photoshop-plain', 'devicon-illustrator-plain', 'devicon-flask-original', 
-    'devicon-sqlalchemy-plain', 'devicon-threejs-original', 'devicon-materialui-plain', 
-    'devicon-materializecss-plain', 'devicon-tailwindcss-original', 'devicon-bulma-plain' 
+    'devicon-photoshop-plain', 'devicon-illustrator-plain', 'devicon-flask-original',
+    'devicon-sqlalchemy-plain', 'devicon-threejs-original', 'devicon-materialui-plain',
+    'devicon-materializecss-plain', 'devicon-tailwindcss-original', 'devicon-bulma-plain',
+    'devicon-amazonwebservices-plain-wordmark'
   ];
 
   const combinedIcons = [...fontAwesomeIcons, ...devIcons];
