@@ -107,7 +107,7 @@ const Portfolio = () => {
                     <Col xs={12} md={6} className="d-flex align-items-center">
                         <div className="text-center">
                             {/* project title */}
-                            <h3 className='proj-title'>GD ATMs <span className='emoji'>🎮</span></h3>
+                            <h3 className='proj-title'>GD ATMs <span className='emoji'>💰</span></h3>
                             <p className='proj-text'>
                                 This application is a full stack ticketing system that allows the user to buy, view and make support claims regarding my ATM locations.
                             </p>
