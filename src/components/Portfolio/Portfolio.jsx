@@ -20,6 +20,14 @@ const Portfolio = () => {
             {/* container holding all projects and descs */}
             <Container style={{ marginTop: '50px' }}>
                 <Row className='each-proj'>
+                <Col xs={12} md={6} className="d-flex align-items-center justify-content-center">
+                        <img
+                            src={liberThumbNail}
+                            alt="liber reader project"
+                            className="rounded-image"
+                            style={{ width: '100%' }}
+                        />
+                    </Col>
                     <Col xs={12} md={6} className="d-flex align-items-center">
                         <div className="text-center">
                             <h3 className='proj-title'>Liber <span className='emoji'>📚</span></h3>
@@ -44,26 +52,11 @@ const Portfolio = () => {
                             </div>
                         </div>
                     </Col>
-                    <Col xs={12} md={6} className="d-flex align-items-center justify-content-center">
-                        <img
-                            src={liberThumbNail}
-                            alt="liber reader project"
-                            className="rounded-image"
-                            style={{ width: '100%' }}
-                        />
-                    </Col>
+                    
                 </Row>
                 {/* project 1 */}
                 <Row className='each-proj'>
-                    <Col xs={12} md={6} className="d-flex align-items-center justify-content-center">
-                        {/* project image */}
-                        <img
-                            src={anyyes}
-                            alt="anyYes project"
-                            className="rounded-image"
-                            style={{ width: '100%' }}
-                        />
-                    </Col>
+
                     <Col xs={12} md={6} className="d-flex align-items-center">
                         <div className="text-center">
                             {/* project title */}
@@ -91,9 +84,26 @@ const Portfolio = () => {
                             </div>
                         </div>
                     </Col>
+                    <Col xs={12} md={6} className="d-flex align-items-center justify-content-center">
+                        {/* project image */}
+                        <img
+                            src={anyyes}
+                            alt="anyYes project"
+                            className="rounded-image"
+                            style={{ width: '100%' }}
+                        />
+                    </Col>
                 </Row>
                 <Row className='each-proj'>
-
+                    <Col xs={12} md={6} className="d-flex align-items-center justify-content-center">
+                        {/* project image */}
+                        <img
+                            src={GDATMs}
+                            alt="GD ATMs project"
+                            className="rounded-image"
+                            style={{ width: '100%' }}
+                        />
+                    </Col>
                     <Col xs={12} md={6} className="d-flex align-items-center">
                         <div className="text-center">
                             {/* project title */}
@@ -121,15 +131,7 @@ const Portfolio = () => {
                             </div>
                         </div>
                     </Col>
-                    <Col xs={12} md={6} className="d-flex align-items-center justify-content-center">
-                        {/* project image */}
-                        <img
-                            src={GDATMs}
-                            alt="GD ATMs project"
-                            className="rounded-image"
-                            style={{ width: '100%' }}
-                        />
-                    </Col>
+
                 </Row>
                 {/* project 2 */}
                 <Row className='each-proj'>
