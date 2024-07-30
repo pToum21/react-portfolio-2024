@@ -10,7 +10,6 @@ const TechStackCarousel = () => {
   const fontAwesomeIcons = [
     faJs, faHtml5, faCss3, faReact, faNode,
     faBootstrap, faStripe, faFigma, faGithub, faPython
-    // Add other FontAwesome icons here
   ];
 
   const devIcons = [
