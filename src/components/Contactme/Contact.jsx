@@ -62,7 +62,7 @@ function Contact() {
                         </InputGroup>
 
                         <div>
-                            <Button as="input" type="submit" disabled={state.submitting} value="Send"  className="custom-submit-btn" />
+                            <Button as="input" type="submit" disabled={state.submitting} value="Send" className="custom-submit-btn" />
                         </div>
                     </Form>
 
