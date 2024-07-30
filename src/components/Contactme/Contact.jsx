@@ -20,7 +20,7 @@ function Contact() {
         <>
             <div className="full-page" id="contact-me">
                 <div className="title-box">
-                    <h1 className='contact-me-header'>Contact Me</h1>
+                    
                     <h2 className='form-title'>Don't be shy, hit my line <span className='emoji'>👇</span></h2>
                 </div>
 
