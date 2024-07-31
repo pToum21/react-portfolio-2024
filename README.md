@@ -12,7 +12,7 @@
 - font awesome for fonts and icons
 
 ## Deployed Application - 👾
-https://peyton-touma-portfolio.netlify.app/
+https://peyton-touma.com/
 
 ## Table of Contents - 📋
 * [Installation](#installation---☢️)
