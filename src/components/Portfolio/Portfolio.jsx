@@ -8,7 +8,7 @@ import techblog from '../../assets/techBlogThumbnail.png';
 import liberThumbNail from '../../assets/liberThumbnail.png'
 import cryptograbber from '../../assets/CryptoGrabberThumbNail.png'
 import blicky from '../../assets/blicky-thumbnail.png'
-import GDATMs from '../../assets/gdatms.png'
+import GDATMs from '../../assets/gd-Thumbnail.png'
 
 
 const Portfolio = () => {
