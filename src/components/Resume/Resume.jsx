@@ -4,6 +4,7 @@ import './resume.css';
 import Button from 'react-bootstrap/Button';
 import { pdfjs } from 'react-pdf';
 import resumePdf from '../../assets/Peyton Touma Resume_8.7.24_1.pdf';
+
 function Resume() {
     const [numPages, setNumPages] = useState();
     const [pageNumber, setPageNumber] = useState(1);
