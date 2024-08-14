@@ -10,6 +10,7 @@ function Resume() {
     const [pageNumber, setPageNumber] = useState(1);
     const [pageWidth, setPageWidth] = useState(window.innerWidth);
 
+    // Set the worker source to be the pdf.worker.js located in the public folder
     pdfjs.GlobalWorkerOptions.workerSrc = new URL(
         'pdfjs-dist/build/pdf.worker.min.js',
         import.meta.url,
