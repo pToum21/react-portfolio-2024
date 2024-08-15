@@ -60,12 +60,12 @@
 
 #certifications {
     padding-top: 60px;
-    /* Adjust this value based on the height of your navbar */
+    
 }
 
 
 
-/* Ensure this matches or is lower than your navbar's z-index */
+/* Overlay CSS */
 .overlay {
     position: fixed;
     top: 0;
@@ -76,10 +76,10 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    z-index: 500; /* Make sure this is less than the navbar z-index */
+    z-index: 500; 
     font-family: 'Poppins', sans-serif;
     color: #333;
-    pointer-events: none; /* Ensure it doesn’t block interactions with the navbar */
+    pointer-events: none;
 }
 
 .overlay h1,
@@ -112,6 +112,5 @@
 
     #certifications {
         padding-top: 60px;
-        /* Ensure it adjusts for mobile */
     }
 }
