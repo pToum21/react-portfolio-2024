@@ -1,0 +1,70 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@600&display=swap');
+
+
+#certifications {
+    margin-top: 20%;
+}
+
+.certifications-title {
+    font-family: 'Poppins', sans-serif;
+    font-size: 3rem;
+    text-align: center;
+    margin-top: 5%;
+    background: linear-gradient(315deg, #136485 15%, #74c4ac 74%);
+    -webkit-background-clip: text;
+    color: transparent;
+}
+
+.certifications-header {
+    font-family: 'Poppins', sans-serif;
+    font-size: 1.5rem;
+    text-align: center;
+    margin-bottom: 5%;
+    background: linear-gradient(315deg, #440370 4%, #d6d0eb 74%);
+    -webkit-background-clip: text;
+    color: transparent;
+}
+
+.certification-item {
+    margin-top: 5%;
+    margin-bottom: 5%;
+}
+
+.certification-placeholder {
+    text-align: center;
+    padding: 20px;
+    border: 2px dashed #ccc;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.placeholder-text {
+    margin-top: 10px;
+    font-family: 'Poppins', sans-serif;
+    font-size: 1.2rem;
+    color: #666;
+}
+
+.certification-title {
+    font-family: 'Poppins', sans-serif;
+    font-size: 2rem;
+    margin-top: 10px;
+    color: #333;
+}
+
+.certification-description {
+    font-family: 'Poppins', sans-serif;
+    font-size: 1rem;
+    color: #555;
+    margin: 10px 0;
+}
+
+.btn {
+    font-family: 'Poppins', sans-serif;
+}
+
+@media (max-width: 767px) {
+    .certification-item {
+        flex-direction: column-reverse;
+    }
+}
