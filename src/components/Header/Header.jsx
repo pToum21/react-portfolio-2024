@@ -51,7 +51,7 @@ function Header() {
                     to='/design-portfolio'
                     onClick={handleLinkClick}
                     >
-                        Design Portfolio
+                        Designs
                     </HashLink>
                     <HashLink 
                     className="nav-bar-links"
