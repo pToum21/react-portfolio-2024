@@ -11,6 +11,7 @@ import Resume from './components/Resume/Resume.jsx';
 import './styles.css';
 import TechStackCarousel from './components/Techstack/Techstack.jsx';
 import Bubbles from './components/Bubbles/Bubbles.jsx';
+import DesignPortfolio from './components/DesignPortfolio/DesignPortfolio.jsx';
 
 // all components in application used inside of react-router dom
 function App() {
@@ -31,6 +32,10 @@ function App() {
         />
         <Route path="/resume" element={
           <Resume />
+        }
+        />
+        <Route path="/design-portfolio" element={
+          <DesignPortfolio />
         }
         />
       </Routes>

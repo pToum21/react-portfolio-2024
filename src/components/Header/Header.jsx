@@ -45,10 +45,20 @@ function Header() {
                     <HashLink className="nav-bar-links" to="/#contact-me" onClick={handleLinkClick}>
                         Contact
                     </HashLink>
-                    <HashLink className="nav-bar-links" to="/#contact-me" onClick={handleLinkClick}>
-                        Design Work
+                    <HashLink 
+                    className="nav-bar-links"
+                    as={LinkRouter}
+                    to='/design-portfolio'
+                    onClick={handleLinkClick}
+                    >
+                        Design Portfolio
                     </HashLink>
-                    <HashLink className="nav-bar-links" to="/#contact-me" onClick={handleLinkClick}>
+                    <HashLink 
+                    className="nav-bar-links"
+                    as={LinkRouter}
+                    to='/certifications'
+                    onClick={handleLinkClick}
+                    >
                         Certifications
                     </HashLink>
                 </Nav>
