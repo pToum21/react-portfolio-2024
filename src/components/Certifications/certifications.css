@@ -101,7 +101,7 @@
 }
 
 @media (max-width: 767px) {
-    .certification-item {
+    .certification-item:nth-child(odd) {
         flex-direction: column-reverse;
     }
 
