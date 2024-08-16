@@ -5,7 +5,9 @@ import { faCertificate } from '@fortawesome/free-solid-svg-icons';
 import './certifications.css'; 
 
 // Import images for certifications
-import uxCert from '../../assets/ux-cert.jpeg'
+import uxCert from '../../assets/uxcert.png'
+import uclaCert from '../../assets/uclacert.png'
+import freeCodeCampCert from '../../assets/freecodecampcert.png'
 
 
 const Certifications = () => {
@@ -26,9 +28,8 @@ const Certifications = () => {
 
                 <Row className="certification-item">
                     <Col xs={12} md={6} className="d-flex align-items-center justify-content-center">
-                        <div className="certification-placeholder">
-                            <FontAwesomeIcon icon={faCertificate} size="4x" />
-                            <p className="placeholder-text">Certification Placeholder</p>
+                    <div className="certification-placeholder">
+                            <img src={uclaCert} alt="ucla-cert" />
                         </div>
                     </Col>
                     <Col xs={12} md={6} className="d-flex align-items-center">
@@ -38,7 +39,7 @@ const Certifications = () => {
                                 Description of the certification goes here. This section will showcase your credentials in a professional manner.
                             </p>
                             <div className="d-flex justify-content-center">
-                                <a href="#" className="btn btn-primary mx-2">View Details</a>
+                                <a href="https://www.parchment.com/u/award/dc57614ec96bf3333319ac485dd6315c" className="btn btn-primary mx-2">View Details</a>
                                 <a href="#" className="btn btn-secondary mx-2">Download Certificate</a>
                             </div>
                         </div>
@@ -61,9 +62,7 @@ const Certifications = () => {
                     </Col>
                     <Col xs={12} md={6} className="d-flex align-items-center justify-content-center">
                         <div className="certification-placeholder">
-                            <img src={uxCert} alt="" />
-                            {/* <FontAwesomeIcon icon={faCertificate} size="4x" /> */}
-                            {/* <p className="placeholder-text">Certification Placeholder</p> */}
+                            <img src={uxCert} alt="ux-cert" />
                         </div>
                     </Col>
                 </Row>
@@ -71,9 +70,8 @@ const Certifications = () => {
 
                 <Row className="certification-item">
                     <Col xs={12} md={6} className="d-flex align-items-center justify-content-center">
-                        <div className="certification-placeholder">
-                            <FontAwesomeIcon icon={faCertificate} size="4x" />
-                            <p className="placeholder-text">Certification Placeholder</p>
+                    <div className="certification-placeholder">
+                            <img src={freeCodeCampCert} alt="freeCodecamp-cert" />
                         </div>
                     </Col>
                     <Col xs={12} md={6} className="d-flex align-items-center">
@@ -83,7 +81,7 @@ const Certifications = () => {
                                 Description of the certification goes here. This section will showcase your credentials in a professional manner.
                             </p>
                             <div className="d-flex justify-content-center">
-                                <a href="#" className="btn btn-primary mx-2">View Details</a>
+                                <a href="https://www.freecodecamp.org/certification/fcc9c43abde-5cf0-478f-8359-c75e3bc69031/responsive-web-design" className="btn btn-primary mx-2">View Details</a>
                                 <a href="#" className="btn btn-secondary mx-2">Download Certificate</a>
                             </div>
                         </div>
