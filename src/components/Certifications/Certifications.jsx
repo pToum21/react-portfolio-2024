@@ -8,12 +8,12 @@ const Certifications = () => {
     return (
         <div id="certifications">
             {/* Overlay for "Coming Soon" */}
-            <div className="overlay">
+            {/* <div className="overlay">
                 <div>
                     <h1>Under Construction</h1>
                     <p>Our certifications page is currently being updated. Please check back later!</p>
                 </div>
-            </div>
+            </div> */}
             
             <h1 className="certifications-title">Certifications</h1>
             <h2 className="certifications-header">Coming Soon!</h2>
