@@ -22,7 +22,6 @@ const Certifications = () => {
             </div> */}
             
             <h1 className="certifications-title">Certifications</h1>
-            <h2 className="certifications-header">Coming Soon!</h2>
             <Container style={{ marginTop: '50px' }}>
 
 
