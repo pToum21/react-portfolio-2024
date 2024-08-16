@@ -1,33 +1,20 @@
 import React from 'react';
 import { Container, Row, Col } from 'react-bootstrap';
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faCertificate } from '@fortawesome/free-solid-svg-icons';
-import './certifications.css'; 
+import './certifications.css';
 
 // Import images for certifications
 import uxCert from '../../assets/uxcert.png'
 import uclaCert from '../../assets/uclacert.png'
 import freeCodeCampCert from '../../assets/freecodecampcert.png'
 
-
 const Certifications = () => {
     return (
         <div id="certifications">
-            {/* Overlay for "Coming Soon" */}
-            {/* <div className="overlay">
-                <div>
-                    <h1>Under Construction</h1>
-                    <p>Our certifications page is currently being updated. Please check back later!</p>
-                </div>
-            </div> */}
-            
             <h1 className="certifications-title">Certifications</h1>
             <Container style={{ marginTop: '50px' }}>
-
-
                 <Row className="certification-item">
                     <Col xs={12} md={6} className="d-flex align-items-center justify-content-center">
-                    <div className="certification-placeholder">
+                        <div className="certification-placeholder">
                             <img src={uclaCert} alt="ucla-cert" />
                         </div>
                     </Col>
@@ -39,12 +26,11 @@ const Certifications = () => {
                             </p>
                             <div className="d-flex justify-content-center">
                                 <a href="https://www.parchment.com/u/award/dc57614ec96bf3333319ac485dd6315c" className="btn btn-primary mx-2">View Details</a>
-                                <a href="#" className="btn btn-secondary mx-2">Download Certificate</a>
+                                <a href="/ucla-web-dev-cert.pdf" download className="btn btn-secondary mx-2">Download Certificate</a>
                             </div>
                         </div>
                     </Col>
                 </Row>
-
 
                 <Row className="certification-item">
                     <Col xs={12} md={6} className="d-flex align-items-center">
@@ -55,7 +41,7 @@ const Certifications = () => {
                             </p>
                             <div className="d-flex justify-content-center">
                                 <a href="https://www.coursera.org/account/accomplishments/specialization/JK3T3NA4BRM7" className="btn btn-primary mx-2">View Details</a>
-                                <a href="#" className="btn btn-secondary mx-2">Download Certificate</a>
+                                <a href="/ux-design-cert.pdf" download className="btn btn-secondary mx-2">Download Certificate</a>
                             </div>
                         </div>
                     </Col>
@@ -66,10 +52,9 @@ const Certifications = () => {
                     </Col>
                 </Row>
 
-
                 <Row className="certification-item">
                     <Col xs={12} md={6} className="d-flex align-items-center justify-content-center">
-                    <div className="certification-placeholder">
+                        <div className="certification-placeholder">
                             <img src={freeCodeCampCert} alt="freeCodecamp-cert" />
                         </div>
                     </Col>
@@ -81,13 +66,11 @@ const Certifications = () => {
                             </p>
                             <div className="d-flex justify-content-center">
                                 <a href="https://www.freecodecamp.org/certification/fcc9c43abde-5cf0-478f-8359-c75e3bc69031/responsive-web-design" className="btn btn-primary mx-2">View Details</a>
-                                <a href="#" className="btn btn-secondary mx-2">Download Certificate</a>
+                                <a href="/freecodecamp-web-design-cert.pdf" download className="btn btn-secondary mx-2">Download Certificate</a>
                             </div>
                         </div>
                     </Col>
                 </Row>
-
-
             </Container>
         </div>
     );
