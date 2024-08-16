@@ -45,6 +45,22 @@ function Header() {
                     <HashLink className="nav-bar-links" to="/#contact-me" onClick={handleLinkClick}>
                         Contact
                     </HashLink>
+                    <HashLink 
+                    className="nav-bar-links"
+                    as={LinkRouter}
+                    to='/design-portfolio'
+                    onClick={handleLinkClick}
+                    >
+                        Designs
+                    </HashLink>
+                    <HashLink 
+                    className="nav-bar-links"
+                    as={LinkRouter}
+                    to='/certifications'
+                    onClick={handleLinkClick}
+                    >
+                        Certifications
+                    </HashLink>
                 </Nav>
                 {/* Link to the /resume route */}
                 <Button
