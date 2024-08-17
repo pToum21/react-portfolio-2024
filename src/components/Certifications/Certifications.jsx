@@ -62,7 +62,7 @@ const Certifications = () => {
                         <div className="text-center">
                             <h3 className="certification-title">Responsive Web Design (FreeCodeCamp)</h3>
                             <p className="certification-description">
-                                Description of the certification goes here. This section will showcase your credentials in a professional manner.
+                            This certification covers the basics of web development and responsive web design, including HTML5, CSS3, JavaScript, Bootstrap, and jQuery. It also includes a series of projects to test your skills and knowledge in these areas. The certification is awarded upon completion of the final project, a responsive web design project that meets the specified requirements.
                             </p>
                             <div className="d-flex justify-content-center">
                                 <a href="https://www.freecodecamp.org/certification/fcc9c43abde-5cf0-478f-8359-c75e3bc69031/responsive-web-design" className="btn btn-primary mx-2">View Details</a>
