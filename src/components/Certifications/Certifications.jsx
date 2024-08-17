@@ -22,7 +22,7 @@ const Certifications = () => {
                         <div className="text-center">
                             <h3 className="certification-title">Full-Stack Web Development (UCLA)</h3>
                             <p className="certification-description">
-                                Description of the certification goes here. This section will showcase your credentials in a professional manner.
+                               This certification is a part of the UCLA Extension Coding Bootcamp. It covers the MERN stack and other web development technologies.
                             </p>
                             <div className="d-flex justify-content-center">
                                 <a href="https://www.parchment.com/u/award/dc57614ec96bf3333319ac485dd6315c" className="btn btn-primary mx-2">View Details</a>
