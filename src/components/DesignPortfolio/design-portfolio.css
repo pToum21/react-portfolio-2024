@@ -1,7 +1,10 @@
 .design-portfolio-container {
-    padding: 60px 20px;
+    height: 100vh;
+    padding: 100px 20px 20px;
     background: linear-gradient(135deg, #2E2E2E 0%, #7A7A7A 100%);
     color: #FFF;
+    display: flex;
+    flex-direction: column;
 }
 
 .design-portfolio-title {
@@ -16,9 +19,11 @@
 
 .design-portfolio-collage {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
-    gap: 15px;
+    grid-template-columns: repeat(4, 1fr); /* Four projects per row */
+    gap: 40px; /* Equal spacing between rows and columns */
+    flex-grow: 1;
     padding: 0 10px;
+    overflow-y: auto;
 }
 
 .design-portfolio-project-item {
@@ -29,19 +34,12 @@
     cursor: pointer;
 }
 
-.design-portfolio-project-item:hover {
-    transform: scale(1.05);
-}
-
 .design-portfolio-image {
     width: 100%;
-    height: auto;
+    height: 100%;
+    object-fit: cover; /* Ensures all images are the same size and cover the container */
     display: block;
     transition: transform 0.3s ease;
-}
-
-.design-portfolio-project-item:hover .design-portfolio-image {
-    transform: scale(1.1);
 }
 
 .design-portfolio-project-overlay {
@@ -50,7 +48,7 @@
     left: 0;
     width: 100%;
     height: 100%;
-    background: rgba(0, 0, 0, 0.6);
+    background: rgba(0, 0, 0, 0.6); /* Slightly transparent overlay */
     display: flex;
     justify-content: center;
     align-items: center;
@@ -70,9 +68,21 @@
     padding: 10px;
 }
 
+@media (max-width: 1200px) {
+    .design-portfolio-collage {
+        grid-template-columns: repeat(3, 1fr); /* Three projects per row for medium screens */
+    }
+}
+
+@media (max-width: 992px) {
+    .design-portfolio-collage {
+        grid-template-columns: repeat(2, 1fr); /* Two projects per row for smaller screens */
+    }
+}
+
 @media (max-width: 767px) {
     .design-portfolio-collage {
-        grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+        grid-template-columns: repeat(1, 1fr); /* One project per row for very small screens */
     }
 
     .design-portfolio-project-title {

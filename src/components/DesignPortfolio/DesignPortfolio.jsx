@@ -7,7 +7,10 @@ const DesignPortfolio = () => {
         { id: 2, name: 'Project Two', imageUrl: 'https://via.placeholder.com/300x400', link: '/project-two' },
         { id: 3, name: 'Project Three', imageUrl: 'https://via.placeholder.com/400x300', link: '/project-three' },
         { id: 4, name: 'Project Four', imageUrl: 'https://via.placeholder.com/200x300', link: '/project-four' },
-        // Add more projects as needed with placeholder images
+        { id: 5, name: 'Project Five', imageUrl: 'https://via.placeholder.com/300x200', link: '/project-five' },
+        { id: 6, name: 'Project Six', imageUrl: 'https://via.placeholder.com/350x350', link: '/project-six' },
+        { id: 7, name: 'Project Seven', imageUrl: 'https://via.placeholder.com/300x400', link: '/project-seven' },
+        { id: 8, name: 'Project Eight', imageUrl: 'https://via.placeholder.com/250x250', link: '/project-eight' },
     ];
 
     return (
