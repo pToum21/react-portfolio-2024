@@ -1,23 +1,34 @@
 import React from 'react';
 import './design-portfolio.css';
 
+// Import local images
+import cutePortals from '../../assets/design-projects/cute-portals/Monster Portals - Google Chrome 8_18_2024 4_14_56 PM.png';
+// import projectTwo from './assets/images/project-two.jpg';
+// import projectThree from './assets/images/project-three.jpg';
+// import projectFour from './assets/images/project-four.jpg';
+// import projectFive from './assets/images/project-five.jpg';
+// import projectSix from './assets/images/project-six.jpg';
+// import projectSeven from './assets/images/project-seven.jpg';
+// import projectEight from './assets/images/project-eight.jpg';
+
 const DesignPortfolio = () => {
     const projects = [
-        { id: 1, name: 'Project One', imageUrl: 'https://via.placeholder.com/300x300', link: '/project-one' },
-        { id: 2, name: 'Project Two', imageUrl: 'https://via.placeholder.com/300x400', link: '/project-two' },
-        { id: 3, name: 'Project Three', imageUrl: 'https://via.placeholder.com/400x300', link: '/project-three' },
-        { id: 4, name: 'Project Four', imageUrl: 'https://via.placeholder.com/200x300', link: '/project-four' },
-        { id: 5, name: 'Project Five', imageUrl: 'https://via.placeholder.com/300x200', link: '/project-five' },
-        { id: 6, name: 'Project Six', imageUrl: 'https://via.placeholder.com/350x350', link: '/project-six' },
-        { id: 7, name: 'Project Seven', imageUrl: 'https://via.placeholder.com/300x400', link: '/project-seven' },
-        { id: 8, name: 'Project Eight', imageUrl: 'https://via.placeholder.com/250x250', link: '/project-eight' },
+        { id: 1, name: 'Cute-Portals', imageUrl: cutePortals, link: '/project-one' },
+        // { id: 2, name: 'Project Two', imageUrl: projectTwo, link: '/project-two' },
+        // { id: 3, name: 'Project Three', imageUrl: projectThree, link: '/project-three' },
+        // { id: 4, name: 'Project Four', imageUrl: projectFour, link: '/project-four' },
+        // { id: 5, name: 'Project Five', imageUrl: projectFive, link: '/project-five' },
+        // { id: 6, name: 'Project Six', imageUrl: projectSix, link: '/project-six' },
+        // { id: 7, name: 'Project Seven', imageUrl: projectSeven, link: '/project-seven' },
+        // { id: 8, name: 'Project Eight', imageUrl: projectEight, link: '/project-eight' },
     ];
 
     return (
         <div className="design-portfolio-container">
             <h1 className="design-portfolio-title">Design Portfolio</h1>
-            <h2 className='design-portfolio-text'>Welcome to my Art Gallery! This collection showcases a mix of my design work and 3D artwork, many of which have been integrated into websites and applications. Feel free to click on any of the images to explore each piece in detail and gain a deeper understanding of my creative process and implementation.
-                This version is concise and informative, guiding viewers to interact with the images for more information. </h2>
+            <h2 className='design-portfolio-text'>
+                Welcome to my Art Gallery! This collection showcases a mix of my design work and 3D artwork, many of which have been integrated into websites and applications. Feel free to click on any of the images to explore each piece in detail and gain a deeper understanding of my creative process and implementation.
+            </h2>
             <div className="design-portfolio-collage">
                 {projects.map((project) => (
                     <a href={project.link} key={project.id} className="design-portfolio-project-item">
