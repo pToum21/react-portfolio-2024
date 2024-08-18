@@ -1,24 +1,24 @@
 import React from 'react';
-import './design-portfolio.css'; // Import the CSS file
+import './design-portfolio.css';
 
 const DesignPortfolio = () => {
-    // Sample data for your projects
     const projects = [
-        { id: 1, name: 'Project One', imageUrl: 'path-to-image1.jpg', link: '/project-one' },
-        { id: 2, name: 'Project Two', imageUrl: 'path-to-image2.jpg', link: '/project-two' },
-        { id: 3, name: 'Project Three', imageUrl: 'path-to-image3.jpg', link: '/project-three' },
-        // Add more projects as needed
+        { id: 1, name: 'Project One', imageUrl: 'https://via.placeholder.com/300x300', link: '/project-one' },
+        { id: 2, name: 'Project Two', imageUrl: 'https://via.placeholder.com/300x400', link: '/project-two' },
+        { id: 3, name: 'Project Three', imageUrl: 'https://via.placeholder.com/400x300', link: '/project-three' },
+        { id: 4, name: 'Project Four', imageUrl: 'https://via.placeholder.com/200x300', link: '/project-four' },
+        // Add more projects as needed with placeholder images
     ];
 
     return (
         <div className="design-portfolio-container">
             <h1 className="design-portfolio-title">Design Portfolio</h1>
-            <div className="design-portfolio-gallery-grid">
+            <div className="design-portfolio-collage">
                 {projects.map((project) => (
                     <a href={project.link} key={project.id} className="design-portfolio-project-item">
-                        <img src={project.imageUrl} alt={project.name} />
+                        <img src={project.imageUrl} alt={project.name} className="design-portfolio-image" />
                         <div className="design-portfolio-project-overlay">
-                            <h2>{project.name}</h2>
+                            <h2 className="design-portfolio-project-title">{project.name}</h2>
                         </div>
                     </a>
                 ))}
