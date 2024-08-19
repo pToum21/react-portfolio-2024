@@ -19,8 +19,8 @@
 
 .design-portfolio-collage {
     display: grid;
-    grid-template-columns: repeat(4, 1fr); /* Four projects per row */
-    gap: 40px; /* Equal spacing between rows and columns */
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); /* Adjust the min width of the grid items */
+    grid-gap: 20px; /* Consistent spacing */
     flex-grow: 1;
     padding: 0 10px;
     overflow-y: auto;
@@ -36,10 +36,10 @@
     aspect-ratio: 1 / 1; /* Ensures the container is square */
 }
 
-.design-portfolio-image {
+.design-portfolio-image, .design-portfolio-video {
     width: 100%;
     height: 100%;
-    object-fit: cover; /* Ensures image covers the container */
+    object-fit: cover;
     display: block;
     transition: transform 0.3s ease;
 }
@@ -50,7 +50,7 @@
     left: 0;
     width: 100%;
     height: 100%;
-    background: rgba(0, 0, 0, 0.6); /* Slightly transparent overlay */
+    background: rgba(0, 0, 0, 0.6);
     display: flex;
     justify-content: center;
     align-items: center;
@@ -81,19 +81,19 @@
 
 @media (max-width: 1200px) {
     .design-portfolio-collage {
-        grid-template-columns: repeat(3, 1fr); /* Three projects per row for medium screens */
+        grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); /* Adjust the min width for medium screens */
     }
 }
 
 @media (max-width: 992px) {
     .design-portfolio-collage {
-        grid-template-columns: repeat(2, 1fr); /* Two projects per row for smaller screens */
+        grid-template-columns: repeat(auto-fit, minmax(180px, 1fr)); /* Adjust the min width for smaller screens */
     }
 }
 
 @media (max-width: 767px) {
     .design-portfolio-collage {
-        grid-template-columns: repeat(1, 1fr); /* One project per row for very small screens */
+        grid-template-columns: repeat(auto-fit, minmax(150px, 1fr)); /* Adjust the min width for very small screens */
     }
 
     .design-portfolio-project-title {
