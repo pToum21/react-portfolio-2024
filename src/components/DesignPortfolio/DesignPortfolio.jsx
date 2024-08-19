@@ -4,7 +4,7 @@ import './design-portfolio.css';
 // Import local images
 import cutePortals from '../../assets/design-projects/cute-portals/Monster Portals - Google Chrome 8_18_2024 4_14_56 PM.png';
 import blickyIo from '../../assets/design-projects/blicky.io/blik.png';
-// import projectThree from './assets/images/project-three.jpg';
+import liber from '../../assets/design-projects/liber/lib.png';
 // import projectFour from './assets/images/project-four.jpg';
 // import projectFive from './assets/images/project-five.jpg';
 // import projectSix from './assets/images/project-six.jpg';
@@ -15,7 +15,7 @@ const DesignPortfolio = () => {
     const projects = [
         { id: 1, name: 'Cute Portals', imageUrl: cutePortals, link: '/project-one' },
         { id: 2, name: 'Blicky.io', imageUrl: blickyIo, link: '/project-two' },
-        // { id: 3, name: 'Project Three', imageUrl: projectThree, link: '/project-three' },
+        { id: 3, name: 'Liber 3D', imageUrl: liber, link: '/project-three' },
         // { id: 4, name: 'Project Four', imageUrl: projectFour, link: '/project-four' },
         // { id: 5, name: 'Project Five', imageUrl: projectFive, link: '/project-five' },
         // { id: 6, name: 'Project Six', imageUrl: projectSix, link: '/project-six' },
