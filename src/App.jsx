@@ -13,6 +13,7 @@ import TechStackCarousel from './components/Techstack/Techstack.jsx';
 import Bubbles from './components/Bubbles/Bubbles.jsx';
 import DesignPortfolio from './components/DesignPortfolio/DesignPortfolio.jsx';
 import Certifications from './components/Certifications/Certifications.jsx';
+import CutePortals from './components/DesignPortfolio/CutePortals/CutePortals.jsx'
 
 // all components in application used inside of react-router dom
 function App() {
@@ -41,6 +42,10 @@ function App() {
         />
         <Route path="/certifications" element={
           <Certifications />
+        }
+        />
+        <Route path="/cute-portals" element={
+          <CutePortals/>
         }
         />
       </Routes>

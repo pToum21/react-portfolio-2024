@@ -13,7 +13,7 @@ import teddyHippo from '../../assets/design-projects/hippo/teddy-hippo-1.png'
 
 const DesignPortfolio = () => {
     const projects = [
-        { id: 1, name: 'Cute Portals', imageUrl: cutePortals, link: '/project-one', type: 'image' },
+        { id: 1, name: 'Cute Portals', imageUrl: cutePortals, link: '/cute-portals', type: 'image' },
         { id: 2, name: 'Blicky.io', imageUrl: blickyIo, link: '/project-two', type: 'image' },
         { id: 3, name: 'Liber 3D', imageUrl: liber, link: '/project-three', type: 'image' },
         { id: 4, name: '3D Face Scan', imageUrl: Certain, link: '/project-four', type: 'image' },
