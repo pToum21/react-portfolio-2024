@@ -7,6 +7,7 @@ const CutePortals = () => {
             <h1>Cute Portals</h1>
             <h1>Cute Portals</h1>
             <h1>Cute Portals</h1>
+            <h1>Cute Portals</h1>
         </div>
     );
 };
