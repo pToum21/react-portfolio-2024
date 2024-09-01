@@ -24,9 +24,7 @@ const DesignPortfolio = () => {
 
     return (
         <div className="design-portfolio-container">
-
             <h1 className="design-portfolio-title">Design Portfolio</h1>
-
             <h2 className="design-portfolio-text">
                 Welcome to my Art Gallery! This collection showcases a mix of my design work and 3D artwork, many of which have been integrated into websites and applications. Feel free to click on any of the images to explore each piece in detail and gain a deeper understanding of my creative process and implementation.
             </h2>
