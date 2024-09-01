@@ -1,9 +1,7 @@
 const CutePortals = () => {
     return (
-        <div>
-            
+        <div> 
             <h1>Cute Portals</h1>
-
         </div>
     );
 };
