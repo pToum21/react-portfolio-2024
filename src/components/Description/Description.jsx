@@ -66,15 +66,15 @@ function Description() {
                         <h4 className='about-me-title'>About Me</h4>
                         {/* about me description header title */}
                         <p className="about-me-text">
-                            👋 Hi, I’m Peyton Touma, a Full-Stack Web Developer based in Los Angeles with roots in Olney, Maryland. I’m currently on the lookout for new opportunities, but in the meantime, I’m working part-time at Code Ninjas as a Code Instructor.
+                        👋 Hi, I’m Peyton Touma, a Full-Stack Web Developer based in Los Angeles with roots in Olney, Maryland. I'm currently exploring new opportunities while working part-time as a Software Engineer at Impact Capitol DC, where I am developing the front end and UI for ALFReD AI, an advanced tool designed for the real estate industry.
 
-                            I recently completed the UCLA Full-Stack Web Development Bootcamp, where I gained expertise in JavaScript, HTML, CSS, and React for dynamic and engaging web interfaces. My backend skills include Node.js, Express.js, Python, and Flask, and I’m adept at managing databases with MySQL, SQLAlchemy, MongoDB, Sequelize, and Mongoose.
+I recently completed the UCLA Full-Stack Web Development Bootcamp, where I honed my skills in JavaScript, HTML, CSS, and React to create dynamic and engaging web interfaces. My backend expertise includes Node.js, Express.js, Python, and Flask, with experience in managing databases using MySQL, SQLAlchemy, MongoDB, Sequelize, and Mongoose.
 
-                            My background in graphic design is well-supported by tools such as Blender, Photoshop, Illustrator, and Cinema 4D. I’m also skilled in front-end frameworks like Tailwind, Bootstrap, and Bulma, and I use Webpack for optimized asset bundling. Additionally, I work with the Stripe API for e-commerce solutions and rely on GitHub for version control and efficient code management.
+In addition to my development skills, my background in graphic design is supported by tools like Blender, Photoshop, Illustrator, and Cinema 4D. I’m proficient in front-end frameworks such as Tailwind, Bootstrap, and Bulma, and I use Webpack for optimized asset bundling. I also work with the Stripe API for e-commerce solutions and rely on GitHub for version control and efficient code management.
 
-                            At Code Ninjas, I teach students HTML, CSS, and JavaScript, covering both foundational and advanced topics. I also lead a 3D design course using Cinema 4D and Blender, mentoring students through the creation of detailed 3D models and helping them develop their projects.
+At Impact Capitol DC, I focus on developing intuitive and efficient user interfaces for ALFReD AI, enhancing its functionality for real estate professionals.
 
-                            If you’re looking for a dedicated and versatile web developer with a passion for teaching and a solid technical background, I’d love to connect!
+If you’re seeking a dedicated and versatile web developer with a passion for innovation and a robust technical background, I’d love to connect!
                         </p>
                     </Col>
                 </Row>
