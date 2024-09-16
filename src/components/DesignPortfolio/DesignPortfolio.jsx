@@ -21,7 +21,7 @@ const DesignPortfolio = () => {
         { id: 6, name: 'Chubby Hello Kitty', imageUrl: helloKitty, link: '/project-six', type: 'image' },
         { id: 7, name: 'Hippo Plushy', imageUrl: teddyHippo, link: '/project-seven', type: 'image' },
     ];
-
+    
     return (
         <div className="design-portfolio-container">
             <h1 className="design-portfolio-title">Design Portfolio</h1>
