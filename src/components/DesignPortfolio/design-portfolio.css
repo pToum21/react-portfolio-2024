@@ -5,6 +5,8 @@
     color: #FFF;
     display: flex;
     flex-direction: column;
+    box-sizing: border-box;
+    overflow: hidden; /* Prevents scrollbars */
 }
 
 .design-portfolio-title {
@@ -20,12 +22,12 @@
 .design-portfolio-collage {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-    grid-auto-rows: minmax(150px, auto);
-    /* Consistent row height */
-    grid-gap: 20px;
+    grid-auto-rows: minmax(250px, 1fr); /* Consistent square ratio for grid items */
+    gap: 20px; /* Adds consistent space between all grid items */
     flex-grow: 1;
-    padding: 0 10px;
-    overflow-y: auto;
+    padding: 0 20px;
+    overflow-y: auto; /* Allows scrolling if necessary */
+    box-sizing: border-box;
 }
 
 .design-portfolio-project-item {
@@ -35,7 +37,7 @@
     transition: transform 0.3s ease;
     cursor: pointer;
     width: 100%;
-    aspect-ratio: 1 / 1;
+    height: auto; /* Auto height to maintain aspect ratio */
 }
 
 .design-portfolio-image,
@@ -81,4 +83,3 @@
     line-height: 140%;
     margin-bottom: 5%;
 }
-
