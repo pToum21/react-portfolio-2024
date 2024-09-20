@@ -3,7 +3,7 @@ import { Document, Page } from 'react-pdf';
 import './resume.css';
 import Button from 'react-bootstrap/Button';
 import { pdfjs } from 'react-pdf';
-import resumePdf from '../../assets/Peyton Touma Resume_8.7.24_1.pdf';
+import resumePdf from '../../assets/Peyton Touma Resume_9.13.24.pdf';
 
 function Resume() {
     const [numPages, setNumPages] = useState();
