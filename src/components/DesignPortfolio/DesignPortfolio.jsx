@@ -17,7 +17,6 @@ const DesignPortfolio = () => {
         { id: 2, name: 'Blicky.io', imageUrl: blickyIo, link: '/project-two', type: 'image' },
         { id: 3, name: 'Liber 3D', imageUrl: liber, link: '/project-three', type: 'image' },
         { id: 4, name: '3D Face Scan', imageUrl: Certain, link: '/project-four', type: 'image' },
-        
         { id: 5, name: 'Guts Sword', videoUrl: gutsSword, link: '/project-five', type: 'video' },
         { id: 6, name: 'Chubby Hello Kitty', imageUrl: helloKitty, link: '/project-six', type: 'image' },
         { id: 7, name: 'Hippo Plushy', imageUrl: teddyHippo, link: '/project-seven', type: 'image' },
