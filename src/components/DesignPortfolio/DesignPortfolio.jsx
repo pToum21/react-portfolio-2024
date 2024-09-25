@@ -28,7 +28,6 @@ const DesignPortfolio = () => {
             <h2 className="design-portfolio-text">
                 Welcome to my Art Gallery! This collection showcases a mix of my design work and 3D artwork, many of which have been integrated into websites and applications. Feel free to explore the gallery and check out the diffrent works of art.
             </h2>
-
             <div className="design-portfolio-collage">
                 {projects.map((project) => (
                     <a href={project.link} key={project.id} className="design-portfolio-project-item">
