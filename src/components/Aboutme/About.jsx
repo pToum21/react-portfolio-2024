@@ -64,7 +64,7 @@ function About() {
                 <h1 className='first-name'>Peyton Touma</h1>
                 <p className='personal-title'>Full-Stack Web Developer and Software Engineer</p>
                 <p className='about-me'>
-                    I'm a passionate full-stack web developer based in Los Angeles, California. 📍
+                    I'm a passionate full-stack web developer based in Washington DC, District of Columbia. 📍
                 </p>
 
                 <div className="mt-3 social-links-container">
