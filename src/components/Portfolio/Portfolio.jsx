@@ -9,6 +9,7 @@ import liberThumbNail from '../../assets/liberThumbnail.png'
 import cryptograbber from '../../assets/CryptoGrabberThumbNail.png'
 import blicky from '../../assets/blicky-thumbnail.png'
 import GDATMs from '../../assets/gd-Thumbnail.png'
+import ALFReD from '../../assets/Thumb ALFReD.png'
 
 
 const Portfolio = () => {
@@ -19,8 +20,35 @@ const Portfolio = () => {
             <h2 className='port-header'>Each Project is a unique piece of Web Development <span className='emoji'>🧩</span></h2>
             {/* container holding all projects and descs */}
             <Container style={{ marginTop: '50px' }}>
+
                 <Row className='each-proj'>
-                <Col xs={12} md={6} className="d-flex align-items-center justify-content-center">
+                    <Col xs={12} md={6} className="d-flex align-items-center">
+                        <div className="text-center">
+                            {/* project title */}
+                            <h3 className='proj-title'>ALFReD <span className='emoji'>🏡</span></h3>
+                            <p className='proj-text'>
+                            ALFReD is a cutting-edge real estate AI assistant designed for enterprise companies, delivering the most current and precise data directly to users. Developed by Impact Capitol DC, ALFReD enhances decision-making with clean, AI-driven insights. I am part of the development team, focusing primarily on front-end tasks and setting up the PostgreSQL database to store user data and preferences, ensuring a seamless and personalized user experience.
+                            </p>
+                            {/* project stack */}
+                            <div style={{ fontSize: '0.8rem', color: 'white', maxWidth: '75%', margin: '0 auto' }}>
+                                <h5 className='used-stack'>Stack Used:</h5>
+                                TypeScript, React, Next.js, Pinecone, PostgreSQL, AWS, Prisma, Vercel, Upstash, Redis, Python, JavaScript, Node.js
+                            </div>
+                        </div>
+                    </Col>
+                    <Col xs={12} md={6} className="d-flex align-items-center justify-content-center">
+                        {/* project image */}
+                        <img
+                            src={ALFReD}
+                            alt="GD ATMs project"
+                            className="rounded-image"
+                            style={{ width: '100%' }}
+                        />
+                    </Col>
+                </Row>
+
+                <Row className='each-proj'>
+                    <Col xs={12} md={6} className="d-flex align-items-center justify-content-center">
                         <img
                             src={liberThumbNail}
                             alt="liber reader project"
@@ -52,7 +80,7 @@ const Portfolio = () => {
                             </div>
                         </div>
                     </Col>
-                    
+
                 </Row>
                 {/* project 1 */}
                 <Row className='each-proj'>
