@@ -1,80 +1,127 @@
-import React, { useState } from 'react';
-import Navbar from 'react-bootstrap/Navbar';
-import Nav from 'react-bootstrap/Nav';
-import Button from 'react-bootstrap/Button';
-import { Link as LinkRouter } from 'react-router-dom';
+import { useState, useEffect, useRef } from 'react';
+import { Link as RouterLink, useLocation } from 'react-router-dom';
 import { HashLink } from 'react-router-hash-link';
-
-import './header.css';
-
+import { gsap } from 'gsap';
 function Header() {
-    // state to track whether the navbar should be collapsed
-    const [expanded, setExpanded] = useState(false);
+  const [scrolled, setScrolled] = useState(false);
+  const [menuOpen, setMenuOpen] = useState(false);
+  const navRef = useRef(null);
+  const location = useLocation();
 
-    // handler for when a link is clicked
-    const handleLinkClick = () => {
-        setExpanded(false); // collapse the navbar
-    };
+  useEffect(() => {
+    const onScroll = () => setScrolled(window.scrollY > 40);
+    window.addEventListener('scroll', onScroll);
+    return () => window.removeEventListener('scroll', onScroll);
+  }, []);
 
-    // renders the header component which is a bootstrap nav bar
-    return (
-        <Navbar
-            bg="dark"
-            variant="dark"
-            expand="lg"
-            className="custom-navbar fixed-top py-3"
-            expanded={expanded} // pass the expanded state to the Navbar
-        >
-            <Navbar.Brand id="logo-name">Peyton Touma |</Navbar.Brand>
-            <Navbar.Toggle
-                aria-controls="basic-navbar-nav"
-                onClick={() => setExpanded(!expanded)} // toggle the expanded state on click
-            />
-            <Navbar.Collapse id="navbarNav">
-                {/* links that in time will render different react components */}
-                <Nav className="me-auto nav-bar">
-                    <HashLink className="nav-bar-links" to="/#about-me" onClick={handleLinkClick}>
-                        Home
-                    </HashLink>
-                    <HashLink className="nav-bar-links" to="/#description" onClick={handleLinkClick}>
-                        About
-                    </HashLink>
-                    <HashLink className="nav-bar-links" to="/#portfolio" onClick={handleLinkClick}>
-                        Portfolio
-                    </HashLink>
-                    <HashLink className="nav-bar-links" to="/#contact-me" onClick={handleLinkClick}>
-                        Contact
-                    </HashLink>
-                    <HashLink 
-                    className="nav-bar-links"
-                    as={LinkRouter}
-                    to='/design-portfolio'
-                    onClick={handleLinkClick}
-                    >
-                        Designs
-                    </HashLink>
-                    <HashLink 
-                    className="nav-bar-links"
-                    as={LinkRouter}
-                    to='/certifications'
-                    onClick={handleLinkClick}
-                    >
-                        Certifications
-                    </HashLink>
-                </Nav>
-                {/* Link to the /resume route */}
-                <Button
-                    as={LinkRouter}
-                    to="/resume"
-                    variant="outline-light"
-                    className="resume-button ml-auto"
-                    onClick={handleLinkClick} // manually call handleLinkClick when Resume link is clicked
-                >
-                    Resume
-                </Button>
-            </Navbar.Collapse>
-        </Navbar>
+  useEffect(() => {
+    gsap.fromTo(
+      navRef.current,
+      { y: -20, opacity: 0 },
+      { y: 0, opacity: 1, duration: 0.8, ease: 'power3.out', delay: 0.2 }
     );
+  }, []);
+
+  useEffect(() => { setMenuOpen(false); }, [location]);
+
+  const isHome = location.pathname === '/';
+
+  const navLinkClass = "font-mono text-xs tracking-widest text-muted uppercase hover:text-text transition-colors no-underline";
+
+  return (
+    <header
+      ref={navRef}
+      className="fixed top-0 left-0 right-0 z-50 transition-all duration-300"
+      style={{
+        backgroundColor: scrolled ? `rgba(var(--color-bg-rgb), 0.92)` : 'transparent',
+        backdropFilter: scrolled ? 'blur(12px)' : 'none',
+        borderBottom: scrolled ? '1px solid var(--color-border)' : 'none',
+      }}
+    >
+      <nav className="flex items-center justify-between px-6 md:px-12 py-5">
+        {/* Logo */}
+        {isHome ? (
+          <HashLink to="/#top" className="font-display font-bold text-sm tracking-widest text-text uppercase no-underline">
+            Peyton Touma
+          </HashLink>
+        ) : (
+          <RouterLink to="/" className="font-display font-bold text-sm tracking-widest text-text uppercase no-underline">
+            Peyton Touma
+          </RouterLink>
+        )}
+
+        {/* Desktop nav */}
+        <div className="hidden md:flex items-center gap-8">
+          {isHome ? (
+            <>
+              <HashLink to="/#about" className={navLinkClass}>About</HashLink>
+              <HashLink to="/#experience" className={navLinkClass}>Experience</HashLink>
+              <HashLink to="/#portfolio" className={navLinkClass}>Projects</HashLink>
+              <HashLink to="/#skills" className={navLinkClass}>Skills</HashLink>
+              <HashLink to="/#contact" className={navLinkClass}>Contact</HashLink>
+            </>
+          ) : (
+            <RouterLink to="/" className={navLinkClass}>Home</RouterLink>
+          )}
+          <RouterLink to="/design-portfolio" className={navLinkClass}>Designs</RouterLink>
+          <RouterLink to="/certifications" className={navLinkClass}>Certs</RouterLink>
+
+          <RouterLink
+            to="/resume"
+            className="font-mono text-xs tracking-widest uppercase px-4 py-2 no-underline transition-all duration-300"
+            style={{
+              border: '1px solid var(--color-border)',
+              color: 'var(--color-text)',
+            }}
+            onMouseEnter={e => { e.currentTarget.style.borderColor = 'var(--color-accent)'; e.currentTarget.style.color = 'var(--color-accent)'; }}
+            onMouseLeave={e => { e.currentTarget.style.borderColor = 'var(--color-border)'; e.currentTarget.style.color = 'var(--color-text)'; }}
+          >
+            Resume
+          </RouterLink>
+        </div>
+
+        {/* Mobile: hamburger */}
+        <div className="md:hidden flex items-center gap-4">
+          <button
+            className="flex flex-col gap-[5px] p-1"
+            onClick={() => setMenuOpen(!menuOpen)}
+            aria-label="Toggle menu"
+            style={{ background: 'none', border: 'none' }}
+          >
+            <span className={`block h-px w-6 transition-all duration-300 ${menuOpen ? 'rotate-45 translate-y-[6px]' : ''}`} style={{ backgroundColor: 'var(--color-text)' }} />
+            <span className={`block h-px w-6 transition-all duration-300 ${menuOpen ? 'opacity-0' : ''}`} style={{ backgroundColor: 'var(--color-text)' }} />
+            <span className={`block h-px w-6 transition-all duration-300 ${menuOpen ? '-rotate-45 -translate-y-[6px]' : ''}`} style={{ backgroundColor: 'var(--color-text)' }} />
+          </button>
+        </div>
+      </nav>
+
+      {/* Mobile menu */}
+      <div
+        className={`md:hidden transition-all duration-300 overflow-hidden ${menuOpen ? 'max-h-96' : 'max-h-0'}`}
+        style={{
+          backgroundColor: `rgba(var(--color-bg-rgb), 0.98)`,
+          borderTop: menuOpen ? '1px solid var(--color-border)' : 'none',
+        }}
+      >
+        <div className="flex flex-col px-6 py-6 gap-6">
+          {isHome ? (
+            <>
+              <HashLink to="/#about" className={navLinkClass} onClick={() => setMenuOpen(false)}>About</HashLink>
+              <HashLink to="/#experience" className={navLinkClass} onClick={() => setMenuOpen(false)}>Experience</HashLink>
+              <HashLink to="/#portfolio" className={navLinkClass} onClick={() => setMenuOpen(false)}>Projects</HashLink>
+              <HashLink to="/#skills" className={navLinkClass} onClick={() => setMenuOpen(false)}>Skills</HashLink>
+              <HashLink to="/#contact" className={navLinkClass} onClick={() => setMenuOpen(false)}>Contact</HashLink>
+            </>
+          ) : (
+            <RouterLink to="/" className={navLinkClass} onClick={() => setMenuOpen(false)}>Home</RouterLink>
+          )}
+          <RouterLink to="/design-portfolio" className={navLinkClass} onClick={() => setMenuOpen(false)}>Designs</RouterLink>
+          <RouterLink to="/certifications" className={navLinkClass} onClick={() => setMenuOpen(false)}>Certifications</RouterLink>
+          <RouterLink to="/resume" className={navLinkClass} onClick={() => setMenuOpen(false)}>Resume</RouterLink>
+        </div>
+      </div>
+    </header>
+  );
 }
 
 export default Header;

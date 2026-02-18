@@ -1,20 +1,274 @@
-body {
-  background-color: #141c27;
-  color: #fff;
+@import url('https://fonts.googleapis.com/css2?family=Syne:wght@400;500;600;700;800&family=JetBrains+Mono:wght@300;400;500&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* ─── Theme variables ─── */
+:root {
+  --color-bg:         #0a0a0a;
+  --color-bg-rgb:     10, 10, 10;
+  --color-surface:    #111111;
+  --color-border:     #1f1f1f;
+  --color-text:       #f0f0f0;
+  --color-muted:      #888888;
+  --color-accent:     #7c5cbf;
+  --color-accent-rgb: 124, 92, 191;
+  --color-dim:        #444444;
 }
 
-body::-webkit-scrollbar {
-  width: 15px;
-  
-
+[data-theme="light"] {
+  --color-bg:         #f4f3ef;
+  --color-bg-rgb:     244, 243, 239;
+  --color-surface:    #eae8e2;
+  --color-border:     #d4d2cc;
+  --color-text:       #0f0f0f;
+  --color-muted:      #666666;
+  --color-accent:     #5a3a9f;
+  --color-accent-rgb: 90, 58, 159;
+  --color-dim:        #999999;
 }
 
-body::-webkit-scrollbar-track {
-  background: #141c25;
+@layer base {
+  *, *::before, *::after {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+  }
+
+  html {
+    scroll-behavior: smooth;
+  }
+
+  body {
+    background-color: var(--color-bg);
+    color: var(--color-text);
+    font-family: 'Syne', sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    overflow-x: hidden;
+    cursor: none;
+    transition: background-color 0.4s ease, color 0.4s ease;
+  }
+
+  a, button {
+    cursor: none;
+  }
+
+  ::selection {
+    background-color: var(--color-accent);
+    color: var(--color-bg);
+  }
+
+  ::-webkit-scrollbar {
+    width: 4px;
+  }
+
+  ::-webkit-scrollbar-track {
+    background: var(--color-bg);
+  }
+
+  ::-webkit-scrollbar-thumb {
+    background: var(--color-accent);
+    border-radius: 2px;
+  }
 }
 
-body::-webkit-scrollbar-thumb {
-  background: linear-gradient(#642bff, #ff22e6);
-  border-radius: 10px;
+/* ─── Theme toggle notification dot ─── */
+@keyframes notify-ping {
+  0%   { transform: scale(1);   opacity: 1; }
+  70%  { transform: scale(2.4); opacity: 0; }
+  100% { transform: scale(2.4); opacity: 0; }
+}
+@keyframes notify-dot {
+  0%, 100% { opacity: 1; }
+  50%       { opacity: 0.55; }
 }
 
+/* ─── Fallout button animations ─── */
+@keyframes fallout-spin {
+  from { transform: rotate(0deg); }
+  to   { transform: rotate(360deg); }
+}
+
+@keyframes fallout-btn-pulse {
+  0%, 100% {
+    box-shadow: 0 0 6px rgba(92, 255, 92, 0.25), 0 0 0px rgba(92, 255, 92, 0);
+  }
+  50% {
+    box-shadow: 0 0 14px rgba(92, 255, 92, 0.55), 0 0 24px rgba(92, 255, 92, 0.2);
+  }
+}
+
+/* ─── Fallout / Pip-Boy Theme ─── */
+[data-theme="fallout"] {
+  /* Authentic Pip-Boy 3000 amber-green phosphor */
+  --color-bg:         #040c04;
+  --color-bg-rgb:     4, 12, 4;
+  --color-surface:    #001800;
+  --color-border:     #1a4d1a;
+  --color-text:       #5cff5c;
+  --color-muted:      #3dcc3d;
+  --color-accent:     #5cff5c;
+  --color-accent-rgb: 92, 255, 92;
+  --color-dim:        #1f7a1f;
+}
+
+/* Force monospace everywhere — Pip-Boy terminal feel */
+[data-theme="fallout"] body {
+  font-family: 'JetBrains Mono', monospace !important;
+  animation: pipboy-flicker 12s infinite;
+}
+
+[data-theme="fallout"] h1,
+[data-theme="fallout"] h2,
+[data-theme="fallout"] h3 {
+  font-family: 'JetBrains Mono', monospace !important;
+  text-shadow:
+    0 0 8px rgba(92, 255, 92, 0.9),
+    0 0 24px rgba(92, 255, 92, 0.4),
+    0.05em 0 0 rgba(255, 80, 0, 0.45),
+    -0.03em 0 0 rgba(0, 220, 255, 0.45);
+  animation: pipboy-glitch 5s infinite;
+}
+
+[data-theme="fallout"] p,
+[data-theme="fallout"] span,
+[data-theme="fallout"] a,
+[data-theme="fallout"] li,
+[data-theme="fallout"] button {
+  text-shadow: 0 0 6px rgba(92, 255, 92, 0.55);
+}
+
+/* Pip-Boy green tint on all images */
+[data-theme="fallout"] img {
+  filter: sepia(1) hue-rotate(80deg) saturate(3) brightness(0.7) contrast(1.15);
+}
+
+/* Borders glow */
+[data-theme="fallout"] .border-border,
+[data-theme="fallout"] [class*="border-"] {
+  border-color: var(--color-border) !important;
+  box-shadow: 0 0 6px rgba(92, 255, 92, 0.15);
+}
+
+/* Cursor glow */
+[data-theme="fallout"] [data-cursor-dot] {
+  box-shadow: 0 0 6px 2px rgba(92, 255, 92, 0.9), 0 0 16px 4px rgba(92, 255, 92, 0.4) !important;
+}
+[data-theme="fallout"] [data-cursor-ring] {
+  box-shadow: 0 0 8px 2px rgba(92, 255, 92, 0.4) !important;
+  border-color: rgba(92, 255, 92, 0.7) !important;
+}
+
+/* Hover bloom */
+[data-theme="fallout"] button:hover,
+[data-theme="fallout"] a:hover {
+  text-shadow: 0 0 14px rgba(92, 255, 92, 1), 0 0 28px rgba(92, 255, 92, 0.6) !important;
+  transition: text-shadow 0.15s ease !important;
+}
+
+/* Tag/chip glow */
+[data-theme="fallout"] [class*="bg-surface"],
+[data-theme="fallout"] [class*="border-border"] {
+  border-color: rgba(92, 255, 92, 0.25) !important;
+  box-shadow: 0 0 4px rgba(92, 255, 92, 0.1);
+}
+
+/* Theme pill */
+[data-theme="fallout"] [aria-label="Theme switcher"] {
+  border-color: rgba(92, 255, 92, 0.5) !important;
+  box-shadow: 0 0 18px rgba(92, 255, 92, 0.25), inset 0 0 12px rgba(92, 255, 92, 0.05) !important;
+}
+
+/* Scrollbar */
+[data-theme="fallout"] ::-webkit-scrollbar-thumb {
+  background: #5cff5c;
+  box-shadow: 0 0 6px rgba(92, 255, 92, 0.8);
+}
+
+/* ─── Fallout Keyframes ─── */
+@keyframes pipboy-flicker {
+  0%, 19%, 21%, 26%, 54%, 58%, 100% { opacity: 1; }
+  20%, 25%, 56%                      { opacity: 0.92; }
+}
+
+/* Glitch: 5s cycle. Each clip-path window = 0.8% = ~40ms. Visible snap, not a block. */
+@keyframes pipboy-glitch {
+  0%, 85%, 100% {
+    transform: translate(0, 0);
+    clip-path: none;
+    text-shadow:
+      0 0 8px rgba(92, 255, 92, 0.9),
+      0 0 24px rgba(92, 255, 92, 0.4),
+      0.05em 0 0 rgba(255, 80, 0, 0.45),
+      -0.03em 0 0 rgba(0, 220, 255, 0.45);
+  }
+
+  /* Burst 1 — wide chromatic shift + upper slice ~40ms */
+  85.8% {
+    transform: translate(-6px, 0);
+    clip-path: polygon(0 0%, 100% 0%, 100% 28%, 0 28%);
+    text-shadow:
+      0.15em 0 0 rgba(255, 80, 0, 1),
+      -0.15em 0 0 rgba(0, 220, 255, 1);
+  }
+  86.6% {
+    transform: translate(6px, 0);
+    clip-path: polygon(0 28%, 100% 28%, 100% 100%, 0 100%);
+    text-shadow:
+      -0.1em 0 0 rgba(255, 80, 0, 0.9),
+      0.1em 0 0 rgba(0, 220, 255, 0.9);
+  }
+  87.4% {
+    transform: translate(0, 0);
+    clip-path: none;
+    text-shadow:
+      0 0 8px rgba(92, 255, 92, 0.9),
+      0 0 24px rgba(92, 255, 92, 0.4),
+      0.05em 0 0 rgba(255, 80, 0, 0.45),
+      -0.03em 0 0 rgba(0, 220, 255, 0.45);
+  }
+
+  /* Burst 2 — quick jitter only, no clip-path */
+  91%   { transform: translate(4px, -1px); }
+  91.4% { transform: translate(-4px, 1px); }
+  91.8% { transform: translate(2px, 0); }
+  92.2% { transform: translate(0, 0); }
+
+  /* Burst 3 — single thin slice */
+  96% {
+    transform: translate(-3px, 0);
+    clip-path: polygon(0 45%, 100% 45%, 100% 55%, 0 55%);
+    text-shadow: 0.1em 0 0 rgba(255, 80, 0, 0.8), -0.1em 0 0 rgba(0, 220, 255, 0.8);
+  }
+  96.8% {
+    transform: translate(0, 0);
+    clip-path: none;
+    text-shadow:
+      0 0 8px rgba(92, 255, 92, 0.9),
+      0 0 24px rgba(92, 255, 92, 0.4),
+      0.05em 0 0 rgba(255, 80, 0, 0.45),
+      -0.03em 0 0 rgba(0, 220, 255, 0.45);
+  }
+}
+
+@keyframes pipboy-scanline-sweep {
+  0%   { transform: translateY(-100%); opacity: 0.07; }
+  50%  { opacity: 0.11; }
+  100% { transform: translateY(100vh); opacity: 0.07; }
+}
+
+@keyframes crt-noise {
+  0%   { transform: translate(0, 0); }
+  10%  { transform: translate(-2%, -3%); }
+  20%  { transform: translate(3%, 1%); }
+  30%  { transform: translate(-1%, 3%); }
+  40%  { transform: translate(2%, -1%); }
+  50%  { transform: translate(-3%, 2%); }
+  60%  { transform: translate(1%, -2%); }
+  70%  { transform: translate(-2%, 3%); }
+  80%  { transform: translate(3%, -1%); }
+  90%  { transform: translate(-1%, 1%); }
+  100% { transform: translate(0, 0); }
+}
