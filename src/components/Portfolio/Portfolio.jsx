@@ -28,6 +28,10 @@ import liberBooks from '../../assets/port-proj-images/liber-ui-images/{95590C79-
 import kiaraHero from '../../assets/port-proj-images/kiara-sky-ui-images/{42564273-817D-4016-BD3C-533299C6130D}.png';
 import kiaraSocial from '../../assets/port-proj-images/kiara-sky-ui-images/{320BB740-B4FF-4B85-81E6-F996B5A9528B}.png';
 import kiaraProducts from '../../assets/port-proj-images/kiara-sky-ui-images/{97FA470E-36F1-4232-A4D3-D6341F03C336}.png';
+// Vantage
+import vantageHero from '../../assets/port-proj-images/vantage-ui-images/vantage-hero.png';
+import vantageFeatures from '../../assets/port-proj-images/vantage-ui-images/vantage-features.png';
+import vantageAnalytics from '../../assets/port-proj-images/vantage-ui-images/vantage-analytics.png';
 
 gsap.registerPlugin(ScrollTrigger);
 
@@ -46,6 +50,18 @@ const projects = [
   },
   {
     id: '02',
+    name: 'Vantage',
+    type: 'SaaS Demo · Frontend',
+    year: '2026',
+    description:
+      'A polished SaaS marketing site and live dashboard demo for an operations intelligence platform. Features animated UI, interactive pricing, testimonial carousel, and a fully functional mock dashboard — built to showcase modern SaaS product design.',
+    stack: ['React', 'TypeScript', 'Tailwind', 'Framer Motion', 'Next.js'],
+    images: [vantageHero, vantageFeatures, vantageAnalytics],
+    demo: 'https://sass-sale-demo.vercel.app/',
+    github: 'https://github.com/pToum21/sass-sale-demo',
+  },
+  {
+    id: '03',
     name: 'Free The Sheep',
     type: 'Shopify Development',
     year: '2026',
@@ -57,7 +73,7 @@ const projects = [
     github: null,
   },
   {
-    id: '03',
+    id: '04',
     name: 'Blicky.io',
     type: '3D Multiplayer Game',
     year: '2024',
@@ -69,7 +85,7 @@ const projects = [
     github: 'https://github.com/pToum21/multiplayer-shooter',
   },
   {
-    id: '04',
+    id: '05',
     name: 'New Harvest',
     type: 'Shopify Development',
     year: '2025',
@@ -81,7 +97,7 @@ const projects = [
     github: null,
   },
   {
-    id: '05',
+    id: '06',
     name: 'Liber',
     type: 'Full-Stack Web App',
     year: '2023',
@@ -93,7 +109,7 @@ const projects = [
     github: 'https://github.com/pToum21/liber',
   },
   {
-    id: '06',
+    id: '07',
     name: 'Kiara Sky',
     type: 'Shopify Development',
     year: '2025',
